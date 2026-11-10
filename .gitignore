@@ -1,0 +1,5 @@
+# Crawler working artifacts: page cache, generated output, bytecode.
+.cache/
+out/
+__pycache__/
+*.pyc
