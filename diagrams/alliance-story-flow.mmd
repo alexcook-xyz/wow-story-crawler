@@ -1,0 +1,28 @@
+flowchart LR
+  northshire["Northshire's Defence"]
+  dwarf_coldrige["Coldridge Valley"]
+  nightelf_shadowglen["Shadowglen"]
+  elwynn["Shadows over Elwynn"]
+  dwarf_lodgings["Dun Morogh"]
+  peoples_militia["The People's Militia"]
+  defias_brotherhood["The Defias Brotherhood"]
+  redridge["Redridge Under Siege [END]"]
+  loch_modan["In Defense of the King's Lands [END]"]
+  stockade["The Stockade Uprising"]
+  stalvan["The Legend of Stalvan [END]"]
+  duskwood_darkness["The Darkness of Duskwood"]
+  missing_diplomat["The Missing Diplomat [END]"]
+  onyxia["Onyxia: The True Masters [END]"]
+  northshire --> elwynn
+  elwynn --> peoples_militia
+  peoples_militia --> defias_brotherhood
+  defias_brotherhood -.->|"The Hermit"| duskwood_darkness
+  duskwood_darkness -.->|"The Perfect Stout"| dwarf_lodgings
+  dwarf_coldrige -.->|"The Adventurer"| dwarf_lodgings
+  dwarf_lodgings -.->|"The Fargodeep Mine"| elwynn
+  dwarf_lodgings -.->|"In Defense of the King's"| loch_modan
+  dwarf_lodgings -.->|"The People's Militia"| peoples_militia
+  dwarf_lodgings -.->|"Encroaching Gnolls"| redridge
+  elwynn -.->|"The Adventurer"| dwarf_lodgings
+  nightelf_shadowglen -.->|"The Adventurer"| dwarf_lodgings
+  stockade -.->|"The Stockade Riots"| defias_brotherhood
