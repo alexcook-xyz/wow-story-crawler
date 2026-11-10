@@ -8,7 +8,7 @@ import tempfile
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
 
-from storycrawler import builder, graph          # noqa: E402
+from storycrawler import builder, emit_html, graph  # noqa: E402
 from storycrawler.fetcher import Fetcher        # noqa: E402
 from storycrawler.models import QuestFact, SeedChapter  # noqa: E402
 from storycrawler.parsers import (parse_foreverdb, parse_rxp_lines,  # noqa: E402
@@ -36,6 +36,14 @@ check("foreverdb: name", f.name == "Manhunt")
 check("foreverdb: before", f.before == [123])
 check("foreverdb: after", f.after == [239])
 check("foreverdb: reqlevel", f.reqlevel == 7)
+check("foreverdb: quest level and zone", f.level == 10
+      and f.zone == "Elwynn Forest")
+check("foreverdb: faction gate", f.faction == "Alliance")
+check("foreverdb: giver card", f.giver == "Marshal Dughan"
+      and f.turnin == "Marshal Dughan")
+check("foreverdb: map and coords", f.map_id == 1429
+      and f.gx == 42.1 and f.gy == 65.9
+      and f.tx == 42.1 and f.ty == 65.9)
 empty = parse_foreverdb(1, "<html><h1>X</h1></html>", "u")
 check("foreverdb: no sections -> empty links, no guess",
       empty.before == [] and empty.after == [] and empty.reqlevel is None)
@@ -91,16 +99,19 @@ check("merge: sources listed",
 chapter = SeedChapter(id="elwynn_tail", name="Elwynn Tail",
                       faction="Alliance", race="Human", seeds=[147])
 members = graph.expand_from_seeds(merged, chapter.seeds, set())
-check("closure: walks both directions from mid seed",
-      members == {123, 147, 239})
-check("closure: class quest excluded by default", 999 not in members)
+check("closure: before-only by default (prereq joins, successor does not)",
+      members == {123, 147})
+members_both = graph.expand_from_seeds(merged, chapter.seeds, set(),
+                                       direction="both")
+check("closure: both directions on request", members_both == {123, 147, 239})
+check("closure: class quest excluded by default", 999 not in members_both)
 members_cls = graph.expand_from_seeds(merged, [239], set(),
-                                      include_class=True)
+                                      include_class=True, direction="both")
 check("closure: class quest opt-in", 999 in members_cls)
 
-ordered, cyc = graph.topo_order(merged, members, chapter.seeds)
+ordered, cyc = graph.topo_order(merged, members_both, chapter.seeds)
 check("topo: linear order", ordered == [123, 147, 239] and cyc == [])
-shape = graph.chapter_shape(merged, chapter, members, ordered)
+shape = graph.chapter_shape(merged, chapter, members_both, ordered)
 check("shape: single entry/exit",
       shape["entry"] == 123 and shape["exit"] == 239
       and shape["heads"] == [123] and shape["tails"] == [239])
@@ -113,12 +124,44 @@ check("topo: cycle detected, not hidden", cyc == [1, 2])
 
 gap_merged = graph.merge_facts([
     QuestFact(147, "foreverdb", name="Manhunt", before=[123])])
-gshape = builder.build_chapters(gap_merged, [chapter])[0]
+pairs = builder.build_chapters(gap_merged, [chapter])
+check("build: chapter stays paired with its own shape",
+      len(pairs) == 1 and pairs[0][0].id == "elwynn_tail"
+      and pairs[0][1]["id"] == "elwynn_tail")
+gshape = pairs[0][1]
 gaps = graph.find_gaps(gap_merged, [chapter], [gshape], set(gap_merged))
 check("gaps: uncrawled predecessor reported",
       any(g.kind == "missing_page" and "123" in g.detail for g in gaps))
 check("gaps: referenced ids feed next crawl round",
       graph.referenced_ids(gap_merged, {147}) == {123})
+
+chain = graph.merge_facts([
+    QuestFact(1, "foreverdb", name="One", after=[2]),
+    QuestFact(2, "foreverdb", name="Two", before=[1], after=[3]),
+    QuestFact(3, "foreverdb", name="Three", before=[2], after=[9]),
+    QuestFact(9, "foreverdb", name="Nine", before=[3]),
+])
+ch3 = SeedChapter(id="trio", name="Trio", faction="Alliance",
+                  seeds=[1, 2, 3], entry=1, exit=3, next_chapter=None)
+mem3 = graph.expand_from_seeds(chain, ch3.seeds, set())
+o3, _c3 = graph.topo_order(chain, mem3, ch3.seeds)
+sh3 = graph.chapter_shape(chain, ch3, mem3, o3)
+check("shape: curated entry/exit kept",
+      sh3["entry"] == 1 and sh3["exit"] == 3)
+ch3m = SeedChapter(id="trio", name="Trio", faction="Alliance",
+                   seeds=[1, 2, 3], entry=2, exit=2)
+shm = graph.chapter_shape(chain, ch3m, mem3, o3)
+check("shape: mid-chain curated entry/exit honored",
+      shm["entry"] == 2 and shm["exit"] == 2)
+g3 = graph.find_gaps(chain, [ch3], [sh3], set(chain))
+check("gaps: tail continuation reported",
+      any(g.kind == "tail_continues" and g.qid == 3
+          and "9" in g.detail for g in g3))
+check("gaps: no false exit_continues on true exit",
+      not any(g.kind == "exit_continues" for g in g3))
+gm = graph.find_gaps(chain, [ch3m], [shm], set(chain))
+check("gaps: mid-thread exit flagged",
+      any(g.kind == "exit_continues" and g.qid == 2 for g in gm))
 
 # --- seeds file + addon diff (real repo data, still offline) ----------
 chapters = builder.load_seeds()
@@ -157,6 +200,32 @@ draft = builder.emit_lua_draft(merged, shape | {"zone": "Elwynn Forest"})
 check("emit-lua: leads on entry and exit", draft.count('kind = "lead"') == 2)
 check("emit-lua: never invents coords", "map = TODO" in draft
       and "x =" not in draft)
+rich = graph.merge_facts([QuestFact(
+    147, "foreverdb", name="Manhunt", before=[123],
+    reqlevel=7, zone="Elwynn Forest", giver="Marshal Dughan",
+    map_id=1429, gx=42.1, gy=65.9)])
+rshape = {"id": "elwynn_tail", "name": "Elwynn Tail", "race": "Human",
+          "zone": "Elwynn Forest", "quests": [147]}
+rdraft = builder.emit_lua_draft(rich, rshape)
+check("emit-lua: fills sourced giver/coords",
+      'giver = "Marshal Dughan"' in rdraft and "map = 1429" in rdraft
+      and "x = 42.1, y = 65.9" in rdraft)
+
+# --- emit-html unplaced lanes --------------------------------------
+syn_graph = {"quests": {"1": {"name": "Alpha", "before": [], "after": ["2"]},
+                        "2": {"name": "Beta", "before": ["1"], "after": [],
+                              "zone": "Duskwood"}},
+             "chapters": [{"id": "c1", "name": "C1", "quests": [1]}]}
+syn_html = emit_html.build_html(syn_graph)
+check("emit-html: chaptered quest renders", "data-qid='1'" in syn_html)
+check("emit-html: unplaced quest gets a zone lane",
+      "Unplaced - Duskwood" in syn_html and "data-qid='2'" in syn_html)
+check("emit-html: edge into unplaced quest renders",
+      "data-a='1'" in syn_html and "data-b='2'" in syn_html)
+full_graph = {"quests": {"1": {"name": "A"}},
+              "chapters": [{"id": "c", "quests": [1]}]}
+check("emit-html: no unplaced lane when all placed",
+      "Unplaced - " not in emit_html.build_html(full_graph))
 
 print()
 print("ALL TESTS PASS" if fails == 0 else f"{fails} FAILURES")
