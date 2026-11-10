@@ -211,21 +211,19 @@ check("emit-lua: fills sourced giver/coords",
       'giver = "Marshal Dughan"' in rdraft and "map = 1429" in rdraft
       and "x = 42.1, y = 65.9" in rdraft)
 
-# --- emit-html unplaced lanes --------------------------------------
+# --- emit-html chapters-only map -----------------------------------
+# The map shows curated chapters only: quests no chapter references
+# render no node and no edge (class lines, profession guides, sides).
 syn_graph = {"quests": {"1": {"name": "Alpha", "before": [], "after": ["2"]},
                         "2": {"name": "Beta", "before": ["1"], "after": [],
                               "zone": "Duskwood"}},
              "chapters": [{"id": "c1", "name": "C1", "quests": [1]}]}
 syn_html = emit_html.build_html(syn_graph)
 check("emit-html: chaptered quest renders", "data-qid='1'" in syn_html)
-check("emit-html: unplaced quest gets a zone lane",
-      "Unplaced - Duskwood" in syn_html and "data-qid='2'" in syn_html)
-check("emit-html: edge into unplaced quest renders",
-      "data-a='1'" in syn_html and "data-b='2'" in syn_html)
-full_graph = {"quests": {"1": {"name": "A"}},
-              "chapters": [{"id": "c", "quests": [1]}]}
-check("emit-html: no unplaced lane when all placed",
-      "Unplaced - " not in emit_html.build_html(full_graph))
+check("emit-html: quest outside any chapter renders no node",
+      "data-qid='2'" not in syn_html)
+check("emit-html: edge to outside quest omitted",
+      "data-b='2'" not in syn_html)
 
 print()
 print("ALL TESTS PASS" if fails == 0 else f"{fails} FAILURES")

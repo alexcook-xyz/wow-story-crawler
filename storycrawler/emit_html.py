@@ -3,8 +3,6 @@
 #
 # Layout: one swimlane per chapter in story order, quest nodes in the
 # chapter's topological order, edges for before/after links, entry/exit
-# highlighting, then one trailing lane per zone for quests no chapter
-# references so every crawled quest renders.
 # highlighting, click-a-node detail panel, zoom/pan, faction/race/chapter
 # filters, and gap markers (multiple heads/tails, cycles).
 from __future__ import annotations
@@ -22,57 +20,9 @@ def load_graph(path: Path) -> dict:
     return json.loads(Path(path).read_text(encoding="utf-8"))
 
 
-def _qid_num(qid_s: str) -> int:
-    try:
-        return int(qid_s)
-    except (TypeError, ValueError):
-        return 0
-
-
-def _qid_int(qid_s: str):
-    try:
-        v = int(qid_s)
-    except (TypeError, ValueError):
-        return qid_s
-    return v if str(v) == str(qid_s) else qid_s
-
-
-def _unplaced_lanes(quests: dict, chapters: list) -> list:
-    """Trailing lanes (one per zone) for quests no chapter references.
-
-    The tree must render every crawled quest; without this, quests
-    the chapter builder left out would have no node and no edges.
-    """
-    placed = set()
-    for ch in chapters:
-        for qid in ch.get("quests", []):
-            placed.add(str(qid))
-    by_zone: dict = {}
-    for qid_s, mq in quests.items():
-        if not isinstance(mq, dict) or str(qid_s) in placed:
-            continue
-        by_zone.setdefault(mq.get("zone") or "Unknown", []).append(qid_s)
-    lanes = []
-    for zone in sorted(by_zone):
-        ids = by_zone[zone]
-        ids.sort(key=lambda q: (
-            quests[q].get("reqlevel")
-            if isinstance(quests[q].get("reqlevel"), int) else 9999,
-            _qid_num(q), q))
-        lanes.append({
-            "id": "unplaced:%s" % zone,
-            "name": "Unplaced - %s (no chapter yet)" % zone,
-            "zone": zone,
-            "quests": [_qid_int(q) for q in ids],
-        })
-    return lanes
-
-
 def build_html(data: dict) -> str:
     quests: dict = data.get("quests", {})
-    chapters: list = list(data.get("chapters", [])) + \
-        _unplaced_lanes(data.get("quests", {}),
-                        data.get("chapters", []))
+    chapters: list = data.get("chapters", [])
 
     # Position map: qid(str) -> (cx, cy, chapter_id, x_index)
     NODE_W, NODE_H, X_STEP, LANE_H = 132, 46, 168, 130
@@ -333,10 +283,10 @@ document.getElementById(id).addEventListener('change',applyFilters);});
     doc = ("<!DOCTYPE html><html lang='en'><head><meta charset='utf-8'>"
            "<meta name='viewport' content='width=device-width,"
            "initial-scale=1'>"
-           "<title>Quest-planning tree</title>"
+           "<title>WoW Forever - Main Story Map</title>"
            "<style>%s</style></head><body>"
            "<div id='main'><div id='bar'>"
-           "<b>Quest-planning tree</b>"
+           "<b>WoW Forever - Main Story Map</b>"
            "<label>Faction <select id='ffac'>%s</select></label>"
            "<label>Race <select id='frac'>%s</select></label>"
            "<label>Chapter <select id='fch'>%s</select></label>"
