@@ -1,0 +1,20 @@
+flowchart LR
+  orc_valley_trials["Valley of Trials"]
+  troll_valley_trials["Valley of Trials (Troll)"]
+  undead_deathknell["Deathknell [END]"]
+  tauren_red_cloud["Red Cloud Mesa"]
+  orgrimmar["Threats to Orgrimmar [END]"]
+  barrens["Trouble in the Barrens [END]"]
+  orc_valley_trials -.->|"Conscript of the Horde"| barrens
+  orc_valley_trials -.->|"Threat from Below"| orgrimmar
+  tauren_red_cloud -.->|"The Forgotten Pools"| barrens
+  troll_valley_trials -.->|"Conscript of the Horde"| barrens
+  troll_valley_trials -.->|"Threat from Below"| orgrimmar
+  ext_kalimdor["To Kalimdor view"]
+  barrens -.->|"Goblin Sponsorship"| ext_kalimdor
+  extf_kalimdor["From Kalimdor view"]
+  extf_kalimdor -.->|"Blood of the Black Dragon"| orgrimmar
+  orgrimmar -.->|"Betrayed"| ext_kalimdor
+  extf_skyborne["From Skyborne view"]
+  extf_skyborne -.->|"The Cult of the Damned"| undead_deathknell
+  extf_skyborne -.->|"Bandarion Keep"| undead_deathknell

@@ -103,7 +103,8 @@
     165,
     166,
     373,
-    396
+    396,
+    214
    ],
    "entry": 65,
    "exit": 373,
@@ -746,7 +747,8 @@
    "seeds": [
     5730,
     99052,
-    3504
+    3504,
+    7493
    ],
    "entry": null,
    "exit": null,
@@ -834,7 +836,8 @@
     98435,
     853,
     872,
-    3281
+    3281,
+    860
    ],
    "notes": "RXP-derived (local RestedXP Forever guide, first-accept order); the crawl verifies every link.",
    "min_level": 1,
@@ -1150,8 +1153,9 @@
    "min_level": 10,
    "max_level": 20,
    "seeds": [
-     954,
-     1275
+    954,
+    1275,
+    957
    ],
    "entry": null,
    "exit": null,
@@ -1168,9 +1172,11 @@
    "min_level": 20,
    "max_level": 30,
    "seeds": [
-     469,
-     470,
-     472
+    469,
+    470,
+    472,
+    1302,
+    526
    ],
    "entry": null,
    "exit": null,
@@ -1187,8 +1193,10 @@
    "min_level": 20,
    "max_level": 30,
    "seeds": [
-     513,
-     559
+    513,
+    559,
+    524,
+    563
    ],
    "entry": null,
    "exit": null,
@@ -1205,7 +1213,9 @@
    "min_level": 20,
    "max_level": 30,
    "seeds": [
-     1055
+    1055,
+    1046,
+    1025
    ],
    "entry": null,
    "exit": null,
@@ -1222,7 +1232,8 @@
    "min_level": 15,
    "max_level": 27,
    "seeds": [
-     1093
+    1093,
+    1096
    ],
    "entry": null,
    "exit": null,
@@ -1239,7 +1250,10 @@
    "min_level": 30,
    "max_level": 40,
    "seeds": [
-     665
+    665,
+    667,
+    662,
+    664
    ],
    "entry": null,
    "exit": null,
@@ -1256,8 +1270,9 @@
    "min_level": 30,
    "max_level": 40,
    "seeds": [
-     1367,
-     6602
+    1367,
+    6602,
+    1381
    ],
    "entry": null,
    "exit": null,
@@ -1274,7 +1289,11 @@
    "min_level": 25,
    "max_level": 35,
    "seeds": [
-     1104
+    1104,
+    1189,
+    1105,
+    1192,
+    1107
    ],
    "entry": null,
    "exit": null,
@@ -1291,8 +1310,12 @@
    "min_level": 35,
    "max_level": 45,
    "seeds": [
-     1319,
-     1273
+    1319,
+    1273,
+    1276,
+    1320,
+    1287,
+    1284
    ],
    "entry": null,
    "exit": null,
@@ -1309,10 +1332,15 @@
    "min_level": 30,
    "max_level": 45,
    "seeds": [
-     189,
-     576,
-     207,
-     578
+    189,
+    576,
+    207,
+    578,
+    209,
+    206,
+    611,
+    587,
+    608
    ],
    "entry": null,
    "exit": null,
@@ -1329,9 +1357,14 @@
    "min_level": 35,
    "max_level": 45,
    "seeds": [
-     720,
-     777,
-     728
+    720,
+    777,
+    728,
+    778,
+    715,
+    716,
+    737,
+    1139
    ],
    "entry": null,
    "exit": null,
@@ -1348,9 +1381,10 @@
    "min_level": 35,
    "max_level": 45,
    "seeds": [
-     1475,
-     1391,
-     2784
+    1475,
+    1391,
+    2784,
+    3628
    ],
    "entry": null,
    "exit": null,
@@ -1367,7 +1401,8 @@
    "min_level": 40,
    "max_level": 50,
    "seeds": [
-     1451
+    1451,
+    81
    ],
    "entry": null,
    "exit": null,
@@ -1384,7 +1419,9 @@
    "min_level": 40,
    "max_level": 50,
    "seeds": [
-     3445
+    3445,
+    3446,
+    3447
    ],
    "entry": null,
    "exit": null,
@@ -1401,7 +1438,8 @@
    "min_level": 40,
    "max_level": 50,
    "seeds": [
-     1690
+    1690,
+    1691
    ],
    "entry": null,
    "exit": null,
@@ -1436,7 +1474,9 @@
    "min_level": 45,
    "max_level": 55,
    "seeds": [
-     3601
+    3601,
+    5534,
+    3507
    ],
    "entry": null,
    "exit": null,
@@ -1453,7 +1493,8 @@
    "min_level": 48,
    "max_level": 55,
    "seeds": [
-     4441
+    4441,
+    4261
    ],
    "entry": null,
    "exit": null,
@@ -1470,7 +1511,9 @@
    "min_level": 50,
    "max_level": 55,
    "seeds": [
-     3845
+    3845,
+    3912,
+    3962
    ],
    "entry": null,
    "exit": null,
@@ -1487,8 +1530,19 @@
    "min_level": 50,
    "max_level": 58,
    "seeds": [
-     5023,
-     5215
+    5023,
+    5215,
+    5051,
+    5218,
+    5221,
+    5224,
+    5227,
+    5237,
+    5238,
+    5505,
+    105,
+    211,
+    5511
    ],
    "entry": null,
    "exit": null,
@@ -1505,8 +1559,9 @@
    "min_level": 55,
    "max_level": 60,
    "seeds": [
-     4842,
-     5121
+    4842,
+    5121,
+    5128
    ],
    "entry": null,
    "exit": null,
@@ -1523,8 +1578,12 @@
    "min_level": 53,
    "max_level": 60,
    "seeds": [
-     5149,
-     5281
+    5149,
+    5281,
+    5282,
+    5211,
+    5942,
+    5241
    ],
    "entry": null,
    "exit": null,
@@ -1541,7 +1600,9 @@
    "min_level": 55,
    "max_level": 60,
    "seeds": [
-     8284
+    8284,
+    8287,
+    8324
    ],
    "entry": null,
    "exit": null,
@@ -1558,7 +1619,9 @@
    "min_level": 51,
    "max_level": 60,
    "seeds": [
-     514
+    514,
+    537,
+    94947
    ],
    "entry": null,
    "exit": null,
@@ -1575,8 +1638,9 @@
    "min_level": 55,
    "max_level": 60,
    "seeds": [
-     4742,
-     7761
+    4742,
+    7761,
+    4743
    ],
    "entry": null,
    "exit": null,

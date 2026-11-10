@@ -1,0 +1,20 @@
+flowchart LR
+  ashenvale["Ashenvale [END]"]
+  stonetalon["Stonetalon Mountains [END]"]
+  desolace["Desolace [END]"]
+  thousand_needles["Thousand Needles [END]"]
+  dustwallow["Dustwallow Marsh [END]"]
+  feralas["Feralas [END]"]
+  tanaris["Tanaris [END]"]
+  azshara["Azshara [END]"]
+  felwood["Felwood [END]"]
+  ungoro["Un'Goro Crater [END]"]
+  winterspring["Winterspring [END]"]
+  silithus["Silithus [END]"]
+  extf_horde["From Horde view"]
+  extf_horde -.->|"Goblin Sponsorship"| thousand_needles
+  ext_horde["To Horde view"]
+  desolace -.->|"Blood of the Black Dragon"| ext_horde
+  extf_horde -.->|"Betrayed"| azshara
+  extf_alliance["From Alliance view"]
+  extf_alliance -.->|"James Hyal"| dustwallow

@@ -1,10 +1,4 @@
 flowchart LR
-  orc_valley_trials["Valley of Trials"]
-  troll_valley_trials["Valley of Trials (Troll)"]
-  undead_deathknell["Deathknell [END]"]
-  tauren_red_cloud["Red Cloud Mesa"]
-  orgrimmar["Threats to Orgrimmar [END]"]
-  barrens["Trouble in the Barrens [END]"]
   skyborne_class["Skyborne: Path of the Caller"]
   skyborne_exits["Skyborne: Leaving Zephras"]
   skyborne_thendal["Skyborne: Thendal Village [END]"]
@@ -13,9 +7,7 @@ flowchart LR
   skyborne_valanaar["Skyborne: Valanaar"]
   skyborne_hermit["Skyborne: The Hermit's Trail [END]"]
   skyborne_war["Skyborne: War on Zephras"]
-  skyborne_unverified["Skyborne: Unverified Pages"]
-  orc_valley_trials -.->|"Conscript of the Horde"| barrens
-  orc_valley_trials -.->|"Threat from Below"| orgrimmar
+  skyborne_unverified["Skyborne: Unverified Pages [END]"]
   skyborne_class -.->|"Fillion's Mission"| skyborne_unverified
   skyborne_class -.->|"Fillion's Mission"| skyborne_valanaar
   skyborne_class -.->|"Fillion's Mission"| skyborne_war
@@ -23,7 +15,6 @@ flowchart LR
   skyborne_exits -.->|"The Cult of the Damned"| skyborne_unverified
   skyborne_exits -.->|"To Valanaar"| skyborne_valanaar
   skyborne_exits -.->|"To Valanaar"| skyborne_war
-  skyborne_exits -.->|"The Cult of the Damned"| undead_deathknell
   skyborne_falaath -.->|"Havoc in the Highlands"| skyborne_class
   skyborne_falaath -.->|"Havoc in the Highlands"| skyborne_exits
   skyborne_falaath -.->|"Havoc in the Highlands"| skyborne_unverified
@@ -35,11 +26,10 @@ flowchart LR
   skyborne_shendar -.->|"Infiltrating the Cult"| skyborne_unverified
   skyborne_shendar -.->|"Infiltrating the Cult"| skyborne_valanaar
   skyborne_shendar -.->|"Infiltrating the Cult"| skyborne_war
-  skyborne_unverified -.->|"Bandarion Keep"| undead_deathknell
   skyborne_valanaar -.->|"Unnerving Silence"| skyborne_hermit
   skyborne_valanaar -.->|"The Cult's True Plans"| skyborne_unverified
   skyborne_valanaar -.->|"The Cult's True Plans"| skyborne_war
   skyborne_war -.->|"Prepare for Battle"| skyborne_unverified
-  tauren_red_cloud -.->|"The Forgotten Pools"| barrens
-  troll_valley_trials -.->|"Conscript of the Horde"| barrens
-  troll_valley_trials -.->|"Threat from Below"| orgrimmar
+  ext_horde["To Horde view"]
+  skyborne_exits -.->|"The Cult of the Damned"| ext_horde
+  skyborne_unverified -.->|"Bandarion Keep"| ext_horde

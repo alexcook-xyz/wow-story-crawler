@@ -13,6 +13,8 @@ flowchart LR
   duskwood_darkness["The Darkness of Duskwood"]
   missing_diplomat["The Missing Diplomat [END]"]
   onyxia["Onyxia: The True Masters [END]"]
+  darkshore["Darkshore [END]"]
+  wetlands["The Wetlands"]
   northshire --> elwynn
   elwynn --> peoples_militia
   peoples_militia --> defias_brotherhood
@@ -26,3 +28,8 @@ flowchart LR
   elwynn -.->|"The Adventurer"| dwarf_lodgings
   nightelf_shadowglen -.->|"The Adventurer"| dwarf_lodgings
   stockade -.->|"The Stockade Riots"| defias_brotherhood
+  wetlands -.->|"Lightforge Ingots"| duskwood_darkness
+  ext_ek["To Eastern Kingdoms view"]
+  stalvan -.->|"A Sticky Situation"| ext_ek
+  ext_kalimdor["To Kalimdor view"]
+  wetlands -.->|"James Hyal"| ext_kalimdor
