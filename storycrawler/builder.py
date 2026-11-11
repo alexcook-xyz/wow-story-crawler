@@ -24,10 +24,12 @@ def load_seeds(path: Path = DEFAULT_SEEDS) -> list[SeedChapter]:
     data = json.loads(Path(path).read_text(encoding="utf-8"))
     chapters = [SeedChapter.from_json(d) for d in data["chapters"]]
     ids = [c.id for c in chapters]
-    if len(ids) != len(set(ids)):
+    known = set(ids)
+    if len(ids) != len(known):
         raise ValueError("duplicate chapter id in seeds")
     for c in chapters:
-        if c.next_chapter and c.next_chapter not in ids:
+
+        if c.next_chapter and c.next_chapter not in known:
             raise ValueError(f"{c.id}: next_chapter {c.next_chapter!r} unknown")
     return chapters
 
@@ -97,12 +99,22 @@ def build_chapters(merged: dict[int, MergedQuest],
     pairs = []
     for chapter in sorted(chapters, key=lambda c: (c.faction, c.order)):
         members = graph.expand_from_seeds(
-            merged, chapter.seeds, set(chapter.exclude), include_class)
+            merged, chapter.seeds, set(chapter.exclude), include_class,
+            max_level=None if chapter.is_attunement else graph.MAX_LEVEL)
         ordered, in_cycle = graph.topo_order(merged, members, chapter.seeds)
         shape = graph.chapter_shape(merged, chapter, members, ordered)
         shape["in_cycle"] = in_cycle
         pairs.append((chapter, shape))
     return pairs
+
+
+def merge_saved_facts(old: list[QuestFact],
+                      new: list[QuestFact]) -> list[QuestFact]:
+    """Keep earlier facts a partial crawl (--chapter / --faction) did
+    not re-read. A fresh fact replaces the saved one for the same
+    (quest, source); everything else is preserved."""
+    fresh = {(f.qid, f.source) for f in new}
+    return [f for f in old if (f.qid, f.source) not in fresh] + list(new)
 
 
 def save_facts(facts: list[QuestFact], path: Path) -> None:
@@ -115,6 +127,11 @@ def load_facts(path: Path) -> list[QuestFact]:
             for d in json.loads(Path(path).read_text(encoding="utf-8"))]
 
 
+def _write_lf(path: Path, text: str, encoding: str = "utf-8") -> None:
+    """Generated outputs always use LF, so diffs match on every OS."""
+    Path(path).write_text(text, encoding=encoding, newline="\n")
+
+
 def write_outputs(out_dir: Path, merged: dict[int, MergedQuest],
                   shapes: list[dict], gaps: list) -> list[Path]:
     out = Path(out_dir)
@@ -124,18 +141,24 @@ def write_outputs(out_dir: Path, merged: dict[int, MergedQuest],
                              for q in sorted(merged)},
                   "chapters": shapes}
     p = out / "story-graph.json"
-    p.write_text(json.dumps(graph_json, indent=1), encoding="utf-8")
+    _write_lf(p, json.dumps(graph_json, indent=1), encoding="utf-8")
     written.append(p)
     p = out / "gaps.md"
     lines = ["# Story graph gaps", ""]
-    lines += [g.line() for g in gaps] or ["No gaps. Every chapter is closed."]
-    p.write_text("\n".join(lines) + "\n", encoding="utf-8")
+    open_gaps, done_gaps = graph.split_gaps(gaps)
+    lines += [f"{len(open_gaps)} open, {len(done_gaps)} explained.", "",
+              "## Open", ""]
+    lines += [g.line() for g in open_gaps] or ["None. Every chapter is closed."]
+    lines += ["", "## Explained", ""]
+    lines += [g.line() for g in done_gaps] or ["None."]
+    _write_lf(p, "\n".join(lines) + "\n", encoding="utf-8")
     written.append(p)
     p = out / "storyline.md"
     lines = ["# Linear main story (draft, generated)", ""]
     for shape in shapes:
         race = f" / {shape['race']}" if shape["race"] else ""
-        lines.append(f"## {shape['name']} ({shape['faction']}{race})")
+        tag = f" [attunement: {shape['gate']}]" if shape.get("gate") else ""
+        lines.append(f"## {shape['name']} ({shape['faction']}{race}){tag}")
         lines.append(f"Entry {shape['entry']} -> exit {shape['exit']}; "
                      f"{len(shape['quests'])} quests")
         for qid in shape["quests"]:
@@ -143,7 +166,7 @@ def write_outputs(out_dir: Path, merged: dict[int, MergedQuest],
             lvl = f" lvl {mq.reqlevel}" if mq.reqlevel else ""
             lines.append(f"- {qid} {mq.name or '?'}{lvl}")
         lines.append("")
-    p.write_text("\n".join(lines), encoding="utf-8")
+    _write_lf(p, "\n".join(lines), encoding="utf-8")
     written.append(p)
     p = out / "storyline.mmd"
     lines = ["flowchart LR"]
@@ -158,7 +181,7 @@ def write_outputs(out_dir: Path, merged: dict[int, MergedQuest],
         lines.append("  end")
         if shape["next_chapter"]:
             lines.append(f"  {shape['id']} --> {shape['next_chapter']}")
-    p.write_text("\n".join(lines) + "\n", encoding="utf-8")
+    _write_lf(p, "\n".join(lines) + "\n", encoding="utf-8")
     written.append(p)
     return written
 

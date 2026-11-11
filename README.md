@@ -83,9 +83,10 @@ guides instead.
 python crawl_story.py validate            # seeds sanity (offline)
 python crawl_story.py crawl --dry-run     # list URLs, fetch nothing
 python crawl_story.py crawl --sources foreverdb --max-rounds 25
-python crawl_story.py crawl --chapter elwynn --verbose
+python crawl_story.py crawl --chapter elwynn --verbose   # merges into out/facts.json
 python crawl_story.py crawl --rxp "<Forever>\RXPGuides\Guides\forever\*.lua"
 python crawl_story.py build               # out/: chapters, gaps, charts
+python crawl_story.py report              # docs/race-gaps.md (generated)
 python crawl_story.py emit-html           # out/story-tree.html
 python crawl_story.py diff                # crawl vs MainStoryGuide/Data_*.lua
 python crawl_story.py emit-lua --chapter elwynn   # draft chain block
@@ -111,6 +112,25 @@ class-specific quests (default: excluded). `--faction` limits a crawl.
 4. `diff` against the addon, `emit-lua` for a draft block, then fill
    giver/map/coords from in-game verification before adding it to
    `MainStoryGuide/Data_*.lua` with route tasks and journal entries.
+
+## Attunement chapters and explained gaps
+
+- `"kind": "attunement"` + `"gate": "<raid/dungeon>"` on a chapter marks
+  a raid/dungeon attunement or key chain (Onyxia, Molten Core, UBRS
+  Seal of Ascension, Blackwing Lair). It lifts the level-60 cutoff for
+  that chapter and makes it a true terminal (no `next_chapter` needed).
+  On every other chapter, a thread that runs past the cutoff is now
+  reported as `level_cutoff` instead of being dropped silently.
+- `"explained": {"<gap kind>": "<reason>"}` on a chapter accounts for
+  gaps of that kind. `gaps.md` lists `## Open` and `## Explained`
+  separately; a `tail_continues` that lands in another chapter is
+  explained automatically as a hand-off. Only explain a gap you have
+  checked: the reason is the audit trail.
+- `docs/endgame-seeds.md` records how the endgame chapters were seeded
+  (Forever DB name search, `?search=<name>` on the quest list) and the
+  structure the crawl found.
+- `docs/race-gaps.md` summarises the race starters; `docs/human-audit.md`
+  is the crawl-vs-`Data_Human.lua` audit (candidates to verify in game).
 
 ## Tests
 

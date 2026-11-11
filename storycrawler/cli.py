@@ -76,8 +76,15 @@ def cmd_crawl(args) -> int:
         fetcher, seed_ids, tuple(args.sources),
         max_rounds=args.max_rounds, rxp_facts=rxp, verbose=args.verbose)
     out = Path(args.out)
-    out.mkdir(parents=True, exist_ok=True)
-    builder.save_facts(facts, out / FACTS_FILE)
+    if not fetcher.dry_run:
+        # A dry run fetched nothing, so it must never touch the saved
+        # facts; a real (or --offline) partial crawl merges into them.
+        out.mkdir(parents=True, exist_ok=True)
+        saved = out / FACTS_FILE
+        if saved.exists():
+            facts = builder.merge_saved_facts(builder.load_facts(saved),
+                                              facts)
+        builder.save_facts(facts, saved)
     print(f"facts={len(facts)} quests parsed={len(crawled)} "
           f"fetched={fetcher.stats['fetched']} "
           f"cached={fetcher.stats['cached']} "
@@ -93,18 +100,23 @@ def cmd_crawl(args) -> int:
     return 0
 
 
+def _gaps_for(args):
+    """The one gap pipeline: build, then find_gaps. build and report use it."""
+    _chapters, _facts, merged, shapes = _merged_and_shapes(args)
+    gaps = graph.find_gaps(merged, _chapters, shapes, set(merged),
+                           include_class=args.include_class)
+    return merged, shapes, gaps
+
+
 def cmd_build(args) -> int:
-    chapters, _facts, merged, shapes = _merged_and_shapes(args)
-    gaps = graph.find_gaps(merged, chapters, shapes, set(merged))
-    for shape in shapes:
-        for qid in shape["in_cycle"]:
-            gaps.append(graph.Gap("cycle", "quest is in a before-link cycle",
-                                  qid, shape["id"]))
+    merged, shapes, gaps = _gaps_for(args)
     written = builder.write_outputs(Path(args.out), merged, shapes, gaps)
     for shape in shapes:
         print(f"{shape['id']}: {len(shape['quests'])} quests "
               f"{shape['entry']} -> {shape['exit']}")
-    print(f"gaps: {len(gaps)} (see gaps.md)")
+    open_gaps, done_gaps = graph.split_gaps(gaps)
+    print(f"gaps: {len(open_gaps)} open, {len(done_gaps)} explained "
+          "(see gaps.md)")
     print("wrote: " + ", ".join(p.name for p in written))
     return 0
 
@@ -207,6 +219,8 @@ def build_arg_parser() -> argparse.ArgumentParser:
     c.add_argument("--verbose", action="store_true")
     sub.add_parser("build", help="facts -> chapters, gaps, chart")
     sub.add_parser("diff", help="crawl vs MainStoryGuide/Data_*.lua")
+    rp = sub.add_parser("report", help="regenerate docs/race-gaps.md")
+    rp.add_argument("--doc", default="docs/race-gaps.md")
     e = sub.add_parser("emit-lua", help="print a draft chain block")
     e.add_argument("--chapter", required=True)
     h = sub.add_parser("emit-html", help="render story-graph.json as an interactive HTML tree")
@@ -221,7 +235,19 @@ def build_arg_parser() -> argparse.ArgumentParser:
     return p
 
 
+def cmd_report(args) -> int:
+    from storycrawler import report
+    _merged, shapes, gaps = _gaps_for(args)
+    text = report.race_report(
+        shapes, gaps, f"crawl_story.py report --doc {args.doc}")
+    Path(args.doc).parent.mkdir(parents=True, exist_ok=True)
+    Path(args.doc).write_text(text, encoding="utf-8", newline="\n")
+    print(f"wrote {args.doc}")
+    return 0
+
+
 _COMMANDS = {"validate": cmd_validate, "crawl": cmd_crawl,
+             "report": cmd_report,
              "build": cmd_build, "diff": cmd_diff,
              "emit-lua": cmd_emit_lua, "emit-html": cmd_emit_html, "discover": cmd_discover,
              "quest": cmd_quest}
