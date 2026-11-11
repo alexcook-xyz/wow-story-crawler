@@ -23,6 +23,10 @@ DEFAULT_ADDON_DIR = ROOT.parent / "MainStoryGuide" / "MainStoryGuide"
 def load_seeds(path: Path = DEFAULT_SEEDS) -> list[SeedChapter]:
     data = json.loads(Path(path).read_text(encoding="utf-8"))
     chapters = [SeedChapter.from_json(d) for d in data["chapters"]]
+    race_excl = list(data.get("exclude_in_race_chapters", {}).get("ids", []))
+    for c in chapters:
+        if c.race and race_excl:
+            c.exclude = sorted(set(c.exclude) | set(race_excl))
     ids = [c.id for c in chapters]
     if len(ids) != len(set(ids)):
         raise ValueError("duplicate chapter id in seeds")

@@ -1,80 +1,29 @@
 # Story graph gaps
 
-- open_head: [northshire] multiple entries [783, 33, 95998, 96101]; curate `entry` or add the missing lead quest
-- open_tail: [northshire] multiple exits [6, 54, 33, 3905, 96044, 96045, 96046, 96047, 96050, 96055, 96056, 96057, 96059, 96629, 96646, 97963, 97964, 97965, 97967, 97968, 97969, 97970, 97971, 97973, 98286]; curate `exit` or split the chapter
-- unbridged_chapter: [northshire] quest 98286: exit 98286 does not link into elwynn entry 62
+- open_head: [northshire] multiple entries [783, 33]; curate `entry` or add the missing lead quest
+- open_tail: [northshire] multiple exits [6, 54, 33, 3905, 96627]; curate `exit` or split the chapter
+- unbridged_chapter: [northshire] quest 96627: exit 96627 does not link into elwynn entry 62
 - orphan_link: [elwynn] quest 218: requires 182 (The Troll Cave) outside the chapter; needs a requires bridge
-- orphan_link: [elwynn] quest 96058: requires 95998 (The Great Outdoors) outside the chapter; needs a requires bridge
-- orphan_link: [elwynn] quest 96646: requires 95998 (The Great Outdoors) outside the chapter; needs a requires bridge
-- orphan_link: [elwynn] quest 97963: requires 95998 (The Great Outdoors) outside the chapter; needs a requires bridge
-- orphan_link: [elwynn] quest 97964: requires 95998 (The Great Outdoors) outside the chapter; needs a requires bridge
-- orphan_link: [elwynn] quest 97965: requires 95998 (The Great Outdoors) outside the chapter; needs a requires bridge
-- orphan_link: [elwynn] quest 97967: requires 95998 (The Great Outdoors) outside the chapter; needs a requires bridge
-- orphan_link: [elwynn] quest 97968: requires 95998 (The Great Outdoors) outside the chapter; needs a requires bridge
-- orphan_link: [elwynn] quest 97969: requires 95998 (The Great Outdoors) outside the chapter; needs a requires bridge
-- orphan_link: [elwynn] quest 97970: requires 95998 (The Great Outdoors) outside the chapter; needs a requires bridge
-- orphan_link: [elwynn] quest 97971: requires 95998 (The Great Outdoors) outside the chapter; needs a requires bridge
-- open_head: [elwynn] multiple entries [179, 183, 3364, 97277, 218, 2160, 96101, 96608]; curate `entry` or add the missing lead quest
-- open_tail: [elwynn] multiple exits [183, 234, 3365, 97277, 420, 2160, 96058, 96646, 97963, 97964, 97965, 97967, 97968, 97969, 97970, 97971]; curate `exit` or split the chapter
-- unbridged_chapter: [elwynn] quest 97971: exit 97971 does not link into peoples_militia entry 109
+- open_head: [elwynn] multiple entries [179, 183, 3364, 97277, 218, 2160]; curate `entry` or add the missing lead quest
+- open_tail: [elwynn] multiple exits [183, 234, 3365, 97277, 420, 96628, 2160]; curate `exit` or split the chapter
+- unbridged_chapter: [elwynn] quest 2160: exit 2160 does not link into peoples_militia entry 109
 - orphan_link: [peoples_militia] quest 218: requires 182 (The Troll Cave) outside the chapter; needs a requires bridge
-- orphan_link: [peoples_militia] quest 96058: requires 95998 (The Great Outdoors) outside the chapter; needs a requires bridge
-- orphan_link: [peoples_militia] quest 96646: requires 95998 (The Great Outdoors) outside the chapter; needs a requires bridge
-- orphan_link: [peoples_militia] quest 97963: requires 95998 (The Great Outdoors) outside the chapter; needs a requires bridge
-- orphan_link: [peoples_militia] quest 97964: requires 95998 (The Great Outdoors) outside the chapter; needs a requires bridge
-- orphan_link: [peoples_militia] quest 97965: requires 95998 (The Great Outdoors) outside the chapter; needs a requires bridge
-- orphan_link: [peoples_militia] quest 97967: requires 95998 (The Great Outdoors) outside the chapter; needs a requires bridge
-- orphan_link: [peoples_militia] quest 97968: requires 95998 (The Great Outdoors) outside the chapter; needs a requires bridge
-- orphan_link: [peoples_militia] quest 97969: requires 95998 (The Great Outdoors) outside the chapter; needs a requires bridge
-- orphan_link: [peoples_militia] quest 97970: requires 95998 (The Great Outdoors) outside the chapter; needs a requires bridge
-- orphan_link: [peoples_militia] quest 97971: requires 95998 (The Great Outdoors) outside the chapter; needs a requires bridge
-- open_head: [peoples_militia] multiple entries [179, 183, 3364, 97277, 218, 2160, 96101, 96608]; curate `entry` or add the missing lead quest
-- open_tail: [peoples_militia] multiple exits [183, 234, 3365, 97277, 420, 2160, 96058, 96646, 97963, 97964, 97965, 97967, 97968, 97969, 97970, 97971]; curate `exit` or split the chapter
-- unbridged_chapter: [peoples_militia] quest 97971: exit 97971 does not link into defias_brotherhood entry 65
+- open_head: [peoples_militia] multiple entries [179, 183, 3364, 97277, 218, 2160]; curate `entry` or add the missing lead quest
+- open_tail: [peoples_militia] multiple exits [183, 234, 3365, 97277, 420, 96628, 2160]; curate `exit` or split the chapter
+- unbridged_chapter: [peoples_militia] quest 2160: exit 2160 does not link into defias_brotherhood entry 65
 - orphan_link: [defias_brotherhood] quest 459: requires 458 (The Woodland Protector) outside the chapter; needs a requires bridge
 - orphan_link: [defias_brotherhood] quest 3521: requires 3519 (A Friend in Need) outside the chapter; needs a requires bridge
-- orphan_link: [defias_brotherhood] quest 96646: requires 95998 (The Great Outdoors) outside the chapter; needs a requires bridge
-- orphan_link: [defias_brotherhood] quest 97963: requires 95998 (The Great Outdoors) outside the chapter; needs a requires bridge
-- orphan_link: [defias_brotherhood] quest 97964: requires 95998 (The Great Outdoors) outside the chapter; needs a requires bridge
-- orphan_link: [defias_brotherhood] quest 97965: requires 95998 (The Great Outdoors) outside the chapter; needs a requires bridge
-- orphan_link: [defias_brotherhood] quest 97967: requires 95998 (The Great Outdoors) outside the chapter; needs a requires bridge
-- orphan_link: [defias_brotherhood] quest 97968: requires 95998 (The Great Outdoors) outside the chapter; needs a requires bridge
-- orphan_link: [defias_brotherhood] quest 97969: requires 95998 (The Great Outdoors) outside the chapter; needs a requires bridge
-- orphan_link: [defias_brotherhood] quest 97970: requires 95998 (The Great Outdoors) outside the chapter; needs a requires bridge
-- orphan_link: [defias_brotherhood] quest 97971: requires 95998 (The Great Outdoors) outside the chapter; needs a requires bridge
 - orphan_link: [defias_brotherhood] quest 97977: requires 458 (The Woodland Protector) outside the chapter; needs a requires bridge
 - orphan_link: [defias_brotherhood] quest 98065: requires 98046 (Crown of the Earth) outside the chapter; needs a requires bridge
-- open_head: [defias_brotherhood] multiple entries [456, 459, 97977, 3521, 916, 97236, 2159, 98065, 96101, 96606]; curate `entry` or add the missing lead quest
-- open_tail: [defias_brotherhood] multiple exits [459, 97977, 457, 3522, 97236, 928, 2159, 97979, 98065, 96646, 97963, 97964, 97965, 97967, 97968, 97969, 97970, 97971]; curate `exit` or split the chapter
-- open_head: [redridge] multiple entries [62, 52, 176, 123, 33, 783, 95998, 96101, 85, 40]; curate `entry` or add the missing lead quest
-- open_tail: [redridge] multiple exits [52, 11, 176, 147, 33, 54, 3905, 6, 96044, 96045, 96046, 96047, 96050, 96055, 96056, 96057, 96059, 96629, 96646, 97963, 97964, 97965, 97967, 97968, 97969, 97970, 97971, 97973, 98286, 87, 46, 59]; curate `exit` or split the chapter
+- open_head: [defias_brotherhood] multiple entries [456, 459, 97977, 3521, 916, 97236, 2159, 98065]; curate `entry` or add the missing lead quest
+- open_tail: [defias_brotherhood] multiple exits [459, 97977, 457, 3522, 97236, 928, 96630, 2159, 97979, 98065]; curate `exit` or split the chapter
+- open_head: [redridge] multiple entries [62, 52, 176, 123, 33, 783, 85, 40]; curate `entry` or add the missing lead quest
+- open_tail: [redridge] multiple exits [52, 11, 176, 147, 33, 96627, 54, 3905, 6, 87, 46, 59]; curate `exit` or split the chapter
 - orphan_link: [loch_modan] quest 37: requires 35 (Further Concerns) outside the chapter; needs a requires bridge
 - orphan_link: [loch_modan] quest 170: requires 179 (Dwarven Outfitters) outside the chapter; needs a requires bridge
-- orphan_link: [loch_modan] quest 96058: requires 95998 (The Great Outdoors) outside the chapter; needs a requires bridge
-- orphan_link: [loch_modan] quest 96058: requires 96606 (The Great Outdoors) outside the chapter; needs a requires bridge
-- orphan_link: [loch_modan] quest 96629: requires 95998 (The Great Outdoors) outside the chapter; needs a requires bridge
-- orphan_link: [loch_modan] quest 96629: requires 96606 (The Great Outdoors) outside the chapter; needs a requires bridge
-- orphan_link: [loch_modan] quest 96646: requires 95998 (The Great Outdoors) outside the chapter; needs a requires bridge
-- orphan_link: [loch_modan] quest 96646: requires 96606 (The Great Outdoors) outside the chapter; needs a requires bridge
-- orphan_link: [loch_modan] quest 97963: requires 95998 (The Great Outdoors) outside the chapter; needs a requires bridge
-- orphan_link: [loch_modan] quest 97963: requires 96606 (The Great Outdoors) outside the chapter; needs a requires bridge
-- orphan_link: [loch_modan] quest 97964: requires 95998 (The Great Outdoors) outside the chapter; needs a requires bridge
-- orphan_link: [loch_modan] quest 97964: requires 96606 (The Great Outdoors) outside the chapter; needs a requires bridge
-- orphan_link: [loch_modan] quest 97965: requires 95998 (The Great Outdoors) outside the chapter; needs a requires bridge
-- orphan_link: [loch_modan] quest 97965: requires 96606 (The Great Outdoors) outside the chapter; needs a requires bridge
-- orphan_link: [loch_modan] quest 97967: requires 95998 (The Great Outdoors) outside the chapter; needs a requires bridge
-- orphan_link: [loch_modan] quest 97967: requires 96606 (The Great Outdoors) outside the chapter; needs a requires bridge
-- orphan_link: [loch_modan] quest 97968: requires 95998 (The Great Outdoors) outside the chapter; needs a requires bridge
-- orphan_link: [loch_modan] quest 97968: requires 96606 (The Great Outdoors) outside the chapter; needs a requires bridge
-- orphan_link: [loch_modan] quest 97969: requires 95998 (The Great Outdoors) outside the chapter; needs a requires bridge
-- orphan_link: [loch_modan] quest 97969: requires 96606 (The Great Outdoors) outside the chapter; needs a requires bridge
-- orphan_link: [loch_modan] quest 97970: requires 95998 (The Great Outdoors) outside the chapter; needs a requires bridge
-- orphan_link: [loch_modan] quest 97970: requires 96606 (The Great Outdoors) outside the chapter; needs a requires bridge
-- orphan_link: [loch_modan] quest 97971: requires 95998 (The Great Outdoors) outside the chapter; needs a requires bridge
-- orphan_link: [loch_modan] quest 97971: requires 96606 (The Great Outdoors) outside the chapter; needs a requires bridge
 - orphan_link: [loch_modan] quest 99161: requires 99160 (Rime's Wrath) outside the chapter; needs a requires bridge
-- open_head: [loch_modan] multiple entries [96608, 98322, 384, 99158, 400, 98321, 317, 313, 5541, 287, 312, 315, 310, 96408, 96392, 433, 96391, 224, 267, 416, 1339, 418, 6387, 1338, 307, 6661, 353, 62, 60, 40, 88, 85, 37, 52, 5545, 91733, 91740, 109, 244, 64, 151, 36, 9, 22, 12, 102, 153, 86667, 86614, 399, 170, 99159, 99161, 96101]; curate `entry` or add the missing lead quest
-- open_tail: [loch_modan] multiple exits [384, 400, 98321, 313, 5541, 312, 320, 311, 291, 96390, 433, 96393, 414, 224, 267, 416, 418, 1338, 307, 6392, 6662, 353, 62, 40, 88, 86, 61, 52, 5545, 91733, 91740, 39, 109, 244, 64, 151, 9, 38, 22, 12, 102, 153, 86667, 86614, 399, 170, 99161, 99162, 96629, 96058, 96646, 97963, 97964, 97965, 97967, 97968, 97969, 97970, 97971]; curate `exit` or split the chapter
+- open_head: [loch_modan] multiple entries [98322, 384, 99158, 400, 98321, 317, 313, 5541, 287, 312, 315, 310, 96408, 96392, 433, 96391, 224, 267, 416, 1339, 418, 6387, 1338, 307, 6661, 353, 62, 60, 40, 88, 85, 37, 52, 5545, 91733, 91740, 109, 244, 64, 151, 36, 9, 22, 12, 102, 153, 86667, 86614, 399, 170, 99159, 99161]; curate `entry` or add the missing lead quest
+- open_tail: [loch_modan] multiple exits [384, 400, 98321, 313, 5541, 312, 320, 311, 291, 96390, 433, 96393, 414, 224, 267, 416, 418, 1338, 307, 6392, 6662, 353, 62, 40, 88, 86, 61, 52, 5545, 91733, 91740, 39, 109, 244, 64, 151, 9, 38, 22, 12, 102, 153, 86667, 86614, 399, 170, 99161, 99162]; curate `exit` or split the chapter
 - open_head: [stockade] multiple entries [109, 12, 102]; curate `entry` or add the missing lead quest
 - open_tail: [stockade] multiple exits [109, 14, 102]; curate `exit` or split the chapter
 - open_head: [stalvan] multiple entries [65, 165, 373, 148]; curate `entry` or add the missing lead quest
@@ -92,30 +41,16 @@
 - open_tail: [orc_valley_trials] multiple exits [1275, 957]; curate `exit` or split the chapter
 - open_head: [troll_valley_trials] multiple entries [469, 470, 472, 1302, 95, 1282]; curate `entry` or add the missing lead quest
 - open_tail: [troll_valley_trials] multiple exits [469, 470, 472, 55, 1284, 1287, 1320]; curate `exit` or split the chapter
-- orphan_link: [undead_deathknell] quest 96102: requires 96607 (The Great Outdoors) outside the chapter; needs a requires bridge
-- orphan_link: [undead_deathknell] quest 96655: requires 96607 (The Great Outdoors) outside the chapter; needs a requires bridge
-- orphan_link: [undead_deathknell] quest 96661: requires 96607 (The Great Outdoors) outside the chapter; needs a requires bridge
-- open_head: [undead_deathknell] multiple entries [4641, 788, 790, 5441, 2161, 786, 97223, 817, 96821, 818, 97225, 808, 826, 823, 96873, 99123, 96876, 96604, 784, 837, 815, 96825, 791, 96822, 830, 99048, 816, 834, 813, 840, 97281, 96877, 832, 97246, 97242, 97275, 97326, 5726, 812, 794]; curate `entry` or add the missing lead quest
-- open_tail: [undead_deathknell] multiple exits [804, 789, 4402, 6394, 2161, 786, 97223, 817, 96821, 818, 97225, 808, 826, 96873, 99123, 96876, 96655, 837, 815, 96825, 791, 96822, 825, 831, 816, 835, 813, 97282, 96877, 832, 97249, 97242, 97275, 97326, 812, 924, 805, 96102, 96661, 99052, 5730, 842]; curate `exit` or split the chapter
+- open_head: [undead_deathknell] multiple entries [4641, 788, 790, 5441, 2161, 786, 97223, 817, 96821, 818, 97225, 808, 826, 823, 96873, 99123, 96876, 784, 837, 815, 96825, 791, 96822, 830, 99048, 816, 834, 813, 840, 97281, 96877, 832, 97246, 97242, 97275, 97326, 5726, 812, 794]; curate `entry` or add the missing lead quest
+- open_tail: [undead_deathknell] multiple exits [804, 789, 4402, 6394, 2161, 786, 97223, 817, 96821, 818, 97225, 808, 826, 96873, 99123, 96876, 837, 815, 96825, 791, 96822, 825, 831, 816, 835, 813, 97282, 96877, 832, 97249, 97242, 97275, 97326, 812, 924, 805, 96652, 99052, 5730, 842]; curate `exit` or split the chapter
 - orphan_link: [orgrimmar] quest 794: requires 792 (Vile Familiars) outside the chapter; needs a requires bridge
 - orphan_link: [orgrimmar] quest 794: requires 1499 (Vile Familiars) outside the chapter; needs a requires bridge
-- orphan_link: [orgrimmar] quest 96102: requires 96605 (The Great Outdoors) outside the chapter; needs a requires bridge
-- orphan_link: [orgrimmar] quest 96102: requires 96607 (The Great Outdoors) outside the chapter; needs a requires bridge
-- orphan_link: [orgrimmar] quest 96655: requires 96605 (The Great Outdoors) outside the chapter; needs a requires bridge
-- orphan_link: [orgrimmar] quest 96655: requires 96607 (The Great Outdoors) outside the chapter; needs a requires bridge
-- orphan_link: [orgrimmar] quest 96661: requires 96605 (The Great Outdoors) outside the chapter; needs a requires bridge
-- orphan_link: [orgrimmar] quest 96661: requires 96607 (The Great Outdoors) outside the chapter; needs a requires bridge
-- open_head: [orgrimmar] multiple entries [4641, 788, 790, 5441, 2161, 786, 97223, 817, 96821, 818, 97225, 808, 826, 823, 96873, 99123, 96876, 96604, 784, 837, 815, 96825, 791, 96822, 830, 99048, 816, 834, 813, 840, 97281, 96877, 832, 97246, 97242, 97275, 97326, 5726, 812, 794]; curate `entry` or add the missing lead quest
-- open_tail: [orgrimmar] multiple exits [804, 789, 4402, 6394, 2161, 786, 97223, 817, 96821, 818, 97225, 808, 826, 96873, 99123, 96876, 96655, 837, 815, 96825, 791, 96822, 825, 831, 816, 835, 813, 97282, 96877, 832, 97249, 97242, 97275, 97326, 812, 924, 805, 96102, 96661, 99052, 5730, 842]; curate `exit` or split the chapter
-- orphan_link: [tauren_red_cloud] quest 96658: requires 96605 (The Great Outdoors) outside the chapter; needs a requires bridge
-- open_head: [tauren_red_cloud] multiple entries [363, 364, 376, 8, 365, 5481, 86784, 404, 96607, 367, 427, 99141, 99134, 375, 97558, 99144, 95314, 398, 358, 354, 362, 356, 361, 96895, 445, 95328, 92422, 366, 411, 1113]; curate `entry` or add the missing lead quest
-- open_tail: [tauren_red_cloud] multiple exits [3901, 6395, 98389, 3902, 383, 86784, 96658, 99141, 99134, 375, 97558, 99144, 426, 407, 95314, 374, 398, 405, 360, 356, 99142, 361, 492, 445, 98545, 99152, 99153, 95328, 372, 408, 590, 92422, 411, 410, 431, 1113]; curate `exit` or split the chapter
-- orphan_link: [barrens] quest 96661: requires 96604 (The Great Outdoors) outside the chapter; needs a requires bridge
-- orphan_link: [barrens] quest 96661: requires 96607 (The Great Outdoors) outside the chapter; needs a requires bridge
-- orphan_link: [barrens] quest 98285: requires 96604 (The Great Outdoors) outside the chapter; needs a requires bridge
-- orphan_link: [barrens] quest 98285: requires 96607 (The Great Outdoors) outside the chapter; needs a requires bridge
-- open_head: [barrens] multiple entries [747, 752, 753, 3376, 781, 1656, 96605, 99411, 766, 743, 745, 767, 746, 761, 99108, 748, 99079, 749, 98430, 76156, 770, 833, 861, 98424, 744, 768, 5722, 5723, 854, 870, 844, 871, 5041, 867, 848, 1492, 6361, 869]; curate `entry` or add the missing lead quest
-- open_tail: [barrens] multiple exits [95805, 780, 3376, 781, 1656, 96661, 96130, 99411, 766, 743, 745, 746, 761, 99108, 98430, 770, 833, 764, 765, 99082, 744, 776, 768, 5722, 5723, 76240, 854, 870, 844, 5041, 867, 1492, 98427, 98435, 853, 872, 3281, 98285, 6364]; curate `exit` or split the chapter
+- open_head: [orgrimmar] multiple entries [4641, 788, 790, 5441, 2161, 786, 97223, 817, 96821, 818, 97225, 808, 826, 823, 96873, 99123, 96876, 784, 837, 815, 96825, 791, 96822, 830, 99048, 816, 834, 813, 840, 97281, 96877, 832, 97246, 97242, 97275, 97326, 5726, 812, 794]; curate `entry` or add the missing lead quest
+- open_tail: [orgrimmar] multiple exits [804, 789, 4402, 6394, 2161, 786, 97223, 817, 96821, 818, 97225, 808, 826, 96873, 99123, 96876, 837, 815, 96825, 791, 96822, 825, 831, 816, 835, 813, 97282, 96877, 832, 97249, 97242, 97275, 97326, 812, 924, 805, 96652, 99052, 5730, 842]; curate `exit` or split the chapter
+- open_head: [tauren_red_cloud] multiple entries [363, 364, 376, 8, 365, 5481, 86784, 404, 367, 427, 99141, 99134, 375, 97558, 99144, 95314, 398, 358, 354, 362, 356, 361, 96895, 445, 95328, 92422, 366, 411, 1113]; curate `entry` or add the missing lead quest
+- open_tail: [tauren_red_cloud] multiple exits [3901, 6395, 98389, 3902, 383, 96656, 86784, 99141, 99134, 375, 97558, 99144, 426, 407, 95314, 374, 398, 405, 360, 356, 99142, 361, 492, 445, 98545, 99152, 99153, 95328, 372, 408, 590, 92422, 411, 410, 431, 1113]; curate `exit` or split the chapter
+- open_head: [barrens] multiple entries [747, 752, 753, 3376, 781, 1656, 99411, 766, 743, 745, 767, 746, 761, 99108, 748, 99079, 749, 98430, 76156, 770, 833, 861, 98424, 744, 768, 5722, 5723, 854, 870, 844, 871, 5041, 867, 848, 1492, 6361, 869]; curate `entry` or add the missing lead quest
+- open_tail: [barrens] multiple exits [95805, 780, 3376, 781, 96659, 1656, 96130, 99411, 766, 743, 745, 746, 761, 99108, 98430, 770, 833, 764, 765, 99082, 744, 776, 768, 5722, 5723, 76240, 854, 870, 844, 5041, 867, 1492, 98427, 98435, 853, 872, 3281, 6364]; curate `exit` or split the chapter
 - open_head: [skyborne_class] multiple entries [3504, 5726, 99048, 4903]; curate `entry` or add the missing lead quest
 - open_tail: [skyborne_class] multiple exits [5730, 99052, 3507, 7493]; curate `exit` or split the chapter
 - orphan_link: [skyborne_exits] quest 1180: requires 1178 (Goblin Sponsorship) outside the chapter; needs a requires bridge

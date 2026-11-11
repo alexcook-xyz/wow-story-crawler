@@ -18,13 +18,13 @@ closure merged all races into each chapter. `expand_from_seeds` and
 non-shared-start race (Dwarf/Gnome and Orc/Troll share starters). Curated
 seeds are never filtered.
 
-After that fix `gaps.md` has **175 open entries** (78 orphan_link,
-48 open_tail, 46 open_head, 3 unbridged_chapter), none triaged. The count
-went UP from 102 because the old merge hid orphan links; it is not
-progress by itself. Human chapters no longer contain Dwarf/Night Elf
-quests, but still contain the Human "Camping 101" tutorial quests
-(95998, 96044-96059, ...) reached from 96627 "The Adventurer". Whether
-those are in the required chain was not settled here.
+After that fix `gaps.md` had 175 open entries. Maintainer then decided
+the Camping 101 profession tutorials (35 quests, 95998 and family) are not
+main story; they are excluded from every chapter with a race via the
+top-level `exclude_in_race_chapters` in `seeds.json` (the two Skyborne
+chapters, which have no race, still list them). Now `gaps.md` has
+**110 open entries** (48 open_tail, 46 open_head, 13 orphan_link,
+3 unbridged_chapter), none triaged. Not clean.
 
 Open: starter chapters are many parallel quest lines, not one chain, so a
 linear `storyline.md` per race still needs a main-chain extraction rule.

@@ -1,7 +1,7 @@
 # Linear main story (draft, generated)
 
 ## Northshire's Defence (Alliance / Human)
-Entry 783 -> exit 98286; 36 quests
+Entry 783 -> exit 96627; 13 quests
 - 783 A Threat Within lvl 1
 - 7 Kobold Camp Cleanup lvl 1
 - 15 Investigate Echo Ridge lvl 1
@@ -14,33 +14,10 @@ Entry 783 -> exit 98286; 36 quests
 - 3903 Milly Osworth lvl 2
 - 3904 Milly's Harvest lvl 2
 - 3905 Grape Manifest lvl 2
-- 95998 The Great Outdoors lvl 4
-- 96101 The Great Outdoors lvl 4
-- 96044 Camping 101: Blacksmithing lvl 4
-- 96045 Camping 101: Alchemy lvl 4
-- 96046 Camping 101: Mining lvl 4
-- 96047 Camping 101: First Aid lvl 4
-- 96050 Camping 101: Fishing lvl 4
-- 96055 Camping 101: Herbalism lvl 4
-- 96056 Camping 101: Skinning lvl 4
-- 96057 Camping 101: Tailoring lvl 4
-- 96059 Camping 101: Enchanting lvl 4
 - 96627 The Adventurer lvl 4
-- 96629 Camping 101: Cooking lvl 4
-- 96646 Camping 101: Cooking lvl 4
-- 97963 Camping 101: Alchemy lvl 4
-- 97964 Camping 101: Blacksmithing lvl 4
-- 97965 Camping 101: First Aid lvl 4
-- 97967 Camping 101: Fishing lvl 4
-- 97968 Camping 101: Herbalism lvl 4
-- 97969 Camping 101: Leatherworking lvl 4
-- 97970 Camping 101: Mining lvl 4
-- 97971 Camping 101: Skinning lvl 4
-- 97973 Camping 101: Tailoring lvl 4
-- 98286 Camping 101: Enchanting lvl 4
 
 ## Coldridge Valley (Alliance / Dwarf)
-Entry 179 -> exit 97971; 24 quests
+Entry 179 -> exit 2160; 12 quests
 - 179 Dwarven Outfitters lvl 1
 - 233 Coldridge Valley Mail Delivery lvl 1
 - 183 The Boar Hunter lvl 1
@@ -53,21 +30,9 @@ Entry 179 -> exit 97971; 24 quests
 - 420 Senir's Observations lvl 1
 - 96628 The Adventurer lvl 4
 - 2160 Supplies to Tannok lvl 1
-- 96101 The Great Outdoors lvl 4
-- 96608 The Great Outdoors lvl 4
-- 96058 Camping 101: Engineering lvl 4
-- 96646 Camping 101: Cooking lvl 4
-- 97963 Camping 101: Alchemy lvl 4
-- 97964 Camping 101: Blacksmithing lvl 4
-- 97965 Camping 101: First Aid lvl 4
-- 97967 Camping 101: Fishing lvl 4
-- 97968 Camping 101: Herbalism lvl 4
-- 97969 Camping 101: Leatherworking lvl 4
-- 97970 Camping 101: Mining lvl 4
-- 97971 Camping 101: Skinning lvl 4
 
 ## TODO Gnome storyline (shares Dun Morogh) (Alliance / Gnome)
-Entry 179 -> exit 97971; 24 quests
+Entry 179 -> exit 2160; 12 quests
 - 179 Dwarven Outfitters lvl 1
 - 233 Coldridge Valley Mail Delivery lvl 1
 - 183 The Boar Hunter lvl 1
@@ -80,21 +45,9 @@ Entry 179 -> exit 97971; 24 quests
 - 420 Senir's Observations lvl 1
 - 96628 The Adventurer lvl 4
 - 2160 Supplies to Tannok lvl 1
-- 96101 The Great Outdoors lvl 4
-- 96608 The Great Outdoors lvl 4
-- 96058 Camping 101: Engineering lvl 4
-- 96646 Camping 101: Cooking lvl 4
-- 97963 Camping 101: Alchemy lvl 4
-- 97964 Camping 101: Blacksmithing lvl 4
-- 97965 Camping 101: First Aid lvl 4
-- 97967 Camping 101: Fishing lvl 4
-- 97968 Camping 101: Herbalism lvl 4
-- 97969 Camping 101: Leatherworking lvl 4
-- 97970 Camping 101: Mining lvl 4
-- 97971 Camping 101: Skinning lvl 4
 
 ## Shadowglen (Alliance / Night Elf)
-Entry 456 -> exit 97971; 27 quests
+Entry 456 -> exit 98065; 16 quests
 - 456 The Balance of Nature lvl 1
 - 459 The Woodland Protector lvl 1
 - 97977 Nature's Call lvl 1
@@ -111,20 +64,9 @@ Entry 456 -> exit 97971; 27 quests
 - 2159 Dolanaar Delivery lvl 1
 - 97979 The Goddess Provides lvl 1
 - 98065 Crown of the Earth lvl 1
-- 96101 The Great Outdoors lvl 4
-- 96606 The Great Outdoors lvl 4
-- 96646 Camping 101: Cooking lvl 4
-- 97963 Camping 101: Alchemy lvl 4
-- 97964 Camping 101: Blacksmithing lvl 4
-- 97965 Camping 101: First Aid lvl 4
-- 97967 Camping 101: Fishing lvl 4
-- 97968 Camping 101: Herbalism lvl 4
-- 97969 Camping 101: Leatherworking lvl 4
-- 97970 Camping 101: Mining lvl 4
-- 97971 Camping 101: Skinning lvl 4
 
 ## Shadows over Elwynn (Alliance / Human)
-Entry 62 -> exit 59; 56 quests
+Entry 62 -> exit 59; 33 quests
 - 62 The Fargodeep Mine lvl 4
 - 76 The Jasperlode Mine lvl 4
 - 52 Protect the Frontier lvl 7
@@ -146,29 +88,6 @@ Entry 62 -> exit 59; 56 quests
 - 3904 Milly's Harvest lvl 2
 - 3905 Grape Manifest lvl 2
 - 6 Bounty on Garrick Padfoot lvl 2
-- 95998 The Great Outdoors lvl 4
-- 96101 The Great Outdoors lvl 4
-- 96044 Camping 101: Blacksmithing lvl 4
-- 96045 Camping 101: Alchemy lvl 4
-- 96046 Camping 101: Mining lvl 4
-- 96047 Camping 101: First Aid lvl 4
-- 96050 Camping 101: Fishing lvl 4
-- 96055 Camping 101: Herbalism lvl 4
-- 96056 Camping 101: Skinning lvl 4
-- 96057 Camping 101: Tailoring lvl 4
-- 96059 Camping 101: Enchanting lvl 4
-- 96629 Camping 101: Cooking lvl 4
-- 96646 Camping 101: Cooking lvl 4
-- 97963 Camping 101: Alchemy lvl 4
-- 97964 Camping 101: Blacksmithing lvl 4
-- 97965 Camping 101: First Aid lvl 4
-- 97967 Camping 101: Fishing lvl 4
-- 97968 Camping 101: Herbalism lvl 4
-- 97969 Camping 101: Leatherworking lvl 4
-- 97970 Camping 101: Mining lvl 4
-- 97971 Camping 101: Skinning lvl 4
-- 97973 Camping 101: Tailoring lvl 4
-- 98286 Camping 101: Enchanting lvl 4
 - 85 Lost Necklace lvl 5
 - 86 Pie for Billy lvl 5
 - 84 Back to Billy lvl 5
@@ -183,8 +102,7 @@ Entry 62 -> exit 59; 56 quests
 - 59 Cloth and Leather Armor lvl 7
 
 ## TODO Dwarf storyline (Alliance / Dwarf)
-Entry 96608 -> exit 97971; 88 quests
-- 96608 The Great Outdoors lvl 4
+Entry 98322 -> exit 99162; 75 quests
 - 98322 Secure the Mountain lvl 4
 - 384 Beer Basted Boar Ribs lvl 5
 - 99158 Dawn in the Mountains lvl 5
@@ -260,18 +178,6 @@ Entry 96608 -> exit 97971; 88 quests
 - 99159 Finding Warmth lvl 5
 - 99161 Rime's Wrath lvl 5
 - 99162 Treacherous Cold lvl 5
-- 96101 The Great Outdoors lvl 4
-- 96629 Camping 101: Cooking lvl 4
-- 96058 Camping 101: Engineering lvl 4
-- 96646 Camping 101: Cooking lvl 4
-- 97963 Camping 101: Alchemy lvl 4
-- 97964 Camping 101: Blacksmithing lvl 4
-- 97965 Camping 101: First Aid lvl 4
-- 97967 Camping 101: Fishing lvl 4
-- 97968 Camping 101: Herbalism lvl 4
-- 97969 Camping 101: Leatherworking lvl 4
-- 97970 Camping 101: Mining lvl 4
-- 97971 Camping 101: Skinning lvl 4
 
 ## The People's Militia (Alliance / Human)
 Entry 109 -> exit 102; 5 quests
@@ -513,7 +419,7 @@ Entry 469 -> exit 1320; 30 quests
 - 1320 The Black Shield lvl 30
 
 ## Valley of Trials (Horde / Orc)
-Entry 4641 -> exit 842; 68 quests
+Entry 4641 -> exit 842; 64 quests
 - 4641 Your Place In The World lvl 1
 - 788 Cutting Teeth lvl 1
 - 790 Sarkoth lvl 1
@@ -535,8 +441,6 @@ Entry 4641 -> exit 842; 68 quests
 - 96873 A Pain in the Neck lvl 5
 - 99123 Lost in the Shadows lvl 4
 - 96876 Ukor's Lost Pack lvl 5
-- 96604 The Great Outdoors lvl 4
-- 96655 Camping 101: Cooking lvl 4
 - 806 Dark Storms lvl 4
 - 784 Vanquish the Betrayers lvl 3
 - 837 Encroachment lvl 6
@@ -574,8 +478,6 @@ Entry 4641 -> exit 842; 68 quests
 - 794 Burning Blade Medallion lvl 1
 - 805 Report to Sen'jin Village lvl 1
 - 96652 The Adventurer lvl 4
-- 96102 Camping 101: Tailoring lvl 4
-- 96661 Camping 101: Cooking lvl 4
 - 99051 Threat from Below lvl 8
 - 99052 Threat from Below lvl 8
 - 5728 Hidden Enemies lvl 9
@@ -584,7 +486,7 @@ Entry 4641 -> exit 842; 68 quests
 - 842 Crossroads Conscription lvl 10
 
 ## Valley of Trials (Troll) (Horde / Troll)
-Entry 4641 -> exit 842; 68 quests
+Entry 4641 -> exit 842; 64 quests
 - 4641 Your Place In The World lvl 1
 - 788 Cutting Teeth lvl 1
 - 790 Sarkoth lvl 1
@@ -606,8 +508,6 @@ Entry 4641 -> exit 842; 68 quests
 - 96873 A Pain in the Neck lvl 5
 - 99123 Lost in the Shadows lvl 4
 - 96876 Ukor's Lost Pack lvl 5
-- 96604 The Great Outdoors lvl 4
-- 96655 Camping 101: Cooking lvl 4
 - 806 Dark Storms lvl 4
 - 784 Vanquish the Betrayers lvl 3
 - 837 Encroachment lvl 6
@@ -645,8 +545,6 @@ Entry 4641 -> exit 842; 68 quests
 - 794 Burning Blade Medallion lvl 1
 - 805 Report to Sen'jin Village lvl 1
 - 96652 The Adventurer lvl 4
-- 96102 Camping 101: Tailoring lvl 4
-- 96661 Camping 101: Cooking lvl 4
 - 99051 Threat from Below lvl 8
 - 99052 Threat from Below lvl 8
 - 5728 Hidden Enemies lvl 9
@@ -655,7 +553,7 @@ Entry 4641 -> exit 842; 68 quests
 - 842 Crossroads Conscription lvl 10
 
 ## Deathknell (Horde / Undead)
-Entry 363 -> exit 1113; 66 quests
+Entry 363 -> exit 1113; 64 quests
 - 363 Rude Awakening lvl 1
 - 364 The Mindless Ones lvl 1
 - 376 The Damned lvl 2
@@ -673,8 +571,6 @@ Entry 363 -> exit 1113; 66 quests
 - 5481 Gordo's Task lvl 5
 - 86784 Sticks and Bones lvl 4
 - 404 A Putrid Task lvl 4
-- 96607 The Great Outdoors lvl 4
-- 96658 Camping 101: Cooking lvl 4
 - 367 A New Plague lvl 6
 - 427 At War With The Scarlet Crusade lvl 5
 - 99141 Patience lvl 4
@@ -724,7 +620,7 @@ Entry 363 -> exit 1113; 66 quests
 - 1113 Hearts of Zeal lvl 30
 
 ## Red Cloud Mesa (Horde / Tauren)
-Entry 747 -> exit 6364; 76 quests
+Entry 747 -> exit 6364; 73 quests
 - 747 The Hunt Begins lvl 1
 - 752 A Humble Task lvl 1
 - 753 A Humble Task lvl 1
@@ -738,8 +634,6 @@ Entry 747 -> exit 6364; 76 quests
 - 763 Rites of the Earthmother lvl 1
 - 96659 The Adventurer lvl 4
 - 1656 A Task Unfinished lvl 1
-- 96605 The Great Outdoors lvl 4
-- 96661 Camping 101: Cooking lvl 4
 - 96130 Chakuyak lvl 4
 - 99411 Kyle's Gone Missing! lvl 5
 - 766 Mazzranache lvl 5
@@ -798,7 +692,6 @@ Entry 747 -> exit 6364; 76 quests
 - 872 The Disruption Ends lvl 9
 - 3281 Stolen Silver lvl 9
 - 860 Sergra Darkthorn lvl 10
-- 98285 Camping 101: Engineering lvl 4
 - 6363 Tal the Wind Rider Master lvl 10
 - 6364 Return to Jahan lvl 10
 

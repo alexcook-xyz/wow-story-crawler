@@ -92,5 +92,14 @@ check("filter: curated seeds are never filtered out", 21 in seeded)
 nofilter = graph.expand_from_seeds(vm, [50], set())
 check("filter: off when faction/race not given", nofilter == {50, 20, 21, 22, 10})
 
+# --- seeds: Camping 101 excluded from every race chapter ---------------
+seeded_chapters = builder.load_seeds()
+camping = {95998, 96031, 96101, 98286}
+check("seeds: every race chapter excludes Camping 101", all(
+    camping <= set(c.exclude) for c in seeded_chapters if c.race))
+check("seeds: chapters without a race keep their own excludes", all(
+    not (camping & set(c.exclude)) for c in seeded_chapters
+    if not c.race))
+
 print("ALL ATTUNEMENT TESTS PASS" if fails == 0 else f"{fails} FAILURES")
 sys.exit(1 if fails else 0)

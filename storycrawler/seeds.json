@@ -1,6 +1,10 @@
 {
  "version": 1,
  "about": "Curated storyline seeds. The crawler expands each seed set over before/after links until entry and exit are closed; it never invents chapter membership, givers, or coords.",
+ "exclude_in_race_chapters": {
+  "why": "Camping 101 profession tutorials (closed 35-quest family reached from 96627 The Adventurer) are not in the required main-story chain; maintainer decision, excluded from every chapter that has a race.",
+  "ids": [95998, 96031, 96044, 96045, 96046, 96047, 96050, 96055, 96056, 96057, 96058, 96059, 96101, 96102, 96604, 96605, 96606, 96607, 96608, 96629, 96646, 96655, 96658, 96661, 97963, 97964, 97965, 97967, 97968, 97969, 97970, 97971, 97973, 98285, 98286]
+ },
  "chapters": [
   {
    "id": "northshire",
