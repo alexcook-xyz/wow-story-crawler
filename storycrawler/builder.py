@@ -89,7 +89,8 @@ def build_chapters(merged: dict[int, MergedQuest],
     shapes = []
     for chapter in sorted(chapters, key=lambda c: (c.faction, c.order)):
         members = graph.expand_from_seeds(
-            merged, chapter.seeds, set(chapter.exclude), include_class)
+            merged, chapter.seeds, set(chapter.exclude), include_class,
+            attunement=set(chapter.attunement))
         ordered, in_cycle = graph.topo_order(merged, members, chapter.seeds)
         shape = graph.chapter_shape(merged, chapter, members, ordered)
         shape["in_cycle"] = in_cycle
@@ -133,7 +134,8 @@ def write_outputs(out_dir: Path, merged: dict[int, MergedQuest],
         for qid in shape["quests"]:
             mq = merged[qid]
             lvl = f" lvl {mq.reqlevel}" if mq.reqlevel else ""
-            lines.append(f"- {qid} {mq.name or '?'}{lvl}")
+            tag = " [attunement]" if qid in shape.get("attunement", []) else ""
+            lines.append(f"- {qid} {mq.name or '?'}{lvl}{tag}")
         lines.append("")
     p.write_text("\n".join(lines), encoding="utf-8")
     written.append(p)
