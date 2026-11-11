@@ -1,0 +1,104 @@
+# Story graph gaps
+
+- open_head: [northshire] multiple entries [783, 33, 95998, 96101, 96604, 96605, 96606, 96607, 96608]; curate `entry` or add the missing lead quest
+- open_tail: [northshire] multiple exits [6, 54, 33, 3905, 96044, 96045, 96046, 96047, 96050, 96055, 96056, 96057, 96058, 96059, 96102, 96629, 96646, 96655, 96658, 96661, 97963, 97964, 97965, 97967, 97968, 97969, 97970, 97971, 97973, 98285, 98286]; curate `exit` or split the chapter
+- unbridged_chapter: [northshire] quest 98286: exit 98286 does not link into elwynn entry 62
+- open_head: [elwynn] multiple entries [179, 183, 3364, 97277, 2160, 182, 95998, 96101, 96604, 96605, 96606, 96607, 96608]; curate `entry` or add the missing lead quest
+- open_tail: [elwynn] multiple exits [183, 234, 3365, 97277, 2160, 170, 420, 96044, 96045, 96046, 96047, 96050, 96055, 96056, 96057, 96058, 96059, 96102, 96629, 96646, 96655, 96658, 96661, 97963, 97964, 97965, 97967, 97968, 97969, 97970, 97971, 97973, 98285, 98286]; curate `exit` or split the chapter
+- unbridged_chapter: [elwynn] quest 98286: exit 98286 does not link into peoples_militia entry 109
+- open_head: [peoples_militia] multiple entries [179, 183, 3364, 97277, 2160, 182, 95998, 96101, 96604, 96605, 96606, 96607, 96608]; curate `entry` or add the missing lead quest
+- open_tail: [peoples_militia] multiple exits [183, 234, 3365, 97277, 2160, 170, 420, 96044, 96045, 96046, 96047, 96050, 96055, 96056, 96057, 96058, 96059, 96102, 96629, 96646, 96655, 96658, 96661, 97963, 97964, 97965, 97967, 97968, 97969, 97970, 97971, 97973, 98285, 98286]; curate `exit` or split the chapter
+- unbridged_chapter: [peoples_militia] quest 98286: exit 98286 does not link into defias_brotherhood entry 65
+- open_head: [defias_brotherhood] multiple entries [456, 916, 97236, 2159, 458, 4495, 95998, 96101, 96604, 96605, 96606, 96607, 96608]; curate `entry` or add the missing lead quest
+- open_tail: [defias_brotherhood] multiple exits [457, 97236, 2159, 97979, 459, 97977, 98065, 3522, 96044, 96045, 96046, 96047, 96050, 96055, 96056, 96057, 96058, 96059, 96102, 96629, 96646, 96655, 96658, 96661, 97963, 97964, 97965, 97967, 97968, 97969, 97970, 97971, 97973, 98285, 98286]; curate `exit` or split the chapter
+- open_head: [redridge] multiple entries [62, 52, 176, 123, 33, 783, 95998, 96101, 96604, 96605, 96606, 96607, 96608, 85, 40]; curate `entry` or add the missing lead quest
+- open_tail: [redridge] multiple exits [52, 11, 176, 147, 33, 54, 3905, 6, 96044, 96045, 96046, 96047, 96050, 96055, 96056, 96057, 96058, 96059, 96102, 96629, 96646, 96655, 96658, 96661, 97963, 97964, 97965, 97967, 97968, 97969, 97970, 97971, 97973, 98285, 98286, 87, 46, 59]; curate `exit` or split the chapter
+- open_head: [loch_modan] multiple entries [96608, 98322, 384, 99158, 400, 98321, 317, 313, 5541, 287, 312, 315, 310, 96408, 96392, 433, 96391, 224, 267, 416, 1339, 418, 6387, 1338, 307, 6661, 353, 62, 60, 40, 88, 85, 52, 5545, 91733, 91740, 109, 244, 64, 151, 36, 9, 22, 12, 102, 153, 86667, 86614, 399, 99159, 179, 95998, 96101, 96604, 96605, 96606, 96607]; curate `entry` or add the missing lead quest
+- open_tail: [loch_modan] multiple exits [384, 400, 98321, 313, 5541, 312, 320, 311, 291, 96390, 433, 96393, 414, 416, 418, 1338, 307, 6392, 6662, 353, 88, 61, 52, 5545, 91733, 91740, 109, 64, 151, 9, 38, 22, 102, 153, 86667, 86614, 399, 99162, 170, 234, 96629, 96044, 96045, 96046, 96047, 96050, 96055, 96056, 96057, 96058, 96059, 96102, 96646, 96655, 96658, 96661, 97963, 97964, 97965, 97967, 97968, 97969, 97970, 97971, 97973, 98285, 98286, 87, 99161, 11, 46, 59, 14, 217, 246]; curate `exit` or split the chapter
+- open_head: [stockade] multiple entries [109, 12, 102]; curate `entry` or add the missing lead quest
+- open_tail: [stockade] multiple exits [109, 14, 102]; curate `exit` or split the chapter
+- open_head: [stalvan] multiple entries [65, 165, 373, 148]; curate `entry` or add the missing lead quest
+- open_tail: [stalvan] multiple exits [166, 214, 396, 253]; curate `exit` or split the chapter
+- open_head: [duskwood_darkness] multiple entries [244, 20, 34, 91, 180, 98387, 125]; curate `entry` or add the missing lead quest
+- open_tail: [duskwood_darkness] multiple exits [34, 91, 180, 246, 19, 115, 98386]; curate `exit` or split the chapter
+- open_head: [missing_diplomat] multiple entries [224, 267]; curate `entry` or add the missing lead quest
+- open_head: [onyxia] multiple entries [377, 386, 387, 388, 373]; curate `entry` or add the missing lead quest
+- open_tail: [onyxia] multiple exits [377, 386, 387, 388, 396]; curate `exit` or split the chapter
+- open_head: [dwarf_coldrige] multiple entries [66, 649]; curate `entry` or add the missing lead quest
+- open_tail: [dwarf_coldrige] multiple exits [98, 81]; curate `exit` or split the chapter
+- open_head: [dwarf_lodgings] multiple entries [56, 310, 312, 313, 314, 315, 298, 95, 148]; curate `entry` or add the missing lead quest
+- open_tail: [dwarf_lodgings] multiple exits [58, 311, 312, 313, 314, 414, 309, 253, 55]; curate `exit` or split the chapter
+- open_head: [orc_valley_trials] multiple entries [954, 1275]; curate `entry` or add the missing lead quest
+- open_tail: [orc_valley_trials] multiple exits [1275, 957]; curate `exit` or split the chapter
+- open_head: [troll_valley_trials] multiple entries [469, 470, 472, 1302, 95, 1282]; curate `entry` or add the missing lead quest
+- open_tail: [troll_valley_trials] multiple exits [469, 470, 472, 55, 1284, 1287, 1320]; curate `exit` or split the chapter
+- orphan_link: [undead_deathknell] quest 794: requires 792 (Vile Familiars) outside the chapter; needs a requires bridge
+- orphan_link: [undead_deathknell] quest 794: requires 1499 (Vile Familiars) outside the chapter; needs a requires bridge
+- open_head: [undead_deathknell] multiple entries [4641, 788, 790, 5441, 2161, 786, 97223, 817, 96821, 818, 97225, 808, 826, 823, 96873, 99123, 96876, 96604, 784, 837, 815, 96825, 791, 96822, 830, 99048, 816, 834, 813, 840, 97281, 96877, 832, 97246, 97242, 97275, 97326, 5726, 812, 794, 95998, 96101, 96605, 96606, 96607, 96608]; curate `entry` or add the missing lead quest
+- open_tail: [undead_deathknell] multiple exits [804, 789, 4402, 6394, 2161, 786, 97223, 817, 96821, 818, 97225, 808, 826, 96873, 99123, 96876, 837, 815, 96825, 791, 96822, 825, 831, 816, 835, 813, 97282, 96877, 832, 97249, 97242, 97275, 97326, 812, 924, 805, 96655, 96044, 96045, 96046, 96047, 96050, 96055, 96056, 96057, 96058, 96059, 96102, 96629, 96646, 96658, 96661, 97963, 97964, 97965, 97967, 97968, 97969, 97970, 97971, 97973, 98285, 98286, 99052, 5730, 842]; curate `exit` or split the chapter
+- orphan_link: [orgrimmar] quest 794: requires 792 (Vile Familiars) outside the chapter; needs a requires bridge
+- orphan_link: [orgrimmar] quest 794: requires 1499 (Vile Familiars) outside the chapter; needs a requires bridge
+- open_head: [orgrimmar] multiple entries [4641, 788, 790, 5441, 2161, 786, 97223, 817, 96821, 818, 97225, 808, 826, 823, 96873, 99123, 96876, 96604, 784, 837, 815, 96825, 791, 96822, 830, 99048, 816, 834, 813, 840, 97281, 96877, 832, 97246, 97242, 97275, 97326, 5726, 812, 794, 95998, 96101, 96605, 96606, 96607, 96608]; curate `entry` or add the missing lead quest
+- open_tail: [orgrimmar] multiple exits [804, 789, 4402, 6394, 2161, 786, 97223, 817, 96821, 818, 97225, 808, 826, 96873, 99123, 96876, 837, 815, 96825, 791, 96822, 825, 831, 816, 835, 813, 97282, 96877, 832, 97249, 97242, 97275, 97326, 812, 924, 805, 96655, 96044, 96045, 96046, 96047, 96050, 96055, 96056, 96057, 96058, 96059, 96102, 96629, 96646, 96658, 96661, 97963, 97964, 97965, 97967, 97968, 97969, 97970, 97971, 97973, 98285, 98286, 99052, 5730, 842]; curate `exit` or split the chapter
+- open_head: [tauren_red_cloud] multiple entries [363, 364, 376, 8, 365, 5481, 86784, 404, 96607, 367, 427, 99141, 99134, 375, 97558, 99144, 95314, 398, 358, 354, 362, 356, 361, 96895, 445, 95328, 95998, 96101, 96604, 96605, 96606, 96608, 1109]; curate `entry` or add the missing lead quest
+- open_tail: [tauren_red_cloud] multiple exits [3901, 6395, 98389, 3902, 383, 86784, 99141, 99134, 375, 97558, 99144, 426, 407, 95314, 374, 398, 360, 99142, 361, 492, 445, 98545, 99152, 99153, 95328, 372, 408, 590, 96658, 96044, 96045, 96046, 96047, 96050, 96055, 96056, 96057, 96058, 96059, 96102, 96629, 96646, 96655, 96661, 97963, 97964, 97965, 97967, 97968, 97969, 97970, 97971, 97973, 98285, 98286, 410, 431, 411, 92422, 1113]; curate `exit` or split the chapter
+- open_head: [barrens] multiple entries [747, 752, 753, 3376, 781, 1656, 96605, 99411, 766, 743, 745, 767, 746, 761, 99108, 748, 99079, 749, 98430, 76156, 770, 833, 861, 98424, 744, 768, 5722, 5723, 854, 870, 844, 871, 5041, 867, 848, 1492, 6361, 869, 95998, 96101, 96604, 96606, 96607, 96608]; curate `entry` or add the missing lead quest
+- open_tail: [barrens] multiple exits [95805, 780, 3376, 781, 1656, 96130, 99411, 766, 743, 745, 746, 761, 99108, 98430, 770, 833, 764, 765, 99082, 744, 776, 768, 5723, 76240, 854, 5041, 1492, 98427, 98435, 853, 872, 3281, 96661, 96044, 96045, 96046, 96047, 96050, 96055, 96056, 96057, 96058, 96059, 96102, 96629, 96646, 96655, 96658, 97963, 97964, 97965, 97967, 97968, 97969, 97970, 97971, 97973, 98285, 98286, 5724, 873, 3301, 6364, 914, 1060, 6382]; curate `exit` or split the chapter
+- open_head: [skyborne_class] multiple entries [3504, 5726, 99048, 4903]; curate `entry` or add the missing lead quest
+- open_tail: [skyborne_class] multiple exits [5730, 99052, 3507, 7493]; curate `exit` or split the chapter
+- open_head: [skyborne_exits] multiple entries [840, 844, 870, 867, 1176]; curate `entry` or add the missing lead quest
+- open_tail: [skyborne_exits] multiple exits [842, 3301, 6382, 873, 1060, 914, 1189]; curate `exit` or split the chapter
+- orphan_link: [skyborne_thendal] quest 93797: requires 93791 (Speak with Belann) outside the chapter; needs a requires bridge
+- open_head: [skyborne_thendal] multiple entries [93797, 98512, 95065, 97246, 97242, 97275, 97326, 92514, 93461]; curate `entry` or add the missing lead quest
+- open_tail: [skyborne_thendal] multiple exits [93797, 98512, 95065, 97249, 97242, 97275, 97326, 92515, 92516, 92553, 93318, 93319, 93951, 92551, 93736, 92834, 93740, 93949, 92708, 92709, 94946, 95349, 92741]; curate `exit` or split the chapter
+- open_head: [skyborne_shendar] multiple entries [94947, 95350, 96895, 92514, 93461]; curate `entry` or add the missing lead quest
+- open_tail: [skyborne_shendar] multiple exits [93963, 98021, 98024, 92515, 92516, 92553, 93318, 93319, 93951, 92551, 93736, 92834, 93740, 93949, 92708, 92709, 93739, 94946, 95349, 92741, 98545, 99152, 99153]; curate `exit` or split the chapter
+- open_head: [skyborne_falaath] multiple entries [92460, 94414, 92474, 92464, 92598, 92465, 92471, 95998, 96101, 96604, 96605, 96606, 96607, 96608]; curate `entry` or add the missing lead quest
+- open_tail: [skyborne_falaath] multiple exits [92463, 94414, 92474, 92464, 92598, 93552, 92597, 92469, 92473, 92472, 96044, 96045, 96046, 96047, 96050, 96055, 96056, 96057, 96058, 96059, 96102, 96629, 96646, 96655, 96658, 96661, 97963, 97964, 97965, 97967, 97968, 97969, 97970, 97971, 97973, 98285, 98286]; curate `exit` or split the chapter
+- open_head: [skyborne_valanaar] multiple entries [92544, 93461, 92514, 92596, 92595]; curate `entry` or add the missing lead quest
+- open_tail: [skyborne_valanaar] multiple exits [92544, 94413, 94411, 93319, 92516, 92515, 93951, 92553, 93318, 92551, 93736, 92834, 93740, 93949, 92708, 92709, 94946, 95349, 92741]; curate `exit` or split the chapter
+- open_head: [skyborne_hermit] multiple entries [92514, 93461]; curate `entry` or add the missing lead quest
+- open_tail: [skyborne_hermit] multiple exits [92515, 92516, 92553, 93318, 93319, 93951, 92551, 93736, 92834, 93740, 93949, 92708, 92709, 94946, 95349, 92741]; curate `exit` or split the chapter
+- open_head: [skyborne_war] multiple entries [93317, 92679, 94484, 94896, 94897, 92514, 93461, 94493]; curate `entry` or add the missing lead quest
+- open_tail: [skyborne_war] multiple exits [93317, 94896, 94897, 92698, 92703, 92515, 92516, 92553, 93318, 93319, 93951, 92551, 92708, 93736, 92741, 92709, 92834, 93740, 93949, 94946, 95349, 93459, 94488, 94489, 94491]; curate `exit` or split the chapter
+- open_head: [skyborne_unverified] multiple entries [93159, 94484, 94493]; curate `entry` or add the missing lead quest
+- open_tail: [skyborne_unverified] multiple exits [93160, 93172, 94488, 94489, 94491, 93459]; curate `exit` or split the chapter
+- open_head: [darkshore] multiple entries [92514, 93461]; curate `entry` or add the missing lead quest
+- open_tail: [darkshore] multiple exits [92515, 92516, 92553, 93318, 93319, 93951, 92551, 93736, 92834, 93740, 93949, 92708, 92709, 94946, 95349, 92741]; curate `exit` or split the chapter
+- open_head: [wetlands] multiple entries [96101, 92471, 92514, 93461, 95998, 96604, 96605, 96606, 96607, 96608, 95350, 96895]; curate `entry` or add the missing lead quest
+- open_tail: [wetlands] multiple exits [92472, 92473, 92515, 92516, 92553, 93318, 93319, 93951, 97970, 97971, 96646, 97968, 97965, 97967, 97963, 97964, 97973, 98286, 97969, 98285, 96044, 96045, 96046, 96047, 96050, 96055, 96056, 96057, 96058, 96059, 96102, 96629, 96655, 96658, 96661, 92551, 93736, 92834, 93740, 93949, 92708, 92709, 94946, 95349, 93739, 98024, 92741, 98545, 99152, 99153]; curate `exit` or split the chapter
+- open_head: [hillsbrad] multiple entries [509, 536]; curate `entry` or add the missing lead quest
+- open_tail: [hillsbrad] multiple exits [524, 563]; curate `exit` or split the chapter
+- open_tail: [ashenvale] multiple exits [1025, 1046]; curate `exit` or split the chapter
+- open_tail: [arathi] multiple exits [662, 664, 667]; curate `exit` or split the chapter
+- open_head: [desolace] multiple entries [1367, 1385, 4903]; curate `entry` or add the missing lead quest
+- open_tail: [desolace] multiple exits [1381, 7493]; curate `exit` or split the chapter
+- open_head: [thousand_needles] multiple entries [1104, 1105, 1176]; curate `entry` or add the missing lead quest
+- open_tail: [thousand_needles] multiple exits [1107, 1189, 1192]; curate `exit` or split the chapter
+- open_head: [dustwallow] multiple entries [1251, 1269, 1282, 1302]; curate `entry` or add the missing lead quest
+- open_tail: [dustwallow] multiple exits [1284, 1320, 1287, 1276]; curate `exit` or split the chapter
+- open_head: [stranglethorn] multiple entries [189, 203, 204, 616, 595]; curate `entry` or add the missing lead quest
+- open_tail: [stranglethorn] multiple exits [209, 206, 611, 576, 587, 608]; curate `exit` or split the chapter
+- open_head: [badlands] multiple entries [720, 709, 710, 713]; curate `entry` or add the missing lead quest
+- open_tail: [badlands] multiple exits [737, 716, 715, 778, 1139]; curate `exit` or split the chapter
+- open_head: [swamp] multiple entries [2784, 1372, 1448, 2783]; curate `entry` or add the missing lead quest
+- open_tail: [swamp] multiple exits [1391, 1475, 3628]; curate `exit` or split the chapter
+- open_head: [hinterlands] multiple entries [1448, 649]; curate `entry` or add the missing lead quest
+- open_tail: [hinterlands] multiple exits [1475, 81]; curate `exit` or split the chapter
+- open_head: [feralas] multiple entries [3445, 3380]; curate `entry` or add the missing lead quest
+- open_tail: [feralas] multiple exits [3446, 3447]; curate `exit` or split the chapter
+- open_head: [searing] multiple entries [4451, 7848]; curate `entry` or add the missing lead quest
+- open_tail: [searing] multiple exits [4451, 7848]; curate `exit` or split the chapter
+- open_head: [azshara] multiple entries [3601, 3504]; curate `entry` or add the missing lead quest
+- open_tail: [azshara] multiple exits [5534, 3507]; curate `exit` or split the chapter
+- open_head: [western_plaguelands] multiple entries [5021, 5092, 5096]; curate `entry` or add the missing lead quest
+- open_tail: [western_plaguelands] multiple exits [5051, 211, 105, 5237, 5218, 5221, 5224, 5227, 5238, 5505, 5511]; curate `exit` or split the chapter
+- open_head: [winterspring] multiple entries [974, 5083]; curate `entry` or add the missing lead quest
+- open_tail: [winterspring] multiple exits [4842, 5121, 5128]; curate `exit` or split the chapter
+- open_head: [eastern_plaguelands] multiple entries [5149, 5281, 5211]; curate `entry` or add the missing lead quest
+- open_tail: [eastern_plaguelands] multiple exits [5282, 5211, 5942]; curate `exit` or split the chapter
+- open_tail: [silithus] multiple exits [8287, 8324]; curate `exit` or split the chapter
+- open_head: [alterac] multiple entries [94947, 511]; curate `entry` or add the missing lead quest
+- open_tail: [alterac] multiple exits [93963, 98021, 537]; curate `exit` or split the chapter
+- open_head: [blackrock] multiple entries [4742, 7761]; curate `entry` or add the missing lead quest
+- open_tail: [blackrock] multiple exits [7761, 4743]; curate `exit` or split the chapter
