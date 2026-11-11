@@ -38,8 +38,9 @@ def merge_facts(facts: list[QuestFact]) -> dict[int, MergedQuest]:
                 for link in getattr(f, attr):
                     if link != qid and link not in getattr(mq, attr):
                         getattr(mq, attr).append(link)
-            for attr in ("name", "reqlevel", "faction", "race",
-                         "class_", "zone", "giver"):
+            for attr in ("name", "reqlevel", "level", "faction", "race",
+                         "class_", "zone", "giver", "turnin", "map_id",
+                         "gx", "gy", "tx", "ty"):
                 val = getattr(f, attr)
                 if val is None:
                     continue
@@ -61,8 +62,16 @@ def merge_facts(facts: list[QuestFact]) -> dict[int, MergedQuest]:
 
 def expand_from_seeds(merged: dict[int, MergedQuest], seeds: list[int],
                       exclude: set[int], include_class: bool = False,
-                      max_level: int = MAX_LEVEL) -> set[int]:
-    """Transitive closure over before+after links from the seed quests."""
+                      max_level: int = MAX_LEVEL,
+                      direction: str = "before") -> set[int]:
+    """Transitive closure from the seed quests. Chapters expand over
+    "before" only: a prerequisite's prerequisite joins, but successors
+    never do, so a chapter cannot swallow the next chapter (the handoff
+    is verified separately as a bridge, not absorbed as membership).
+    "both" also follows after-links; the crawl loop uses it to discover
+    the full graph, chapter building must not."""
+    if direction not in ("before", "both"):
+        raise ValueError(f"direction must be before|both, got {direction!r}")
     seen: set[int] = set()
     queue = deque(q for q in seeds if q not in exclude)
     while queue:
@@ -78,7 +87,8 @@ def expand_from_seeds(merged: dict[int, MergedQuest], seeds: list[int],
             continue
         seen.add(qid)
         queue.extend(mq.before)
-        queue.extend(mq.after)
+        if direction == "both":
+            queue.extend(mq.after)
     return seen
 
 
@@ -120,12 +130,18 @@ def chapter_shape(merged: dict[int, MergedQuest], chapter: SeedChapter,
              if not any(p in members for p in merged[q].before)]
     tails = [q for q in ordered
              if not any(s in members for s in merged[q].after)]
+    # Curated entry/exit win when they survived the crawl: topo order is
+    # evidence, curation is intent. Tails that continue outside the
+    # chapter are reported as gaps, not silently crowned exits.
+    entry = (chapter.entry if chapter.entry in members
+             else (ordered[0] if ordered else None))
+    exit_ = (chapter.exit if chapter.exit in members
+             else (ordered[-1] if ordered else None))
     return {
         "id": chapter.id, "name": chapter.name,
         "faction": chapter.faction, "race": chapter.race,
         "zone": chapter.zone, "order": chapter.order,
-        "entry": ordered[0] if ordered else None,
-        "exit": ordered[-1] if ordered else None,
+        "entry": entry, "exit": exit_,
         "heads": heads, "tails": tails,
         "quests": ordered, "next_chapter": chapter.next_chapter,
     }
@@ -159,6 +175,34 @@ def find_gaps(merged: dict[int, MergedQuest], chapters: list[SeedChapter],
                 kind = ("name_conflict" if conflict.startswith("name")
                         else "level_conflict")
                 gaps.append(Gap(kind, conflict, qid, chapter.id))
+        for tail in shape["tails"]:
+            cont = [s for s in merged[tail].after if s not in members]
+            if cont:
+                known = [f"{s} ({merged[s].name})" for s in cont
+                         if s in merged]
+                missing = [s for s in cont if s not in merged]
+                gaps.append(Gap("tail_continues",
+                                f"{merged[tail].name} continues into "
+                                f"{known + missing}; fetch and decide if "
+                                "the thread belongs to the chapter",
+                                tail, chapter.id))
+        if shape["entry"] is not None:
+            preds = [p for p in merged[shape["entry"]].before
+                     if p in members]
+            if preds:
+                gaps.append(Gap("entry_has_pred",
+                                f"curated entry needs {preds} first; "
+                                "make sure the addon bridges them "
+                                "(requires/lead)",
+                                shape["entry"], chapter.id))
+        if shape["exit"] is not None:
+            succs = [s for s in merged[shape["exit"]].after
+                     if s in members]
+            if succs:
+                gaps.append(Gap("exit_continues",
+                                f"curated exit leads to {succs} inside "
+                                "the chapter; the exit may be mid-thread",
+                                shape["exit"], chapter.id))
         if len(shape["heads"]) > 1:
             gaps.append(Gap("open_head", f"multiple entries {shape['heads']};"
                             " curate `entry` or add the missing lead quest",

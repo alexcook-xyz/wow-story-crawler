@@ -22,12 +22,19 @@ class QuestFact:
     name: str | None = None
     before: list[int] = field(default_factory=list)   # must be done first
     after: list[int] = field(default_factory=list)    # unlocked by this
-    reqlevel: int | None = None
+    reqlevel: int | None = None       # minimum level to accept
+    level: int | None = None          # quest level (difficulty), if shown
     faction: str | None = None        # Alliance/Horde/Neutral when stated
     race: str | None = None           # set only when race-locked
     class_: str | None = None         # set only when class-locked
     zone: str | None = None
-    giver: str | None = None
+    giver: str | None = None          # pickup NPC / object name
+    turnin: str | None = None         # turn-in NPC / object name
+    map_id: int | None = None         # UiMapID when the page states one
+    gx: float | None = None           # giver x (0-100), when stated
+    gy: float | None = None           # giver y (0-100), when stated
+    tx: float | None = None           # turn-in x (0-100), when stated
+    ty: float | None = None           # turn-in y (0-100), when stated
 
     def to_json(self) -> dict:
         d = asdict(self)
@@ -48,11 +55,18 @@ class MergedQuest:
     before: list[int] = field(default_factory=list)
     after: list[int] = field(default_factory=list)
     reqlevel: int | None = None
+    level: int | None = None
     faction: str | None = None
     race: str | None = None
     class_: str | None = None
     zone: str | None = None
     giver: str | None = None
+    turnin: str | None = None
+    map_id: int | None = None
+    gx: float | None = None
+    gy: float | None = None
+    tx: float | None = None
+    ty: float | None = None
     sources: list[str] = field(default_factory=list)
     conflicts: list[str] = field(default_factory=list)
 

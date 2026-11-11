@@ -20,7 +20,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
-from storycrawler import builder, graph               # noqa: E402
+from storycrawler import builder, emit_html, graph       # noqa: E402
 from storycrawler.fetcher import Fetcher              # noqa: E402
 from storycrawler.parsers import parse_wiki_chain     # noqa: E402
 from storycrawler.sources import DEFAULT_CRAWL_SOURCES, SOURCES  # noqa: E402
@@ -35,11 +35,13 @@ def _fetcher(args) -> Fetcher:
 
 
 def _merged_and_shapes(args):
-    chapters = builder.load_seeds(args.seeds)
     facts_path = Path(args.out) / FACTS_FILE
     facts = builder.load_facts(facts_path) if facts_path.exists() else []
     merged = graph.merge_facts(facts)
-    shapes = builder.build_chapters(merged, chapters, args.include_class)
+    pairs = builder.build_chapters(
+        merged, builder.load_seeds(args.seeds), args.include_class)
+    chapters = [c for c, _s in pairs]
+    shapes = [s for _c, s in pairs]
     return chapters, facts, merged, shapes
 
 
@@ -70,7 +72,7 @@ def cmd_crawl(args) -> int:
           f"{len(chapters)} chapters; sources={args.sources}")
     rxp = builder.load_rxp_facts([Path(p) for p in args.rxp or []])
     fetcher = _fetcher(args)
-    facts, crawled = builder.crawl(
+    facts, crawled, unclosed = builder.crawl(
         fetcher, seed_ids, tuple(args.sources),
         max_rounds=args.max_rounds, rxp_facts=rxp, verbose=args.verbose)
     out = Path(args.out)
@@ -80,6 +82,10 @@ def cmd_crawl(args) -> int:
           f"fetched={fetcher.stats['fetched']} "
           f"cached={fetcher.stats['cached']} "
           f"failed={fetcher.stats['failed']} blocked={fetcher.blocked}")
+    if unclosed:
+        print(f"UNCLOSED ({len(unclosed)} referenced but unfetched; "
+              f"re-run with --max-rounds above {args.max_rounds}): "
+              f"{sorted(unclosed)[:20]}")
     if fetcher.dry_run:
         print(f"DRY RUN: {len(fetcher.planned)} URLs would be fetched:")
         for url in fetcher.planned:
@@ -116,6 +122,17 @@ def cmd_diff(args) -> int:
     return 0
 
 
+def cmd_emit_html(args) -> int:
+    graph_path = Path(args.graph) if args.graph else Path(args.out) / "story-graph.json"
+    if not graph_path.exists():
+        print(f"no graph at {graph_path}; run `build` first")
+        return 2
+    dest = Path(args.output) if args.output else Path(args.out) / "story-tree.html"
+    emit_html.write_html(graph_path, dest)
+    print(f"wrote {dest}")
+    return 0
+
+
 def cmd_emit_lua(args) -> int:
     _c, _f, merged, shapes = _merged_and_shapes(args)
     shape = next((s for s in shapes if s["id"] == args.chapter), None)
@@ -146,7 +163,7 @@ def cmd_discover(args) -> int:
 
 def cmd_quest(args) -> int:
     fetcher = _fetcher(args)
-    facts, _ = builder.crawl(fetcher, {args.qid}, tuple(
+    facts, _, _ = builder.crawl(fetcher, {args.qid}, tuple(
         s for s in DEFAULT_CRAWL_SOURCES), max_rounds=1, verbose=True)
     merged = graph.merge_facts(facts)
     mq = merged.get(args.qid)
@@ -192,6 +209,11 @@ def build_arg_parser() -> argparse.ArgumentParser:
     sub.add_parser("diff", help="crawl vs MainStoryGuide/Data_*.lua")
     e = sub.add_parser("emit-lua", help="print a draft chain block")
     e.add_argument("--chapter", required=True)
+    h = sub.add_parser("emit-html", help="render story-graph.json as an interactive HTML tree")
+    h.add_argument("--graph", default=None,
+                   help="story-graph.json to render (default: <out>/story-graph.json)")
+    h.add_argument("-o", "--output", default=None,
+                   help="HTML file to write (default: <out>/story-tree.html)")
     d = sub.add_parser("discover", help="propose seeds from a wiki article")
     d.add_argument("--wiki-slug", required=True)
     q = sub.add_parser("quest", help="inspect one quest across sources")
@@ -201,7 +223,7 @@ def build_arg_parser() -> argparse.ArgumentParser:
 
 _COMMANDS = {"validate": cmd_validate, "crawl": cmd_crawl,
              "build": cmd_build, "diff": cmd_diff,
-             "emit-lua": cmd_emit_lua, "discover": cmd_discover,
+             "emit-lua": cmd_emit_lua, "emit-html": cmd_emit_html, "discover": cmd_discover,
              "quest": cmd_quest}
 
 

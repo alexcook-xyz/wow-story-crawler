@@ -43,14 +43,17 @@ def load_rxp_facts(paths: list[Path]) -> list[QuestFact]:
 def crawl(fetcher: Fetcher, seed_ids: set[int],
           source_names: tuple[str, ...] = DEFAULT_CRAWL_SOURCES,
           max_rounds: int = 12, rxp_facts: list[QuestFact] | None = None,
-          verbose: bool = False) -> tuple[list[QuestFact], set[int]]:
+          verbose: bool = False
+          ) -> tuple[list[QuestFact], set[int], set[int]]:
     """Fetch every seed quest, then keep feeding newly referenced ids
     back in until the before/after graph is closed (or max_rounds).
-    Returns (facts, ids for which at least one page was parsed)."""
+    Returns (facts, ids for which at least one page was parsed,
+    referenced-but-unfetched ids left when max_rounds ran out)."""
     facts: list[QuestFact] = list(rxp_facts or [])
     crawled: set[int] = {f.qid for f in facts}
     frontier = set(seed_ids)
     attempted: set[int] = set()
+    unclosed: set[int] = set()
     for _round in range(max_rounds):
         todo = sorted(frontier - attempted)
         if not todo:
@@ -80,21 +83,26 @@ def crawl(fetcher: Fetcher, seed_ids: set[int],
                           f"after={fact.after}")
         merged = graph.merge_facts(facts)
         frontier = graph.referenced_ids(merged, attempted | crawled)
-    return facts, crawled
+    unclosed = set(frontier - attempted)
+    return facts, crawled, unclosed
 
 
 def build_chapters(merged: dict[int, MergedQuest],
                    chapters: list[SeedChapter],
-                   include_class: bool = False) -> list[dict]:
-    shapes = []
+                   include_class: bool = False
+                   ) -> list[tuple[SeedChapter, dict]]:
+    """Build one shape per chapter, sorted by (faction, order). Returns
+    (chapter, shape) pairs so gap attribution can never mis-pair a
+    chapter with another chapter's shape."""
+    pairs = []
     for chapter in sorted(chapters, key=lambda c: (c.faction, c.order)):
         members = graph.expand_from_seeds(
             merged, chapter.seeds, set(chapter.exclude), include_class)
         ordered, in_cycle = graph.topo_order(merged, members, chapter.seeds)
         shape = graph.chapter_shape(merged, chapter, members, ordered)
         shape["in_cycle"] = in_cycle
-        shapes.append(shape)
-    return shapes
+        pairs.append((chapter, shape))
+    return pairs
 
 
 def save_facts(facts: list[QuestFact], path: Path) -> None:
@@ -200,8 +208,10 @@ def diff_catalogue(shapes: list[dict],
 
 
 def emit_lua_draft(merged: dict[int, MergedQuest], shape: dict) -> str:
-    """Draft Data_* chain block for human review. Giver/zone/coords are
-    left as TODOs: this tool never invents markers or coordinates."""
+    """Draft Data_* chain block for human review. Giver/zone/map/coords
+    come from the crawled database pages when present (still marked for
+    in-game verification); missing ones stay TODOs. This tool never
+    invents markers or coordinates."""
     def esc(s: str) -> str:
         return s.replace("\\", "\\\\").replace('"', '\\"')
 
@@ -221,8 +231,13 @@ def emit_lua_draft(merged: dict[int, MergedQuest], shape: dict) -> str:
         req = [p for p in mq.before if p not in members]
         req_s = f', requires = {{{",".join(str(r) for r in req)}}}' if req else ""
         lvl = f", reqlevel = {mq.reqlevel}" if mq.reqlevel else ""
+        giver = f'"{esc(mq.giver)}"' if mq.giver else '"TODO"'
+        zone = f'"{esc(mq.zone)}"' if mq.zone else '"TODO"'
+        map_ = str(mq.map_id) if mq.map_id else "TODO"
+        xy = (f", x = {mq.gx}, y = {mq.gy}"
+              if mq.gx is not None and mq.gy is not None else "")
         lines.append(f'    {{ id = {qid}, name = "{esc(mq.name or "TODO")}", '
-                     f'giver = "TODO", zone = "TODO", map = TODO'
+                     f'giver = {giver}, zone = {zone}, map = {map_}{xy}'
                      f'{kind}{req_s}{lvl} }},')
     lines += ["  } },", ""]
     return "\n".join(lines)

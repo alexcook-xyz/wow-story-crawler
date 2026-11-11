@@ -82,6 +82,9 @@ class Fetcher:
                 last_err = e
             except urllib.error.URLError as e:
                 last_err = e
+            except OSError as e:
+                # Dropped connections / TLS resets: transient, retryable.
+                last_err = e
             if attempt < self.max_retries:
                 self._sleep(self.delay * (attempt + 1))
         self.stats["failed"] += 1
