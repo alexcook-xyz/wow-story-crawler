@@ -1,1651 +1,3608 @@
 {
- "version": 1,
- "about": "Curated storyline seeds. The crawler expands each seed set over before/after links until entry and exit are closed; it never invents chapter membership, givers, or coords.",
- "chapters": [
-  {
-   "id": "northshire",
-   "name": "Northshire's Defence",
-   "faction": "Alliance",
-   "race": "Human",
-   "zone": "Elwynn Forest",
-   "order": 1,
-   "min_level": 1,
-   "max_level": 6,
-   "seeds": [
-    783,
-    7,
-    15,
-    21,
-    18,
-    6,
-    54
-   ],
-   "entry": 783,
-   "exit": 54,
-   "next_chapter": "elwynn",
-   "notes": "Imported from Data_Human.lua; crawl re-verifies every link."
-  },
-  {
-   "id": "elwynn",
-   "name": "Shadows over Elwynn",
-   "faction": "Alliance",
-   "race": "Human",
-   "zone": "Elwynn Forest",
-   "order": 2,
-   "min_level": 5,
-   "max_level": 11,
-   "seeds": [
-    3903,
-    3904,
-    3905,
-    62,
-    76,
-    35,
-    37,
-    45,
-    71,
-    39,
-    52,
-    11,
-    176,
-    123,
-    147,
-    239,
-    87,
-    33,
-    46,
-    59,
-    96627,
-    5261
-   ],
-   "entry": 3903,
-   "exit": 239,
-   "next_chapter": "peoples_militia",
-   "notes": "Imported from Data_Human.lua; crawl re-verifies every link."
-  },
-  {
-   "id": "peoples_militia",
-   "name": "The People's Militia",
-   "faction": "Alliance",
-   "race": "Human",
-   "zone": "Westfall",
-   "order": 3,
-   "min_level": 9,
-   "max_level": 15,
-   "seeds": [
-    109,
-    12,
-    13,
-    14,
-    102
-   ],
-   "entry": 109,
-   "exit": 102,
-   "next_chapter": "defias_brotherhood",
-   "notes": "Imported from Data_Human.lua; crawl re-verifies every link."
-  },
-  {
-   "id": "defias_brotherhood",
-   "name": "The Defias Brotherhood",
-   "faction": "Alliance",
-   "race": "Human",
-   "zone": "Westfall",
-   "order": 4,
-   "min_level": 14,
-   "max_level": 22,
-   "seeds": [
-    65,
-    132,
-    135,
-    141,
-    142,
-    155,
-    165,
-    166,
-    373,
-    396,
-    214
-   ],
-   "entry": 65,
-   "exit": 373,
-   "next_chapter": null,
-   "notes": "Imported from Data_Human.lua; crawl re-verifies every link."
-  },
-  {
-   "id": "redridge",
-   "name": "Redridge Under Siege",
-   "faction": "Alliance",
-   "race": "Human",
-   "zone": "Redridge Mountains",
-   "order": 5,
-   "min_level": 15,
-   "max_level": 25,
-   "seeds": [
-    244,
-    20,
-    34,
-    89,
-    91,
-    180,
-    246,
-    98386,
-    98387,
-    19,
-    115
-   ],
-   "entry": 244,
-   "exit": 180,
-   "next_chapter": null,
-   "notes": "Imported from Data_Human.lua; crawl re-verifies every link."
-  },
-  {
-   "id": "loch_modan",
-   "name": "In Defense of the King's Lands",
-   "faction": "Alliance",
-   "race": null,
-   "zone": "Loch Modan",
-   "order": 5,
-   "min_level": 10,
-   "max_level": 20,
-   "seeds": [
-     237,
-     217
-   ],
-   "entry": 237,
-   "exit": 217,
-   "next_chapter": null,
-   "notes": "Triaged from unplaced crawl: the Loch Modan main chain. Tail seed pulls the chain via prereq closure."
-},
-
-  {
-   "id": "stockade",
-   "name": "The Stockade Uprising",
-   "faction": "Alliance",
-   "race": "Human",
-   "zone": "Stormwind City",
-   "order": 6,
-   "min_level": 22,
-   "max_level": 29,
-   "seeds": [
-    377,
-    386,
-    387,
-    388,
-    391
-   ],
-   "entry": 377,
-   "exit": 391,
-   "next_chapter": null,
-   "notes": "Imported from Data_Human.lua; crawl re-verifies every link."
-  },
-  {
-   "id": "stalvan",
-   "name": "The Legend of Stalvan",
-   "faction": "Alliance",
-   "race": "Human",
-   "zone": "Duskwood",
-   "order": 7,
-   "min_level": 22,
-   "max_level": 32,
-   "seeds": [
-    66,
-    67,
-    68,
-    69,
-    70,
-    72,
-    74,
-    75,
-    77,
-    78,
-    79,
-    80,
-    97,
-    98
-   ],
-   "entry": 66,
-   "exit": 98,
-   "next_chapter": null,
-   "notes": "Imported from Data_Human.lua; crawl re-verifies every link."
-  },
-  {
-   "id": "duskwood_darkness",
-   "name": "The Darkness of Duskwood",
-   "faction": "Alliance",
-   "race": "Human",
-   "zone": "Duskwood",
-   "order": 8,
-   "min_level": 25,
-   "max_level": 35,
-   "seeds": [
-    55,
-    56,
-    57,
-    58,
-    309,
-    310,
-    311,
-    312,
-    313,
-    314,
-    315,
-    253
-   ],
-   "entry": 55,
-   "exit": 315,
-   "next_chapter": null,
-   "notes": "Imported from Data_Human.lua; crawl re-verifies every link."
-  },
-  {
-   "id": "missing_diplomat",
-   "name": "The Missing Diplomat",
-   "faction": "Alliance",
-   "race": "Human",
-   "zone": "Stormwind City",
-   "order": 9,
-   "min_level": 18,
-   "max_level": 37,
-   "seeds": [
-    1274,
-    1241,
-    1242,
-    1243,
-    1244,
-    1245,
-    1246,
-    1447,
-    1247,
-    1248,
-    1249,
-    1250,
-    1264,
-    1265,
-    1266,
-    1267
-   ],
-   "entry": 1274,
-   "exit": 1267,
-   "next_chapter": null,
-   "notes": "Imported from Data_Human.lua; crawl re-verifies every link."
-  },
-  {
-   "id": "onyxia",
-   "name": "Onyxia: The True Masters",
-   "faction": "Alliance",
-   "race": "Human",
-   "zone": "Burning Steppes",
-   "order": 10,
-   "min_level": 48,
-   "max_level": 60,
-   "seeds": [
-    4182,
-    4183,
-    4184,
-    4185,
-    4186,
-    4223,
-    4224,
-    4241,
-    4242,
-    4264,
-    4282,
-    4322,
-    6402,
-    6403,
-    6501,
-    6502,
-    7497
-   ],
-   "entry": 4182,
-   "exit": 6502,
-   "next_chapter": null,
-   "notes": "Imported from Data_Human.lua; crawl re-verifies every link."
-  },
-  {
-   "id": "dwarf_coldrige",
-   "name": "Coldridge Valley",
-   "faction": "Alliance",
-   "race": "Dwarf",
-   "zone": "Coldridge Valley",
-   "order": 1,
-   "seeds": [
-    179,
-    233,
-    183,
-    234,
-    3364,
-    3365,
-    97277,
-    218,
-    282,
-    420,
-    96628,
-    2160
-   ],
-   "notes": "RXP-derived (local RestedXP Forever guide, first-accept order); the crawl verifies every link.",
-   "min_level": 1,
-   "max_level": 5,
-   "entry": 179,
-   "exit": 2160
-  },
-  {
-   "id": "dwarf_lodgings",
-   "name": "TODO Dwarf storyline",
-   "faction": "Alliance",
-   "race": "Dwarf",
-   "zone": "Dun Morogh",
-   "order": 2,
-   "seeds": [
-    96608,
-    96629,
-    98322,
-    384,
-    99158,
-    400,
-    98321,
-    317,
-    313,
-    5541,
-    98319,
-    318,
-    287,
-    98323,
-    312,
-    319,
-    315,
-    310,
-    320,
-    311,
-    413,
-    291,
-    96408,
-    96392,
-    96390,
-    433,
-    96391,
-    96393,
-    414,
-    224,
-    267,
-    416,
-    1339,
-    418,
-    6387,
-    1338,
-    307,
-    6391,
-    6388,
-    6392,
-    6661,
-    6662,
-    353,
-    62,
-    60,
-    40,
-    88,
-    85,
-    86,
-    61,
-    37,
-    52,
-    45,
-    5545,
-    71,
-    91733,
-    91740,
-    39,
-    109,
-    244,
-    64,
-    151,
-    36,
-    9,
-    38,
-    22,
-    12,
-    102,
-    153,
-    86667,
-    86614,
-    399,
-    170,
-    415,
-    99159,
-    99161,
-    99162
-   ],
-   "notes": "RXP-derived (local RestedXP Forever guide, first-accept order); the crawl verifies every link. Dun Morogh plus the Dwarf/Gnome Elwynn and Loch Modan follow-ups from the same RXP file.",
-   "min_level": 5,
-   "max_level": 14,
-   "entry": 96608,
-   "exit": 399
-  },
-  {
-   "id": "gnome_leper",
-   "name": "TODO Gnome storyline (shares Dun Morogh)",
-   "faction": "Alliance",
-   "race": "Gnome",
-   "zone": "Coldridge Valley",
-   "order": 1,
-   "seeds": [
-    179,
-    233,
-    183,
-    234,
-    3364,
-    3365,
-    97277,
-    218,
-    282,
-    420,
-    96628,
-    2160
-   ],
-   "notes": "RXP-derived (local RestedXP Forever guide, first-accept order); the crawl verifies every link. SHARED STARTER: Forever gnomes start in Coldridge Valley with the dwarves; no separate gnome chain found on the wiki. Refine via /story logquest.",
-   "min_level": 1,
-   "max_level": 5,
-   "entry": 179,
-   "exit": 2160
-  },
-  {
-   "id": "nightelf_shadowglen",
-   "name": "Shadowglen",
-   "faction": "Alliance",
-   "race": "Night Elf",
-   "zone": "Teldrassil",
-   "order": 1,
-   "seeds": [
-    456,
-    459,
-    97977,
-    457,
-    3521,
-    916,
-    3522,
-    917,
-    97236,
-    920,
-    921,
-    928,
-    96630,
-    2159,
-    97979,
-    98065
-   ],
-   "notes": "RXP-derived (local RestedXP Forever guide, first-accept order); the crawl verifies every link.",
-   "min_level": 1,
-   "max_level": 6,
-   "entry": 456,
-   "exit": 2159
-  },
-  {
-   "id": "orc_valley_trials",
-   "name": "Valley of Trials",
-   "faction": "Horde",
-   "race": "Orc",
-   "zone": "Durotar",
-   "order": 1,
-   "seeds": [
-    4641,
-    788,
-    790,
-    804,
-    789,
-    4402,
-    792,
-    5441,
-    6394,
-    784,
-    96825,
-    791,
-    96822,
-    805,
-    96652,
-    2161,
-    786,
-    97223,
-    817,
-    96821,
-    818,
-    97225,
-    808,
-    826,
-    823,
-    96873,
-    99123,
-    96876,
-    96604,
-    96655,
-    806,
-    784,
-    837,
-    815,
-    96825,
-    791,
-    96822,
-    830,
-    825,
-    831,
-    99048,
-    99049,
-    816,
-    5654,
-    5660,
-    834,
-    835,
-    812,
-    97246,
-    97249,
-    97242,
-    97275,
-    97326,
-    5726,
-    813,
-    828,
-    840,
-    827,
-    97281,
-    97282,
-    96877,
-    832,
-    829,
-    97246,
-    97249,
-    97242,
-    97275,
-    97326,
-    5726,
-    5727,
-    809,
-    812,
-    924
-   ],
-   "notes": "RXP-derived (local RestedXP Forever guide, first-accept order); the crawl verifies every link.",
-   "min_level": 1,
-   "max_level": 12,
-   "entry": 4641,
-   "exit": 924
-  },
-  {
-   "id": "troll_valley_trials",
-   "name": "Valley of Trials (Troll)",
-   "faction": "Horde",
-   "race": "Troll",
-   "zone": "Durotar",
-   "order": 1,
-   "seeds": [
-    4641,
-    788,
-    790,
-    804,
-    789,
-    4402,
-    792,
-    5441,
-    6394,
-    784,
-    96825,
-    791,
-    96822,
-    805,
-    96652,
-    2161,
-    786,
-    97223,
-    817,
-    96821,
-    818,
-    97225,
-    808,
-    826,
-    823,
-    96873,
-    99123,
-    96876,
-    96604,
-    96655,
-    806,
-    784,
-    837,
-    815,
-    96825,
-    791,
-    96822,
-    830,
-    825,
-    831,
-    99048,
-    99049,
-    816,
-    5654,
-    5660,
-    834,
-    835,
-    812,
-    97246,
-    97249,
-    97242,
-    97275,
-    97326,
-    5726,
-    813,
-    828,
-    840,
-    827,
-    97281,
-    97282,
-    96877,
-    832,
-    829,
-    97246,
-    97249,
-    97242,
-    97275,
-    97326,
-    5726,
-    5727,
-    809,
-    812,
-    924
-   ],
-   "notes": "RXP-derived (local RestedXP Forever guide, first-accept order); the crawl verifies every link. Same Valley starter as the orcs; troll-only threads (Echo Isles etc.) are later.",
-   "min_level": 1,
-   "max_level": 12,
-   "entry": 4641,
-   "exit": 924
-  },
-  {
-   "id": "undead_deathknell",
-   "name": "Deathknell",
-   "faction": "Horde",
-   "race": "Undead",
-   "zone": "Tirisfal Glades",
-   "order": 1,
-   "seeds": [
-    363,
-    364,
-    376,
-    3901,
-    6395,
-    98389,
-    3902,
-    380,
-    381,
-    382,
-    383,
-    96656,
-    8,
-    365,
-    5481,
-    86784,
-    404,
-    96607,
-    96658,
-    367,
-    427,
-    99141,
-    99134,
-    375,
-    97558,
-    99144,
-    5482,
-    426,
-    368,
-    407,
-    95314,
-    370,
-    374,
-    398,
-    358,
-    354,
-    362,
-    405,
-    359,
-    360,
-    356,
-    369,
-    99142,
-    361,
-    355,
-    96895,
-    371,
-    96897,
-    96898,
-    96899,
-    492,
-    445,
-    96896,
-    98545,
-    99152,
-    99153,
-    95328,
-    372,
-    408,
-    590,
-    92422,
-    366,
-    411,
-    410,
-    431,
-    1113
-   ],
-   "notes": "RXP-derived (local RestedXP Forever guide, first-accept order); the crawl verifies every link.",
-   "min_level": 1,
-   "max_level": 12,
-   "entry": 363,
-   "exit": 95328
-  },
-  {
-   "id": "orgrimmar",
-   "name": "Threats to Orgrimmar",
-   "faction": "Horde",
-   "race": null,
-   "zone": "Orgrimmar",
-   "order": 2,
-   "min_level": 10,
-   "max_level": 20,
-   "seeds": [
-    5730,
-    99052,
-    3504,
-    7493
-   ],
-   "entry": null,
-   "exit": null,
-   "next_chapter": null,
-   "notes": "Triaged from unplaced crawl: Hidden Enemies and Threat from Below tails; prereq closure pulls both chains."
-},
-
-  {
-   "id": "tauren_red_cloud",
-   "name": "Red Cloud Mesa",
-   "faction": "Horde",
-   "race": "Tauren",
-   "zone": "Mulgore",
-   "order": 1,
-   "seeds": [
-    747,
-    752,
-    753,
-    750,
-    755,
-    757,
-    95805,
-    780,
-    3376,
-    781,
-    763,
-    96659,
-    1656,
-    96605,
-    96661,
-    96130,
-    99411,
-    766,
-    743,
-    745,
-    767,
-    746,
-    771,
-    761,
-    99108,
-    748,
-    99079,
-    754,
-    756,
-    772,
-    749,
-    99081,
-    751,
-    98430,
-    99101,
-    99080,
-    758,
-    773,
-    76156,
-    770,
-    833,
-    775,
-    861,
-    759,
-    5928,
-    764,
-    765,
-    98424,
-    99082,
-    760,
-    76160,
-    744,
-    776,
-    768,
-    5722,
-    5723,
-    76240,
-    854,
-    870,
-    844,
-    871,
-    5041,
-    867,
-    848,
-    1492,
-    6361,
-    6362,
-    869,
-    98427,
-    98435,
-    853,
-    872,
-    3281,
-    860
-   ],
-   "notes": "RXP-derived (local RestedXP Forever guide, first-accept order); the crawl verifies every link.",
-   "min_level": 1,
-   "max_level": 12,
-   "entry": 747,
-   "exit": 869
-  },
-  {
-   "id": "barrens",
-   "name": "Trouble in the Barrens",
-   "faction": "Horde",
-   "race": null,
-   "zone": "The Barrens",
-   "order": 2,
-   "min_level": 10,
-   "max_level": 25,
-   "seeds": [
-    845,
-    882,
-    1060,
-    880,
-    842,
-    873,
-    914,
-    3301,
-    6382,
-    1180
-   ],
-   "entry": null,
-   "exit": null,
-   "next_chapter": null,
-   "notes": "Triaged from unplaced crawl: Ishamuhale, harpy, oasis chains plus the Crossroads breadcrumb. Multi-chain chapter, entry/exit intentionally uncurated."
-},
-
-  {
-   "id": "skyborne_class",
-   "name": "Skyborne: Path of the Caller",
-   "faction": "Neutral",
-   "race": null,
-   "zone": "Zephras Isle",
-   "order": 1,
-   "seeds": [
-    92481,
-    92483,
-    92482,
-    92484,
-    92532,
-    92485,
-    92466,
-    92467,
-    92468,
-    97243,
-    97244,
-    97245,
-    97257,
-    93791,
-    93797,
-    94003,
-    94978,
-    94006,
-    99260,
-    94979,
-    94013,
-    94050,
-    94638,
-    98512,
-    94912,
-    94914,
-    95065,
-    94911,
-    94913,
-    97246,
-    97249,
-    97242,
-    97275,
-    97326
-   ],
-   "entry": 92481,
-   "exit": 97326,
-   "notes": "Imported from Data_Forever.lua (local RXP source); the crawl re-verifies every link."
-  },
-  {
-   "id": "skyborne_exits",
-   "name": "Skyborne: Leaving Zephras",
-   "faction": "Neutral",
-   "race": null,
-   "zone": "Zephras Isle",
-   "order": 2,
-   "seeds": [
-    92701,
-    92579,
-    93948,
-    94947,
-    93963,
-    98021,
-    95350,
-    98024,
-    96895,
-    96897,
-    96898
-   ],
-   "entry": 92701,
-   "exit": 96898,
-   "notes": "Imported from Data_Forever.lua (local RXP source); the crawl re-verifies every link."
-  },
-  {
-   "id": "skyborne_thendal",
-   "name": "Skyborne: Thendal Village",
-   "faction": "Neutral",
-   "race": null,
-   "zone": "Zephras Isle",
-   "order": 3,
-   "seeds": [
-    92460,
-    92461,
-    92462,
-    92463,
-    94414,
-    92474,
-    92464,
-    92598,
-    93552,
-    92597,
-    92465,
-    92469,
-    92471,
-    92470,
-    92473,
-    92472
-   ],
-   "entry": 92460,
-   "exit": 92472,
-   "notes": "Imported from Data_Forever.lua (local RXP source); the crawl re-verifies every link."
-  },
-  {
-   "id": "skyborne_shendar",
-   "name": "Skyborne: Shen'dar Village",
-   "faction": "Neutral",
-   "race": null,
-   "zone": "Zephras Isle",
-   "order": 4,
-   "seeds": [
-    92544,
-    93461,
-    92514,
-    92596,
-    94413,
-    92595,
-    94411,
-    92517,
-    93319,
-    92516,
-    92515,
-    93951,
-    92553,
-    93318,
-    93036
-   ],
-   "entry": 92544,
-   "exit": 93036,
-   "notes": "Imported from Data_Forever.lua (local RXP source); the crawl re-verifies every link."
-  },
-  {
-   "id": "skyborne_falaath",
-   "name": "Skyborne: Falaath Village",
-   "faction": "Neutral",
-   "race": null,
-   "zone": "Zephras Isle",
-   "order": 5,
-   "seeds": [
-    92529,
-    92528,
-    92550,
-    93926,
-    92551,
-    93927
-   ],
-   "entry": 92529,
-   "exit": 93927,
-   "notes": "Imported from Data_Forever.lua (local RXP source); the crawl re-verifies every link."
-  },
-  {
-   "id": "skyborne_valanaar",
-   "name": "Skyborne: Valanaar",
-   "faction": "Neutral",
-   "race": null,
-   "zone": "Zephras Isle",
-   "order": 6,
-   "seeds": [
-    93317,
-    92679,
-    94484,
-    94896,
-    94897,
-    92699,
-    92700,
-    93949,
-    92727,
-    92741,
-    92849,
-    92850,
-    92708,
-    92682,
-    92684,
-    92683,
-    92698,
-    92685,
-    92693,
-    92703,
-    92840,
-    92834,
-    92860,
-    92709,
-    92880,
-    92881,
-    94568
-   ],
-   "entry": 93317,
-   "exit": 94568,
-   "notes": "Imported from Data_Forever.lua (local RXP source); the crawl re-verifies every link."
-  },
-  {
-   "id": "skyborne_hermit",
-   "name": "Skyborne: The Hermit's Trail",
-   "faction": "Neutral",
-   "race": null,
-   "zone": "Zephras Isle",
-   "order": 7,
-   "seeds": [
-    93159,
-    93160,
-    93172,
-    94485,
-    94486,
-    94487,
-    93165,
-    94488,
-    94489,
-    94490,
-    94491
-   ],
-   "entry": 93159,
-   "exit": 94491,
-   "notes": "Imported from Data_Forever.lua (local RXP source); the crawl re-verifies every link."
-  },
-  {
-   "id": "skyborne_war",
-   "name": "Skyborne: War on Zephras",
-   "faction": "Neutral",
-   "race": null,
-   "zone": "Zephras Isle",
-   "order": 8,
-   "seeds": [
-    93735,
-    93737,
-    93320,
-    92642,
-    92645,
-    92643,
-    92644,
-    92640,
-    93065,
-    93738
-   ],
-   "entry": 93735,
-   "exit": 93738,
-   "notes": "Imported from Data_Forever.lua (local RXP source); the crawl re-verifies every link."
-  },
-  {
-   "id": "skyborne_unverified",
-   "name": "Skyborne: Unverified Pages",
-   "faction": "Neutral",
-   "race": null,
-   "zone": "Zephras Isle",
-   "order": 9,
-   "seeds": [
-    92947,
-    93089,
-    93736,
-    93739,
-    93835,
-    93958,
-    94369,
-    94946,
-    96899,
-    96638,
-    96101,
-    97970,
-    97971,
-    96646,
-    97968,
-    97965,
-    97967,
-    97963,
-    97964,
-    97973,
-    98286,
-    97969,
-    98285,
-    95349
-   ],
-   "entry": 92947,
-   "exit": 98285,
-   "notes": "Imported from Data_Forever.lua (local RXP source); the crawl re-verifies every link."
-  },
-  {
-   "id": "darkshore",
-   "name": "Darkshore",
-   "faction": "Alliance",
-   "race": null,
-   "zone": "Darkshore",
-   "order": 10,
-   "min_level": 10,
-   "max_level": 20,
-   "seeds": [
-    954,
-    1275,
-    957
-   ],
-   "entry": null,
-   "exit": null,
-   "next_chapter": null,
-   "notes": "Seeded for the 20-60 expansion; member quests verified one by one against the Forever database, tails curated after the discovery crawl."
-},
-  {
-   "id": "wetlands",
-   "name": "The Wetlands",
-   "faction": "Alliance",
-   "race": null,
-   "zone": "Wetlands",
-   "order": 11,
-   "min_level": 20,
-   "max_level": 30,
-   "seeds": [
-    469,
-    470,
-    472,
-    1302,
-    526
-   ],
-   "entry": null,
-   "exit": null,
-   "next_chapter": null,
-   "notes": "Seeded for the 20-60 expansion; member quests verified one by one against the Forever database, tails curated after the discovery crawl."
-},
-  {
-   "id": "hillsbrad",
-   "name": "Hillsbrad Foothills",
-   "faction": "Neutral",
-   "race": null,
-   "zone": "Hillsbrad Foothills",
-   "order": 12,
-   "min_level": 20,
-   "max_level": 30,
-   "seeds": [
-    513,
-    559,
-    524,
-    563
-   ],
-   "entry": null,
-   "exit": null,
-   "next_chapter": null,
-   "notes": "Seeded for the 20-60 expansion; member quests verified one by one against the Forever database, tails curated after the discovery crawl."
-},
-  {
-   "id": "ashenvale",
-   "name": "Ashenvale",
-   "faction": "Neutral",
-   "race": null,
-   "zone": "Ashenvale",
-   "order": 13,
-   "min_level": 20,
-   "max_level": 30,
-   "seeds": [
-    1055,
-    1046,
-    1025
-   ],
-   "entry": null,
-   "exit": null,
-   "next_chapter": null,
-   "notes": "Seeded for the 20-60 expansion; member quests verified one by one against the Forever database, tails curated after the discovery crawl."
-},
-  {
-   "id": "stonetalon",
-   "name": "Stonetalon Mountains",
-   "faction": "Neutral",
-   "race": null,
-   "zone": "Stonetalon Mountains",
-   "order": 14,
-   "min_level": 15,
-   "max_level": 27,
-   "seeds": [
-    1093,
-    1096
-   ],
-   "entry": null,
-   "exit": null,
-   "next_chapter": null,
-   "notes": "Seeded for the 20-60 expansion; member quests verified one by one against the Forever database, tails curated after the discovery crawl."
-},
-  {
-   "id": "arathi",
-   "name": "Arathi Highlands",
-   "faction": "Neutral",
-   "race": null,
-   "zone": "Arathi Highlands",
-   "order": 15,
-   "min_level": 30,
-   "max_level": 40,
-   "seeds": [
-    665,
-    667,
-    662,
-    664
-   ],
-   "entry": null,
-   "exit": null,
-   "next_chapter": null,
-   "notes": "Seeded for the 20-60 expansion; member quests verified one by one against the Forever database, tails curated after the discovery crawl."
-},
-  {
-   "id": "desolace",
-   "name": "Desolace",
-   "faction": "Neutral",
-   "race": null,
-   "zone": "Desolace",
-   "order": 16,
-   "min_level": 30,
-   "max_level": 40,
-   "seeds": [
-    1367,
-    6602,
-    1381
-   ],
-   "entry": null,
-   "exit": null,
-   "next_chapter": null,
-   "notes": "Seeded for the 20-60 expansion; member quests verified one by one against the Forever database, tails curated after the discovery crawl."
-},
-  {
-   "id": "thousand_needles",
-   "name": "Thousand Needles",
-   "faction": "Neutral",
-   "race": null,
-   "zone": "Thousand Needles",
-   "order": 17,
-   "min_level": 25,
-   "max_level": 35,
-   "seeds": [
-    1104,
-    1189,
-    1105,
-    1192,
-    1107
-   ],
-   "entry": null,
-   "exit": null,
-   "next_chapter": null,
-   "notes": "Seeded for the 20-60 expansion; member quests verified one by one against the Forever database, tails curated after the discovery crawl."
-},
-  {
-   "id": "dustwallow",
-   "name": "Dustwallow Marsh",
-   "faction": "Neutral",
-   "race": null,
-   "zone": "Dustwallow Marsh",
-   "order": 18,
-   "min_level": 35,
-   "max_level": 45,
-   "seeds": [
-    1319,
-    1273,
-    1276,
-    1320,
-    1287,
-    1284
-   ],
-   "entry": null,
-   "exit": null,
-   "next_chapter": null,
-   "notes": "Seeded for the 20-60 expansion; member quests verified one by one against the Forever database, tails curated after the discovery crawl."
-},
-  {
-   "id": "stranglethorn",
-   "name": "Stranglethorn Vale",
-   "faction": "Neutral",
-   "race": null,
-   "zone": "Stranglethorn Vale",
-   "order": 19,
-   "min_level": 30,
-   "max_level": 45,
-   "seeds": [
-    189,
-    576,
-    207,
-    578,
-    209,
-    206,
-    611,
-    587,
-    608
-   ],
-   "entry": null,
-   "exit": null,
-   "next_chapter": null,
-   "notes": "Seeded for the 20-60 expansion; member quests verified one by one against the Forever database, tails curated after the discovery crawl."
-},
-  {
-   "id": "badlands",
-   "name": "The Badlands",
-   "faction": "Neutral",
-   "race": null,
-   "zone": "The Badlands",
-   "order": 20,
-   "min_level": 35,
-   "max_level": 45,
-   "seeds": [
-    720,
-    777,
-    728,
-    778,
-    715,
-    716,
-    737,
-    1139
-   ],
-   "entry": null,
-   "exit": null,
-   "next_chapter": null,
-   "notes": "Seeded for the 20-60 expansion; member quests verified one by one against the Forever database, tails curated after the discovery crawl."
-},
-  {
-   "id": "swamp",
-   "name": "Swamp of Sorrows",
-   "faction": "Neutral",
-   "race": null,
-   "zone": "Swamp of Sorrows",
-   "order": 21,
-   "min_level": 35,
-   "max_level": 45,
-   "seeds": [
-    1475,
-    1391,
-    2784,
-    3628
-   ],
-   "entry": null,
-   "exit": null,
-   "next_chapter": null,
-   "notes": "Seeded for the 20-60 expansion; member quests verified one by one against the Forever database, tails curated after the discovery crawl."
-},
-  {
-   "id": "hinterlands",
-   "name": "The Hinterlands",
-   "faction": "Neutral",
-   "race": null,
-   "zone": "The Hinterlands",
-   "order": 22,
-   "min_level": 40,
-   "max_level": 50,
-   "seeds": [
-    1451,
-    81
-   ],
-   "entry": null,
-   "exit": null,
-   "next_chapter": null,
-   "notes": "Seeded for the 20-60 expansion; member quests verified one by one against the Forever database, tails curated after the discovery crawl."
-},
-  {
-   "id": "feralas",
-   "name": "Feralas",
-   "faction": "Neutral",
-   "race": null,
-   "zone": "Feralas",
-   "order": 23,
-   "min_level": 40,
-   "max_level": 50,
-   "seeds": [
-    3445,
-    3446,
-    3447
-   ],
-   "entry": null,
-   "exit": null,
-   "next_chapter": null,
-   "notes": "Seeded for the 20-60 expansion; member quests verified one by one against the Forever database, tails curated after the discovery crawl."
-},
-  {
-   "id": "tanaris",
-   "name": "Tanaris",
-   "faction": "Neutral",
-   "race": null,
-   "zone": "Tanaris",
-   "order": 24,
-   "min_level": 40,
-   "max_level": 50,
-   "seeds": [
-    1690,
-    1691
-   ],
-   "entry": null,
-   "exit": null,
-   "next_chapter": null,
-   "notes": "Seeded for the 20-60 expansion; member quests verified one by one against the Forever database, tails curated after the discovery crawl."
-},
-  {
-   "id": "searing",
-   "name": "Searing Gorge",
-   "faction": "Neutral",
-   "race": null,
-   "zone": "Searing Gorge",
-   "order": 25,
-   "min_level": 45,
-   "max_level": 55,
-   "seeds": [
-     4451,
-     7848
-   ],
-   "entry": null,
-   "exit": null,
-   "next_chapter": null,
-   "notes": "Seeded for the 20-60 expansion; member quests verified one by one against the Forever database, tails curated after the discovery crawl."
-},
-  {
-   "id": "azshara",
-   "name": "Azshara",
-   "faction": "Neutral",
-   "race": null,
-   "zone": "Azshara",
-   "order": 26,
-   "min_level": 45,
-   "max_level": 55,
-   "seeds": [
-    3601,
-    5534,
-    3507
-   ],
-   "entry": null,
-   "exit": null,
-   "next_chapter": null,
-   "notes": "Seeded for the 20-60 expansion; member quests verified one by one against the Forever database, tails curated after the discovery crawl."
-},
-  {
-   "id": "felwood",
-   "name": "Felwood",
-   "faction": "Neutral",
-   "race": null,
-   "zone": "Felwood",
-   "order": 27,
-   "min_level": 48,
-   "max_level": 55,
-   "seeds": [
-    4441,
-    4261
-   ],
-   "entry": null,
-   "exit": null,
-   "next_chapter": null,
-   "notes": "Seeded for the 20-60 expansion; member quests verified one by one against the Forever database, tails curated after the discovery crawl."
-},
-  {
-   "id": "ungoro",
-   "name": "Un'Goro Crater",
-   "faction": "Neutral",
-   "race": null,
-   "zone": "Un'Goro Crater",
-   "order": 28,
-   "min_level": 50,
-   "max_level": 55,
-   "seeds": [
-    3845,
-    3912,
-    3962
-   ],
-   "entry": null,
-   "exit": null,
-   "next_chapter": null,
-   "notes": "Seeded for the 20-60 expansion; member quests verified one by one against the Forever database, tails curated after the discovery crawl."
-},
-  {
-   "id": "western_plaguelands",
-   "name": "Western Plaguelands",
-   "faction": "Neutral",
-   "race": null,
-   "zone": "Western Plaguelands",
-   "order": 29,
-   "min_level": 50,
-   "max_level": 58,
-   "seeds": [
-    5023,
-    5215,
-    5051,
-    5218,
-    5221,
-    5224,
-    5227,
-    5237,
-    5238,
-    5505,
-    105,
-    211,
-    5511
-   ],
-   "entry": null,
-   "exit": null,
-   "next_chapter": null,
-   "notes": "Seeded for the 20-60 expansion; member quests verified one by one against the Forever database, tails curated after the discovery crawl."
-},
-  {
-   "id": "winterspring",
-   "name": "Winterspring",
-   "faction": "Neutral",
-   "race": null,
-   "zone": "Winterspring",
-   "order": 30,
-   "min_level": 55,
-   "max_level": 60,
-   "seeds": [
-    4842,
-    5121,
-    5128
-   ],
-   "entry": null,
-   "exit": null,
-   "next_chapter": null,
-   "notes": "Seeded for the 20-60 expansion; member quests verified one by one against the Forever database, tails curated after the discovery crawl."
-},
-  {
-   "id": "eastern_plaguelands",
-   "name": "Eastern Plaguelands",
-   "faction": "Neutral",
-   "race": null,
-   "zone": "Eastern Plaguelands",
-   "order": 31,
-   "min_level": 53,
-   "max_level": 60,
-   "seeds": [
-    5149,
-    5281,
-    5282,
-    5211,
-    5942,
-    5241
-   ],
-   "entry": null,
-   "exit": null,
-   "next_chapter": null,
-   "notes": "Seeded for the 20-60 expansion; member quests verified one by one against the Forever database, tails curated after the discovery crawl."
-},
-  {
-   "id": "silithus",
-   "name": "Silithus",
-   "faction": "Neutral",
-   "race": null,
-   "zone": "Silithus",
-   "order": 32,
-   "min_level": 55,
-   "max_level": 60,
-   "seeds": [
-    8284,
-    8287,
-    8324
-   ],
-   "entry": null,
-   "exit": null,
-   "next_chapter": null,
-   "notes": "Seeded for the 20-60 expansion; member quests verified one by one against the Forever database, tails curated after the discovery crawl."
-},
-  {
-   "id": "alterac",
-   "name": "Alterac Valley",
-   "faction": "Neutral",
-   "race": null,
-   "zone": "Alterac Mountains",
-   "order": 33,
-   "min_level": 51,
-   "max_level": 60,
-   "seeds": [
-    514,
-    537,
-    94947
-   ],
-   "entry": null,
-   "exit": null,
-   "next_chapter": null,
-   "notes": "Seeded for the 20-60 expansion; member quests verified one by one against the Forever database, tails curated after the discovery crawl."
-},
-  {
-   "id": "blackrock",
-   "name": "Blackrock Depths",
-   "faction": "Neutral",
-   "race": null,
-   "zone": "Blackrock Mountain",
-   "order": 34,
-   "min_level": 55,
-   "max_level": 60,
-   "seeds": [
-    4742,
-    7761,
-    4743
-   ],
-   "entry": null,
-   "exit": null,
-   "next_chapter": null,
-   "notes": "Seeded for the 20-60 expansion; member quests verified one by one against the Forever database, tails curated after the discovery crawl."
-}
- ]
+  "version": 1,
+  "about": "Curated storyline seeds. The crawler expands each seed set over before/after links until entry and exit are closed; it never invents chapter membership, givers, or coords.",
+  "chapters": [
+    {
+      "id": "northshire",
+      "name": "Northshire's Defence",
+      "faction": "Alliance",
+      "race": "Human",
+      "zone": "Elwynn Forest",
+      "order": 1,
+      "min_level": 1,
+      "max_level": 6,
+      "seeds": [
+        783,
+        7,
+        15,
+        21,
+        18,
+        6,
+        54
+      ],
+      "entry": 783,
+      "exit": 54,
+      "next_chapter": "elwynn",
+      "notes": "Imported from Data_Human.lua; crawl re-verifies every link."
+    },
+    {
+      "id": "elwynn",
+      "name": "Shadows over Elwynn",
+      "faction": "Alliance",
+      "race": "Human",
+      "zone": "Elwynn Forest",
+      "order": 2,
+      "min_level": 5,
+      "max_level": 11,
+      "seeds": [
+        3903,
+        3904,
+        3905,
+        62,
+        76,
+        35,
+        37,
+        45,
+        71,
+        39,
+        52,
+        11,
+        176,
+        123,
+        147,
+        239,
+        87,
+        33,
+        46,
+        59,
+        96627,
+        5261
+      ],
+      "entry": 3903,
+      "exit": 239,
+      "next_chapter": "peoples_militia",
+      "notes": "Imported from Data_Human.lua; crawl re-verifies every link.",
+      "explained": [
+        {
+          "kind": "tail_continues",
+          "qids": [
+            96627
+          ],
+          "reason": "hands off to chapter dwarf_lodgings, orc_valley_trials, skyborne_unverified, tauren_red_cloud, troll_valley_trials, undead_deathknell"
+        }
+      ]
+    },
+    {
+      "id": "peoples_militia",
+      "name": "The People's Militia",
+      "faction": "Alliance",
+      "race": "Human",
+      "zone": "Westfall",
+      "order": 3,
+      "min_level": 9,
+      "max_level": 15,
+      "seeds": [
+        109,
+        12,
+        13,
+        14,
+        102
+      ],
+      "entry": 109,
+      "exit": 102,
+      "next_chapter": "defias_brotherhood",
+      "notes": "Imported from Data_Human.lua; crawl re-verifies every link."
+    },
+    {
+      "id": "defias_brotherhood",
+      "name": "The Defias Brotherhood",
+      "faction": "Alliance",
+      "race": "Human",
+      "zone": "Westfall",
+      "order": 4,
+      "min_level": 14,
+      "max_level": 22,
+      "seeds": [
+        65,
+        132,
+        135,
+        141,
+        142,
+        155,
+        165,
+        166,
+        373,
+        396,
+        214
+      ],
+      "entry": 65,
+      "exit": 373,
+      "next_chapter": null,
+      "notes": "Imported from Data_Human.lua; crawl re-verifies every link.",
+      "explained": [
+        {
+          "kind": "tail_continues",
+          "qids": [
+            165
+          ],
+          "reason": "hands off to chapter duskwood_darkness"
+        }
+      ]
+    },
+    {
+      "id": "redridge",
+      "name": "Redridge Under Siege",
+      "faction": "Alliance",
+      "race": "Human",
+      "zone": "Redridge Mountains",
+      "order": 5,
+      "min_level": 15,
+      "max_level": 25,
+      "seeds": [
+        244,
+        20,
+        34,
+        89,
+        91,
+        180,
+        246,
+        98386,
+        98387,
+        19,
+        115
+      ],
+      "entry": 244,
+      "exit": 180,
+      "next_chapter": null,
+      "notes": "Imported from Data_Human.lua; crawl re-verifies every link."
+    },
+    {
+      "id": "loch_modan",
+      "name": "In Defense of the King's Lands",
+      "faction": "Alliance",
+      "race": null,
+      "zone": "Loch Modan",
+      "order": 5,
+      "min_level": 10,
+      "max_level": 20,
+      "seeds": [
+        237,
+        217
+      ],
+      "entry": 237,
+      "exit": 217,
+      "next_chapter": null,
+      "notes": "Triaged from unplaced crawl: the Loch Modan main chain. Tail seed pulls the chain via prereq closure."
+    },
+    {
+      "id": "stockade",
+      "name": "The Stockade Uprising",
+      "faction": "Alliance",
+      "race": "Human",
+      "zone": "Stormwind City",
+      "order": 6,
+      "min_level": 22,
+      "max_level": 29,
+      "seeds": [
+        377,
+        386,
+        387,
+        388,
+        391
+      ],
+      "entry": 377,
+      "exit": 391,
+      "next_chapter": null,
+      "notes": "Imported from Data_Human.lua; crawl re-verifies every link.",
+      "explained": [
+        {
+          "kind": "tail_continues",
+          "qids": [
+            391
+          ],
+          "reason": "hands off to chapter defias_brotherhood"
+        }
+      ]
+    },
+    {
+      "id": "stalvan",
+      "name": "The Legend of Stalvan",
+      "faction": "Alliance",
+      "race": "Human",
+      "zone": "Duskwood",
+      "order": 7,
+      "min_level": 22,
+      "max_level": 32,
+      "seeds": [
+        66,
+        67,
+        68,
+        69,
+        70,
+        72,
+        74,
+        75,
+        77,
+        78,
+        79,
+        80,
+        97,
+        98
+      ],
+      "entry": 66,
+      "exit": 98,
+      "next_chapter": null,
+      "notes": "Imported from Data_Human.lua; crawl re-verifies every link.",
+      "explained": [
+        {
+          "kind": "tail_continues",
+          "qids": [
+            77
+          ],
+          "reason": "hands off to chapter hinterlands"
+        }
+      ]
+    },
+    {
+      "id": "duskwood_darkness",
+      "name": "The Darkness of Duskwood",
+      "faction": "Alliance",
+      "race": "Human",
+      "zone": "Duskwood",
+      "order": 8,
+      "min_level": 25,
+      "max_level": 35,
+      "seeds": [
+        55,
+        56,
+        57,
+        58,
+        309,
+        310,
+        311,
+        312,
+        313,
+        314,
+        315,
+        253
+      ],
+      "entry": 55,
+      "exit": 315,
+      "next_chapter": null,
+      "notes": "Imported from Data_Human.lua; crawl re-verifies every link.",
+      "explained": [
+        {
+          "kind": "tail_continues",
+          "qids": [
+            315
+          ],
+          "reason": "hands off to chapter dwarf_lodgings"
+        }
+      ]
+    },
+    {
+      "id": "missing_diplomat",
+      "name": "The Missing Diplomat",
+      "faction": "Alliance",
+      "race": "Human",
+      "zone": "Stormwind City",
+      "order": 9,
+      "min_level": 18,
+      "max_level": 37,
+      "seeds": [
+        1274,
+        1241,
+        1242,
+        1243,
+        1244,
+        1245,
+        1246,
+        1447,
+        1247,
+        1248,
+        1249,
+        1250,
+        1264,
+        1265,
+        1266,
+        1267
+      ],
+      "entry": 1274,
+      "exit": 1267,
+      "next_chapter": null,
+      "notes": "Imported from Data_Human.lua; crawl re-verifies every link."
+    },
+    {
+      "id": "onyxia",
+      "gate": "Onyxia's Lair",
+      "name": "Onyxia: The True Masters",
+      "faction": "Alliance",
+      "race": "Human",
+      "zone": "Burning Steppes",
+      "order": 10,
+      "min_level": 48,
+      "max_level": 60,
+      "seeds": [
+        4182,
+        4183,
+        4184,
+        4185,
+        4186,
+        4223,
+        4224,
+        4241,
+        4242,
+        4264,
+        4282,
+        4322,
+        6402,
+        6403,
+        6501,
+        6502,
+        7497
+      ],
+      "entry": 4182,
+      "exit": 7497,
+      "next_chapter": null,
+      "notes": "Imported from Data_Human.lua; crawl re-verifies every link."
+    },
+    {
+      "id": "dwarf_coldrige",
+      "name": "Coldridge Valley",
+      "faction": "Alliance",
+      "race": "Dwarf",
+      "zone": "Coldridge Valley",
+      "order": 1,
+      "seeds": [
+        179,
+        233,
+        183,
+        234,
+        3364,
+        3365,
+        97277,
+        218,
+        282,
+        420,
+        96628,
+        2160
+      ],
+      "notes": "RXP-derived (local RestedXP Forever guide, first-accept order); the crawl verifies every link.",
+      "min_level": 1,
+      "max_level": 5,
+      "entry": 179,
+      "exit": 2160,
+      "explained": [
+        {
+          "kind": "tail_continues",
+          "qids": [
+            96628
+          ],
+          "reason": "hands off to chapter dwarf_lodgings, orc_valley_trials, skyborne_unverified, tauren_red_cloud, troll_valley_trials, undead_deathknell"
+        },
+        {
+          "kind": "open_head",
+          "qids": [
+            179,
+            182,
+            183,
+            2160,
+            3364,
+            97277
+          ],
+          "reason": "Starter valley is parallel quest threads accepted in RXP first-accept order; storyline order is topological with RXP order as tie-break, no single thread spans the chapter."
+        },
+        {
+          "kind": "open_tail",
+          "qids": [
+            183,
+            234,
+            420,
+            2160,
+            3365,
+            96628,
+            97277
+          ],
+          "reason": "Starter valley is parallel quest threads accepted in RXP first-accept order; storyline order is topological with RXP order as tie-break, no single thread spans the chapter."
+        }
+      ]
+    },
+    {
+      "id": "dwarf_lodgings",
+      "name": "TODO Dwarf storyline",
+      "faction": "Alliance",
+      "race": "Dwarf",
+      "zone": "Dun Morogh",
+      "order": 2,
+      "seeds": [
+        96608,
+        96629,
+        98322,
+        384,
+        99158,
+        400,
+        98321,
+        317,
+        313,
+        5541,
+        98319,
+        318,
+        287,
+        98323,
+        312,
+        319,
+        315,
+        310,
+        320,
+        311,
+        413,
+        291,
+        96408,
+        96392,
+        96390,
+        433,
+        96391,
+        96393,
+        414,
+        224,
+        267,
+        416,
+        1339,
+        418,
+        6387,
+        1338,
+        307,
+        6391,
+        6388,
+        6392,
+        6661,
+        6662,
+        353,
+        62,
+        60,
+        40,
+        88,
+        85,
+        86,
+        61,
+        37,
+        52,
+        45,
+        5545,
+        71,
+        91733,
+        91740,
+        39,
+        109,
+        244,
+        64,
+        151,
+        36,
+        9,
+        38,
+        22,
+        12,
+        102,
+        153,
+        86667,
+        86614,
+        399,
+        170,
+        415,
+        99159,
+        99161,
+        99162
+      ],
+      "notes": "RXP-derived (local RestedXP Forever guide, first-accept order); the crawl verifies every link. Dun Morogh plus the Dwarf/Gnome Elwynn and Loch Modan follow-ups from the same RXP file.",
+      "min_level": 5,
+      "max_level": 14,
+      "entry": 96608,
+      "exit": 399,
+      "explained": [
+        {
+          "kind": "tail_continues",
+          "qids": [
+            224
+          ],
+          "reason": "hands off to chapter loch_modan"
+        },
+        {
+          "kind": "tail_continues",
+          "qids": [
+            267
+          ],
+          "reason": "hands off to chapter loch_modan"
+        },
+        {
+          "kind": "tail_continues",
+          "qids": [
+            62
+          ],
+          "reason": "hands off to chapter elwynn"
+        },
+        {
+          "kind": "tail_continues",
+          "qids": [
+            86
+          ],
+          "reason": "hands off to chapter elwynn"
+        },
+        {
+          "kind": "tail_continues",
+          "qids": [
+            244
+          ],
+          "reason": "hands off to chapter redridge"
+        },
+        {
+          "kind": "tail_continues",
+          "qids": [
+            12
+          ],
+          "reason": "hands off to chapter peoples_militia"
+        },
+        {
+          "kind": "tail_continues",
+          "qids": [
+            39
+          ],
+          "reason": "hands off to chapter elwynn"
+        },
+        {
+          "kind": "open_head",
+          "qids": [
+            9,
+            12,
+            22,
+            36,
+            40,
+            52,
+            60,
+            62,
+            64,
+            85,
+            88,
+            102,
+            109,
+            151,
+            153,
+            179,
+            224,
+            244,
+            267,
+            287,
+            307,
+            310,
+            312,
+            313,
+            315,
+            317,
+            353,
+            384,
+            399,
+            400,
+            416,
+            418,
+            433,
+            1338,
+            1339,
+            5541,
+            5545,
+            6387,
+            6661,
+            86614,
+            86667,
+            91733,
+            91740,
+            95998,
+            96101,
+            96391,
+            96392,
+            96408,
+            96604,
+            96605,
+            96606,
+            96607,
+            96608,
+            98321,
+            98322,
+            99158,
+            99159
+          ],
+          "reason": "Starter valley is parallel quest threads accepted in RXP first-accept order; storyline order is topological with RXP order as tie-break, no single thread spans the chapter."
+        },
+        {
+          "kind": "open_tail",
+          "qids": [
+            9,
+            12,
+            22,
+            38,
+            39,
+            52,
+            61,
+            62,
+            64,
+            86,
+            88,
+            102,
+            109,
+            151,
+            153,
+            170,
+            224,
+            244,
+            267,
+            291,
+            307,
+            311,
+            312,
+            313,
+            320,
+            353,
+            384,
+            399,
+            400,
+            414,
+            416,
+            418,
+            433,
+            1338,
+            5541,
+            5545,
+            6392,
+            6662,
+            86614,
+            86667,
+            91733,
+            91740,
+            96390,
+            96393,
+            96629,
+            98321,
+            99161,
+            99162
+          ],
+          "reason": "Starter valley is parallel quest threads accepted in RXP first-accept order; storyline order is topological with RXP order as tie-break, no single thread spans the chapter."
+        }
+      ]
+    },
+    {
+      "id": "gnome_leper",
+      "name": "TODO Gnome storyline (shares Dun Morogh)",
+      "faction": "Alliance",
+      "race": "Gnome",
+      "zone": "Coldridge Valley",
+      "order": 1,
+      "seeds": [
+        179,
+        233,
+        183,
+        234,
+        3364,
+        3365,
+        97277,
+        218,
+        282,
+        420,
+        96628,
+        2160
+      ],
+      "notes": "RXP-derived (local RestedXP Forever guide, first-accept order); the crawl verifies every link. SHARED STARTER: Forever gnomes start in Coldridge Valley with the dwarves; no separate gnome chain found on the wiki. Refine via /story logquest.",
+      "min_level": 1,
+      "max_level": 5,
+      "entry": 179,
+      "exit": 2160,
+      "explained": [
+        {
+          "kind": "tail_continues",
+          "qids": [
+            96628
+          ],
+          "reason": "hands off to chapter dwarf_lodgings, orc_valley_trials, skyborne_unverified, tauren_red_cloud, troll_valley_trials, undead_deathknell"
+        },
+        {
+          "kind": "open_head",
+          "qids": [
+            179,
+            182,
+            183,
+            2160,
+            3364,
+            97277
+          ],
+          "reason": "Starter valley is parallel quest threads accepted in RXP first-accept order; storyline order is topological with RXP order as tie-break, no single thread spans the chapter."
+        },
+        {
+          "kind": "open_tail",
+          "qids": [
+            183,
+            234,
+            420,
+            2160,
+            3365,
+            96628,
+            97277
+          ],
+          "reason": "Starter valley is parallel quest threads accepted in RXP first-accept order; storyline order is topological with RXP order as tie-break, no single thread spans the chapter."
+        }
+      ]
+    },
+    {
+      "id": "nightelf_shadowglen",
+      "name": "Shadowglen",
+      "faction": "Alliance",
+      "race": "Night Elf",
+      "zone": "Teldrassil",
+      "order": 1,
+      "seeds": [
+        456,
+        459,
+        97977,
+        457,
+        3521,
+        916,
+        3522,
+        917,
+        97236,
+        920,
+        921,
+        928,
+        96630,
+        2159,
+        97979,
+        98065
+      ],
+      "notes": "RXP-derived (local RestedXP Forever guide, first-accept order); the crawl verifies every link.",
+      "min_level": 1,
+      "max_level": 6,
+      "entry": 456,
+      "exit": 2159,
+      "explained": [
+        {
+          "kind": "tail_continues",
+          "qids": [
+            96630
+          ],
+          "reason": "hands off to chapter dwarf_lodgings, orc_valley_trials, skyborne_unverified, tauren_red_cloud, troll_valley_trials, undead_deathknell"
+        },
+        {
+          "kind": "open_head",
+          "qids": [
+            456,
+            458,
+            916,
+            2159,
+            4495,
+            97236
+          ],
+          "reason": "Starter valley is parallel quest threads accepted in RXP first-accept order; storyline order is topological with RXP order as tie-break, no single thread spans the chapter."
+        },
+        {
+          "kind": "open_tail",
+          "qids": [
+            457,
+            459,
+            2159,
+            3522,
+            96630,
+            97236,
+            97977,
+            97979,
+            98065
+          ],
+          "reason": "Starter valley is parallel quest threads accepted in RXP first-accept order; storyline order is topological with RXP order as tie-break, no single thread spans the chapter."
+        }
+      ]
+    },
+    {
+      "id": "orc_valley_trials",
+      "name": "Valley of Trials",
+      "faction": "Horde",
+      "race": "Orc",
+      "zone": "Durotar",
+      "order": 1,
+      "seeds": [
+        4641,
+        788,
+        790,
+        804,
+        789,
+        4402,
+        792,
+        5441,
+        6394,
+        784,
+        96825,
+        791,
+        96822,
+        805,
+        96652,
+        2161,
+        786,
+        97223,
+        817,
+        96821,
+        818,
+        97225,
+        808,
+        826,
+        823,
+        96873,
+        99123,
+        96876,
+        96604,
+        96655,
+        806,
+        784,
+        837,
+        815,
+        96825,
+        791,
+        96822,
+        830,
+        825,
+        831,
+        99048,
+        99049,
+        816,
+        5654,
+        5660,
+        834,
+        835,
+        812,
+        97246,
+        97249,
+        97242,
+        97275,
+        97326,
+        5726,
+        813,
+        828,
+        840,
+        827,
+        97281,
+        97282,
+        96877,
+        832,
+        829,
+        97246,
+        97249,
+        97242,
+        97275,
+        97326,
+        5726,
+        5727,
+        809,
+        812,
+        924
+      ],
+      "notes": "RXP-derived (local RestedXP Forever guide, first-accept order); the crawl verifies every link.",
+      "min_level": 1,
+      "max_level": 12,
+      "entry": 4641,
+      "exit": 924,
+      "explained": [
+        {
+          "kind": "shared_member",
+          "qids": [
+            784
+          ],
+          "reason": "declared shared starter ['orc_valley_trials', 'troll_valley_trials']"
+        },
+        {
+          "kind": "shared_member",
+          "qids": [
+            786
+          ],
+          "reason": "declared shared starter ['orc_valley_trials', 'troll_valley_trials']"
+        },
+        {
+          "kind": "shared_member",
+          "qids": [
+            788
+          ],
+          "reason": "declared shared starter ['orc_valley_trials', 'troll_valley_trials']"
+        },
+        {
+          "kind": "shared_member",
+          "qids": [
+            789
+          ],
+          "reason": "declared shared starter ['orc_valley_trials', 'troll_valley_trials']"
+        },
+        {
+          "kind": "shared_member",
+          "qids": [
+            790
+          ],
+          "reason": "declared shared starter ['orc_valley_trials', 'troll_valley_trials']"
+        },
+        {
+          "kind": "shared_member",
+          "qids": [
+            791
+          ],
+          "reason": "declared shared starter ['orc_valley_trials', 'troll_valley_trials']"
+        },
+        {
+          "kind": "shared_member",
+          "qids": [
+            794
+          ],
+          "reason": "declared shared starter ['orc_valley_trials', 'troll_valley_trials']"
+        },
+        {
+          "kind": "shared_member",
+          "qids": [
+            804
+          ],
+          "reason": "declared shared starter ['orc_valley_trials', 'troll_valley_trials']"
+        },
+        {
+          "kind": "shared_member",
+          "qids": [
+            805
+          ],
+          "reason": "declared shared starter ['orc_valley_trials', 'troll_valley_trials']"
+        },
+        {
+          "kind": "shared_member",
+          "qids": [
+            806
+          ],
+          "reason": "declared shared starter ['orc_valley_trials', 'troll_valley_trials']"
+        },
+        {
+          "kind": "shared_member",
+          "qids": [
+            808
+          ],
+          "reason": "declared shared starter ['orc_valley_trials', 'troll_valley_trials']"
+        },
+        {
+          "kind": "shared_member",
+          "qids": [
+            809
+          ],
+          "reason": "declared shared starter ['orc_valley_trials', 'troll_valley_trials']"
+        },
+        {
+          "kind": "shared_member",
+          "qids": [
+            812
+          ],
+          "reason": "declared shared starter ['orc_valley_trials', 'troll_valley_trials']"
+        },
+        {
+          "kind": "shared_member",
+          "qids": [
+            813
+          ],
+          "reason": "declared shared starter ['orc_valley_trials', 'troll_valley_trials']"
+        },
+        {
+          "kind": "shared_member",
+          "qids": [
+            815
+          ],
+          "reason": "declared shared starter ['orc_valley_trials', 'troll_valley_trials']"
+        },
+        {
+          "kind": "shared_member",
+          "qids": [
+            816
+          ],
+          "reason": "declared shared starter ['orc_valley_trials', 'troll_valley_trials']"
+        },
+        {
+          "kind": "shared_member",
+          "qids": [
+            817
+          ],
+          "reason": "declared shared starter ['orc_valley_trials', 'troll_valley_trials']"
+        },
+        {
+          "kind": "shared_member",
+          "qids": [
+            818
+          ],
+          "reason": "declared shared starter ['orc_valley_trials', 'troll_valley_trials']"
+        },
+        {
+          "kind": "shared_member",
+          "qids": [
+            823
+          ],
+          "reason": "declared shared starter ['orc_valley_trials', 'troll_valley_trials']"
+        },
+        {
+          "kind": "shared_member",
+          "qids": [
+            825
+          ],
+          "reason": "declared shared starter ['orc_valley_trials', 'troll_valley_trials']"
+        },
+        {
+          "kind": "shared_member",
+          "qids": [
+            826
+          ],
+          "reason": "declared shared starter ['orc_valley_trials', 'troll_valley_trials']"
+        },
+        {
+          "kind": "shared_member",
+          "qids": [
+            827
+          ],
+          "reason": "declared shared starter ['orc_valley_trials', 'troll_valley_trials']"
+        },
+        {
+          "kind": "shared_member",
+          "qids": [
+            828
+          ],
+          "reason": "declared shared starter ['orc_valley_trials', 'troll_valley_trials']"
+        },
+        {
+          "kind": "shared_member",
+          "qids": [
+            829
+          ],
+          "reason": "declared shared starter ['orc_valley_trials', 'troll_valley_trials']"
+        },
+        {
+          "kind": "shared_member",
+          "qids": [
+            830
+          ],
+          "reason": "declared shared starter ['orc_valley_trials', 'troll_valley_trials']"
+        },
+        {
+          "kind": "shared_member",
+          "qids": [
+            831
+          ],
+          "reason": "declared shared starter ['orc_valley_trials', 'troll_valley_trials']"
+        },
+        {
+          "kind": "shared_member",
+          "qids": [
+            832
+          ],
+          "reason": "declared shared starter ['orc_valley_trials', 'troll_valley_trials']"
+        },
+        {
+          "kind": "shared_member",
+          "qids": [
+            834
+          ],
+          "reason": "declared shared starter ['orc_valley_trials', 'troll_valley_trials']"
+        },
+        {
+          "kind": "shared_member",
+          "qids": [
+            835
+          ],
+          "reason": "declared shared starter ['orc_valley_trials', 'troll_valley_trials']"
+        },
+        {
+          "kind": "shared_member",
+          "qids": [
+            837
+          ],
+          "reason": "declared shared starter ['orc_valley_trials', 'troll_valley_trials']"
+        },
+        {
+          "kind": "shared_member",
+          "qids": [
+            924
+          ],
+          "reason": "declared shared starter ['orc_valley_trials', 'troll_valley_trials']"
+        },
+        {
+          "kind": "shared_member",
+          "qids": [
+            2161
+          ],
+          "reason": "declared shared starter ['orc_valley_trials', 'troll_valley_trials']"
+        },
+        {
+          "kind": "shared_member",
+          "qids": [
+            4402
+          ],
+          "reason": "declared shared starter ['orc_valley_trials', 'troll_valley_trials']"
+        },
+        {
+          "kind": "shared_member",
+          "qids": [
+            4641
+          ],
+          "reason": "declared shared starter ['orc_valley_trials', 'troll_valley_trials']"
+        },
+        {
+          "kind": "shared_member",
+          "qids": [
+            5441
+          ],
+          "reason": "declared shared starter ['orc_valley_trials', 'troll_valley_trials']"
+        },
+        {
+          "kind": "shared_member",
+          "qids": [
+            6394
+          ],
+          "reason": "declared shared starter ['orc_valley_trials', 'troll_valley_trials']"
+        },
+        {
+          "kind": "shared_member",
+          "qids": [
+            96652
+          ],
+          "reason": "declared shared starter ['orc_valley_trials', 'troll_valley_trials']"
+        },
+        {
+          "kind": "shared_member",
+          "qids": [
+            96655
+          ],
+          "reason": "declared shared starter ['orc_valley_trials', 'troll_valley_trials']"
+        },
+        {
+          "kind": "shared_member",
+          "qids": [
+            96821
+          ],
+          "reason": "declared shared starter ['orc_valley_trials', 'troll_valley_trials']"
+        },
+        {
+          "kind": "shared_member",
+          "qids": [
+            96822
+          ],
+          "reason": "declared shared starter ['orc_valley_trials', 'troll_valley_trials']"
+        },
+        {
+          "kind": "shared_member",
+          "qids": [
+            96825
+          ],
+          "reason": "declared shared starter ['orc_valley_trials', 'troll_valley_trials']"
+        },
+        {
+          "kind": "shared_member",
+          "qids": [
+            96873
+          ],
+          "reason": "declared shared starter ['orc_valley_trials', 'troll_valley_trials']"
+        },
+        {
+          "kind": "shared_member",
+          "qids": [
+            96876
+          ],
+          "reason": "declared shared starter ['orc_valley_trials', 'troll_valley_trials']"
+        },
+        {
+          "kind": "shared_member",
+          "qids": [
+            96877
+          ],
+          "reason": "declared shared starter ['orc_valley_trials', 'troll_valley_trials']"
+        },
+        {
+          "kind": "shared_member",
+          "qids": [
+            97223
+          ],
+          "reason": "declared shared starter ['orc_valley_trials', 'troll_valley_trials']"
+        },
+        {
+          "kind": "shared_member",
+          "qids": [
+            97225
+          ],
+          "reason": "declared shared starter ['orc_valley_trials', 'troll_valley_trials']"
+        },
+        {
+          "kind": "shared_member",
+          "qids": [
+            97281
+          ],
+          "reason": "declared shared starter ['orc_valley_trials', 'troll_valley_trials']"
+        },
+        {
+          "kind": "shared_member",
+          "qids": [
+            97282
+          ],
+          "reason": "declared shared starter ['orc_valley_trials', 'troll_valley_trials']"
+        },
+        {
+          "kind": "shared_member",
+          "qids": [
+            99123
+          ],
+          "reason": "declared shared starter ['orc_valley_trials', 'troll_valley_trials']"
+        },
+        {
+          "kind": "orphan_link",
+          "qids": [
+            792,
+            794
+          ],
+          "reason": "Prerequisites 792 (Warrior) and 1499 (Warlock) are class quests; class-gated quests are excluded by design, so the medallion quest has no in-chapter bridge."
+        },
+        {
+          "kind": "orphan_link",
+          "qids": [
+            794,
+            1499
+          ],
+          "reason": "Prerequisites 792 (Warrior) and 1499 (Warlock) are class quests; class-gated quests are excluded by design, so the medallion quest has no in-chapter bridge."
+        },
+        {
+          "kind": "tail_continues",
+          "qids": [
+            99049
+          ],
+          "reason": "hands off to chapter orgrimmar"
+        },
+        {
+          "kind": "tail_continues",
+          "qids": [
+            840
+          ],
+          "reason": "hands off to chapter barrens"
+        },
+        {
+          "kind": "tail_continues",
+          "qids": [
+            5727
+          ],
+          "reason": "hands off to chapter orgrimmar"
+        },
+        {
+          "kind": "open_head",
+          "qids": [
+            784,
+            786,
+            788,
+            790,
+            791,
+            794,
+            808,
+            812,
+            813,
+            815,
+            816,
+            817,
+            818,
+            823,
+            826,
+            830,
+            832,
+            834,
+            837,
+            840,
+            2161,
+            4641,
+            5441,
+            5726,
+            95998,
+            96101,
+            96604,
+            96605,
+            96606,
+            96607,
+            96608,
+            96821,
+            96822,
+            96825,
+            96873,
+            96876,
+            96877,
+            97223,
+            97225,
+            97242,
+            97246,
+            97249,
+            97275,
+            97281,
+            97326,
+            99048,
+            99123
+          ],
+          "reason": "Starter valley is parallel quest threads accepted in RXP first-accept order; storyline order is topological with RXP order as tie-break, no single thread spans the chapter."
+        },
+        {
+          "kind": "open_tail",
+          "qids": [
+            786,
+            789,
+            791,
+            804,
+            805,
+            808,
+            812,
+            813,
+            815,
+            816,
+            817,
+            818,
+            825,
+            826,
+            831,
+            832,
+            835,
+            837,
+            840,
+            924,
+            2161,
+            4402,
+            5727,
+            6394,
+            96655,
+            96821,
+            96822,
+            96825,
+            96873,
+            96876,
+            96877,
+            97223,
+            97225,
+            97242,
+            97246,
+            97249,
+            97275,
+            97282,
+            97326,
+            99049,
+            99123
+          ],
+          "reason": "Starter valley is parallel quest threads accepted in RXP first-accept order; storyline order is topological with RXP order as tie-break, no single thread spans the chapter."
+        }
+      ]
+    },
+    {
+      "id": "troll_valley_trials",
+      "name": "Valley of Trials (Troll)",
+      "faction": "Horde",
+      "race": "Troll",
+      "zone": "Durotar",
+      "order": 1,
+      "seeds": [
+        4641,
+        788,
+        790,
+        804,
+        789,
+        4402,
+        792,
+        5441,
+        6394,
+        784,
+        96825,
+        791,
+        96822,
+        805,
+        96652,
+        2161,
+        786,
+        97223,
+        817,
+        96821,
+        818,
+        97225,
+        808,
+        826,
+        823,
+        96873,
+        99123,
+        96876,
+        96604,
+        96655,
+        806,
+        784,
+        837,
+        815,
+        96825,
+        791,
+        96822,
+        830,
+        825,
+        831,
+        99048,
+        99049,
+        816,
+        5654,
+        5660,
+        834,
+        835,
+        812,
+        97246,
+        97249,
+        97242,
+        97275,
+        97326,
+        5726,
+        813,
+        828,
+        840,
+        827,
+        97281,
+        97282,
+        96877,
+        832,
+        829,
+        97246,
+        97249,
+        97242,
+        97275,
+        97326,
+        5726,
+        5727,
+        809,
+        812,
+        924
+      ],
+      "notes": "RXP-derived (local RestedXP Forever guide, first-accept order); the crawl verifies every link. Same Valley starter as the orcs; troll-only threads (Echo Isles etc.) are later.",
+      "min_level": 1,
+      "max_level": 12,
+      "entry": 4641,
+      "exit": 924,
+      "explained": [
+        {
+          "kind": "orphan_link",
+          "qids": [
+            792,
+            794
+          ],
+          "reason": "Prerequisites 792 (Warrior) and 1499 (Warlock) are class quests; class-gated quests are excluded by design, so the medallion quest has no in-chapter bridge."
+        },
+        {
+          "kind": "orphan_link",
+          "qids": [
+            794,
+            1499
+          ],
+          "reason": "Prerequisites 792 (Warrior) and 1499 (Warlock) are class quests; class-gated quests are excluded by design, so the medallion quest has no in-chapter bridge."
+        },
+        {
+          "kind": "tail_continues",
+          "qids": [
+            99049
+          ],
+          "reason": "hands off to chapter orgrimmar"
+        },
+        {
+          "kind": "tail_continues",
+          "qids": [
+            840
+          ],
+          "reason": "hands off to chapter barrens"
+        },
+        {
+          "kind": "tail_continues",
+          "qids": [
+            5727
+          ],
+          "reason": "hands off to chapter orgrimmar"
+        },
+        {
+          "kind": "open_head",
+          "qids": [
+            784,
+            786,
+            788,
+            790,
+            791,
+            794,
+            808,
+            812,
+            813,
+            815,
+            816,
+            817,
+            818,
+            823,
+            826,
+            830,
+            832,
+            834,
+            837,
+            840,
+            2161,
+            4641,
+            5441,
+            5726,
+            95998,
+            96101,
+            96604,
+            96605,
+            96606,
+            96607,
+            96608,
+            96821,
+            96822,
+            96825,
+            96873,
+            96876,
+            96877,
+            97223,
+            97225,
+            97242,
+            97246,
+            97249,
+            97275,
+            97281,
+            97326,
+            99048,
+            99123
+          ],
+          "reason": "Starter valley is parallel quest threads accepted in RXP first-accept order; storyline order is topological with RXP order as tie-break, no single thread spans the chapter."
+        },
+        {
+          "kind": "open_tail",
+          "qids": [
+            786,
+            789,
+            791,
+            804,
+            805,
+            808,
+            812,
+            813,
+            815,
+            816,
+            817,
+            818,
+            825,
+            826,
+            831,
+            832,
+            835,
+            837,
+            840,
+            924,
+            2161,
+            4402,
+            5727,
+            6394,
+            96655,
+            96821,
+            96822,
+            96825,
+            96873,
+            96876,
+            96877,
+            97223,
+            97225,
+            97242,
+            97246,
+            97249,
+            97275,
+            97282,
+            97326,
+            99049,
+            99123
+          ],
+          "reason": "Starter valley is parallel quest threads accepted in RXP first-accept order; storyline order is topological with RXP order as tie-break, no single thread spans the chapter."
+        }
+      ]
+    },
+    {
+      "id": "undead_deathknell",
+      "name": "Deathknell",
+      "faction": "Horde",
+      "race": "Undead",
+      "zone": "Tirisfal Glades",
+      "order": 1,
+      "seeds": [
+        363,
+        364,
+        376,
+        3901,
+        6395,
+        98389,
+        3902,
+        380,
+        381,
+        382,
+        383,
+        96656,
+        8,
+        365,
+        5481,
+        86784,
+        404,
+        96607,
+        96658,
+        367,
+        427,
+        99141,
+        99134,
+        375,
+        97558,
+        99144,
+        5482,
+        426,
+        368,
+        407,
+        95314,
+        370,
+        374,
+        398,
+        358,
+        354,
+        362,
+        405,
+        359,
+        360,
+        356,
+        369,
+        99142,
+        361,
+        355,
+        96895,
+        371,
+        96897,
+        96898,
+        96899,
+        492,
+        445,
+        96896,
+        98545,
+        99152,
+        99153,
+        95328,
+        372,
+        408,
+        590,
+        92422,
+        366,
+        411,
+        410,
+        431,
+        1113
+      ],
+      "notes": "RXP-derived (local RestedXP Forever guide, first-accept order); the crawl verifies every link.",
+      "min_level": 1,
+      "max_level": 12,
+      "entry": 363,
+      "exit": 95328,
+      "explained": [
+        {
+          "kind": "open_head",
+          "qids": [
+            8,
+            354,
+            356,
+            358,
+            361,
+            362,
+            363,
+            364,
+            365,
+            367,
+            375,
+            376,
+            398,
+            404,
+            427,
+            445,
+            1109,
+            5481,
+            86784,
+            95314,
+            95328,
+            95998,
+            96101,
+            96604,
+            96605,
+            96606,
+            96607,
+            96608,
+            96895,
+            97558,
+            99134,
+            99141,
+            99144
+          ],
+          "reason": "Starter valley is parallel quest threads accepted in RXP first-accept order; storyline order is topological with RXP order as tie-break, no single thread spans the chapter."
+        },
+        {
+          "kind": "open_tail",
+          "qids": [
+            360,
+            361,
+            372,
+            374,
+            375,
+            383,
+            398,
+            407,
+            408,
+            410,
+            411,
+            426,
+            431,
+            445,
+            492,
+            590,
+            1113,
+            3901,
+            3902,
+            6395,
+            86784,
+            92422,
+            95314,
+            95328,
+            96658,
+            97558,
+            98389,
+            98545,
+            99134,
+            99141,
+            99142,
+            99144,
+            99152,
+            99153
+          ],
+          "reason": "Starter valley is parallel quest threads accepted in RXP first-accept order; storyline order is topological with RXP order as tie-break, no single thread spans the chapter."
+        }
+      ]
+    },
+    {
+      "id": "orgrimmar",
+      "name": "Threats to Orgrimmar",
+      "faction": "Horde",
+      "race": null,
+      "zone": "Orgrimmar",
+      "order": 2,
+      "min_level": 10,
+      "max_level": 20,
+      "seeds": [
+        5730,
+        99052,
+        3504
+      ],
+      "entry": null,
+      "exit": null,
+      "next_chapter": null,
+      "notes": "Triaged from unplaced crawl: Hidden Enemies and Threat from Below tails; prereq closure pulls both chains.",
+      "explained": [
+        {
+          "kind": "tail_continues",
+          "qids": [
+            3504
+          ],
+          "reason": "hands off to chapter azshara"
+        }
+      ]
+    },
+    {
+      "id": "tauren_red_cloud",
+      "name": "Red Cloud Mesa",
+      "faction": "Horde",
+      "race": "Tauren",
+      "zone": "Mulgore",
+      "order": 1,
+      "seeds": [
+        747,
+        752,
+        753,
+        750,
+        755,
+        757,
+        95805,
+        780,
+        3376,
+        781,
+        763,
+        96659,
+        1656,
+        96605,
+        96661,
+        96130,
+        99411,
+        766,
+        743,
+        745,
+        767,
+        746,
+        771,
+        761,
+        99108,
+        748,
+        99079,
+        754,
+        756,
+        772,
+        749,
+        99081,
+        751,
+        98430,
+        99101,
+        99080,
+        758,
+        773,
+        76156,
+        770,
+        833,
+        775,
+        861,
+        759,
+        5928,
+        764,
+        765,
+        98424,
+        99082,
+        760,
+        76160,
+        744,
+        776,
+        768,
+        5722,
+        5723,
+        76240,
+        854,
+        870,
+        844,
+        871,
+        5041,
+        867,
+        848,
+        1492,
+        6361,
+        6362,
+        869,
+        98427,
+        98435,
+        853,
+        872,
+        3281,
+        860
+      ],
+      "notes": "RXP-derived (local RestedXP Forever guide, first-accept order); the crawl verifies every link.",
+      "min_level": 1,
+      "max_level": 12,
+      "entry": 747,
+      "exit": 3281,
+      "explained": [
+        {
+          "kind": "tail_continues",
+          "qids": [
+            5722
+          ],
+          "reason": "Thread leaves Red Cloud Mesa (Thunder Bluff / Barrens); owned by the Horde mid-game spine (#11)."
+        },
+        {
+          "kind": "tail_continues",
+          "qids": [
+            870
+          ],
+          "reason": "hands off to chapter barrens"
+        },
+        {
+          "kind": "tail_continues",
+          "qids": [
+            844
+          ],
+          "reason": "hands off to chapter barrens"
+        },
+        {
+          "kind": "tail_continues",
+          "qids": [
+            867
+          ],
+          "reason": "hands off to chapter barrens"
+        },
+        {
+          "kind": "tail_continues",
+          "qids": [
+            6362
+          ],
+          "reason": "Thread leaves Red Cloud Mesa (Thunder Bluff / Barrens); owned by the Horde mid-game spine (#11)."
+        },
+        {
+          "kind": "open_head",
+          "qids": [
+            743,
+            744,
+            745,
+            746,
+            747,
+            748,
+            749,
+            752,
+            753,
+            761,
+            766,
+            767,
+            768,
+            770,
+            781,
+            833,
+            844,
+            848,
+            854,
+            861,
+            867,
+            869,
+            870,
+            871,
+            1492,
+            1656,
+            3376,
+            5041,
+            5722,
+            5723,
+            6361,
+            76156,
+            95998,
+            96101,
+            96130,
+            96604,
+            96605,
+            96606,
+            96607,
+            96608,
+            98424,
+            98430,
+            99079,
+            99108,
+            99411
+          ],
+          "reason": "Starter valley is parallel quest threads accepted in RXP first-accept order; storyline order is topological with RXP order as tie-break, no single thread spans the chapter."
+        },
+        {
+          "kind": "open_tail",
+          "qids": [
+            743,
+            744,
+            745,
+            746,
+            761,
+            764,
+            765,
+            766,
+            768,
+            770,
+            776,
+            780,
+            781,
+            833,
+            844,
+            853,
+            854,
+            867,
+            870,
+            872,
+            1492,
+            1656,
+            3281,
+            3376,
+            5041,
+            5722,
+            5723,
+            6362,
+            76240,
+            95805,
+            96130,
+            96661,
+            98427,
+            98430,
+            98435,
+            99082,
+            99108,
+            99411
+          ],
+          "reason": "Starter valley is parallel quest threads accepted in RXP first-accept order; storyline order is topological with RXP order as tie-break, no single thread spans the chapter."
+        }
+      ]
+    },
+    {
+      "id": "barrens",
+      "name": "Trouble in the Barrens",
+      "faction": "Horde",
+      "race": null,
+      "zone": "The Barrens",
+      "order": 2,
+      "min_level": 10,
+      "max_level": 25,
+      "seeds": [
+        845,
+        882,
+        1060,
+        880,
+        842,
+        873,
+        914,
+        3301,
+        6382,
+        1180
+      ],
+      "entry": null,
+      "exit": null,
+      "next_chapter": null,
+      "notes": "Triaged from unplaced crawl: Ishamuhale, harpy, oasis chains plus the Crossroads breadcrumb. Multi-chain chapter, entry/exit intentionally uncurated.",
+      "explained": [
+        {
+          "kind": "tail_continues",
+          "qids": [
+            1180
+          ],
+          "reason": "hands off to chapter thousand_needles"
+        }
+      ]
+    },
+    {
+      "id": "skyborne_class",
+      "name": "Skyborne: Path of the Caller",
+      "faction": "Neutral",
+      "race": null,
+      "zone": "Zephras Isle",
+      "order": 1,
+      "seeds": [
+        92481,
+        92483,
+        92482,
+        92484,
+        92532,
+        92485,
+        92466,
+        92467,
+        92468,
+        97243,
+        97244,
+        97245,
+        97257,
+        93791,
+        93797,
+        94003,
+        94978,
+        94006,
+        99260,
+        94979,
+        94013,
+        94050,
+        94638,
+        98512,
+        94912,
+        94914,
+        95065,
+        94911,
+        94913,
+        97246,
+        97249,
+        97242,
+        97275,
+        97326
+      ],
+      "entry": 92481,
+      "exit": 97326,
+      "notes": "Imported from Data_Forever.lua (local RXP source); the crawl re-verifies every link.",
+      "explained": [
+        {
+          "kind": "tail_continues",
+          "qids": [
+            99260
+          ],
+          "reason": "hands off to chapter skyborne_unverified, skyborne_valanaar, skyborne_war"
+        }
+      ]
+    },
+    {
+      "id": "skyborne_exits",
+      "name": "Skyborne: Leaving Zephras",
+      "faction": "Neutral",
+      "race": null,
+      "zone": "Zephras Isle",
+      "order": 2,
+      "seeds": [
+        92701,
+        92579,
+        93948,
+        94947,
+        93963,
+        98021,
+        95350,
+        98024,
+        96895,
+        96897,
+        96898
+      ],
+      "entry": 92701,
+      "exit": 96898,
+      "notes": "Imported from Data_Forever.lua (local RXP source); the crawl re-verifies every link.",
+      "explained": [
+        {
+          "kind": "tail_continues",
+          "qids": [
+            96897
+          ],
+          "reason": "hands off to chapter skyborne_unverified, undead_deathknell"
+        },
+        {
+          "kind": "tail_continues",
+          "qids": [
+            96898
+          ],
+          "reason": "hands off to chapter skyborne_unverified, undead_deathknell"
+        },
+        {
+          "kind": "tail_continues",
+          "qids": [
+            92701
+          ],
+          "reason": "hands off to chapter skyborne_class, skyborne_unverified, skyborne_valanaar, skyborne_war"
+        },
+        {
+          "kind": "tail_continues",
+          "qids": [
+            92579
+          ],
+          "reason": "hands off to chapter skyborne_unverified, skyborne_valanaar, skyborne_war"
+        },
+        {
+          "kind": "tail_continues",
+          "qids": [
+            93948
+          ],
+          "reason": "hands off to chapter skyborne_valanaar"
+        }
+      ]
+    },
+    {
+      "id": "skyborne_thendal",
+      "name": "Skyborne: Thendal Village",
+      "faction": "Neutral",
+      "race": null,
+      "zone": "Zephras Isle",
+      "order": 3,
+      "seeds": [
+        92460,
+        92461,
+        92462,
+        92463,
+        94414,
+        92474,
+        92464,
+        92598,
+        93552,
+        92597,
+        92465,
+        92469,
+        92471,
+        92470,
+        92473,
+        92472
+      ],
+      "entry": 92460,
+      "exit": 92472,
+      "notes": "Imported from Data_Forever.lua (local RXP source); the crawl re-verifies every link."
+    },
+    {
+      "id": "skyborne_shendar",
+      "name": "Skyborne: Shen'dar Village",
+      "faction": "Neutral",
+      "race": null,
+      "zone": "Zephras Isle",
+      "order": 4,
+      "seeds": [
+        92544,
+        93461,
+        92514,
+        92596,
+        94413,
+        92595,
+        94411,
+        92517,
+        93319,
+        92516,
+        92515,
+        93951,
+        92553,
+        93318,
+        93036
+      ],
+      "entry": 92544,
+      "exit": 93036,
+      "notes": "Imported from Data_Forever.lua (local RXP source); the crawl re-verifies every link.",
+      "explained": [
+        {
+          "kind": "tail_continues",
+          "qids": [
+            93036
+          ],
+          "reason": "hands off to chapter skyborne_class, skyborne_exits, skyborne_falaath, skyborne_unverified, skyborne_valanaar, skyborne_war"
+        }
+      ]
+    },
+    {
+      "id": "skyborne_falaath",
+      "name": "Skyborne: Falaath Village",
+      "faction": "Neutral",
+      "race": null,
+      "zone": "Zephras Isle",
+      "order": 5,
+      "seeds": [
+        92529,
+        92528,
+        92550,
+        93926,
+        92551,
+        93927
+      ],
+      "entry": 92529,
+      "exit": 93927,
+      "notes": "Imported from Data_Forever.lua (local RXP source); the crawl re-verifies every link.",
+      "explained": [
+        {
+          "kind": "tail_continues",
+          "qids": [
+            92550
+          ],
+          "reason": "hands off to chapter skyborne_class, skyborne_exits, skyborne_unverified, skyborne_valanaar, skyborne_war"
+        },
+        {
+          "kind": "tail_continues",
+          "qids": [
+            93927
+          ],
+          "reason": "hands off to chapter skyborne_class, skyborne_exits, skyborne_unverified, skyborne_valanaar, skyborne_war"
+        }
+      ]
+    },
+    {
+      "id": "skyborne_valanaar",
+      "name": "Skyborne: Valanaar",
+      "faction": "Neutral",
+      "race": null,
+      "zone": "Zephras Isle",
+      "order": 6,
+      "seeds": [
+        93317,
+        92679,
+        94484,
+        94896,
+        94897,
+        92699,
+        92700,
+        93949,
+        92727,
+        92741,
+        92849,
+        92850,
+        92708,
+        92682,
+        92684,
+        92683,
+        92698,
+        92685,
+        92693,
+        92703,
+        92840,
+        92834,
+        92860,
+        92709,
+        92880,
+        92881,
+        94568
+      ],
+      "entry": 93317,
+      "exit": 94568,
+      "notes": "Imported from Data_Forever.lua (local RXP source); the crawl re-verifies every link.",
+      "explained": [
+        {
+          "kind": "tail_continues",
+          "qids": [
+            94484
+          ],
+          "reason": "hands off to chapter skyborne_hermit"
+        },
+        {
+          "kind": "tail_continues",
+          "qids": [
+            94568
+          ],
+          "reason": "hands off to chapter skyborne_unverified, skyborne_war"
+        }
+      ]
+    },
+    {
+      "id": "skyborne_hermit",
+      "name": "Skyborne: The Hermit's Trail",
+      "faction": "Neutral",
+      "race": null,
+      "zone": "Zephras Isle",
+      "order": 7,
+      "seeds": [
+        93159,
+        93160,
+        93172,
+        94485,
+        94486,
+        94487,
+        93165,
+        94488,
+        94489,
+        94490,
+        94491
+      ],
+      "entry": 93159,
+      "exit": 94491,
+      "notes": "Imported from Data_Forever.lua (local RXP source); the crawl re-verifies every link."
+    },
+    {
+      "id": "skyborne_war",
+      "name": "Skyborne: War on Zephras",
+      "faction": "Neutral",
+      "race": null,
+      "zone": "Zephras Isle",
+      "order": 8,
+      "seeds": [
+        93735,
+        93737,
+        93320,
+        92642,
+        92645,
+        92643,
+        92644,
+        92640,
+        93065,
+        93738
+      ],
+      "entry": 93735,
+      "exit": 93738,
+      "notes": "Imported from Data_Forever.lua (local RXP source); the crawl re-verifies every link.",
+      "explained": [
+        {
+          "kind": "tail_continues",
+          "qids": [
+            93065
+          ],
+          "reason": "hands off to chapter skyborne_unverified"
+        }
+      ]
+    },
+    {
+      "id": "skyborne_unverified",
+      "name": "Skyborne: Unverified Pages",
+      "faction": "Neutral",
+      "race": null,
+      "zone": "Zephras Isle",
+      "order": 9,
+      "seeds": [
+        92947,
+        93089,
+        93736,
+        93739,
+        93835,
+        93958,
+        94369,
+        94946,
+        96899,
+        96638,
+        96101,
+        97970,
+        97971,
+        96646,
+        97968,
+        97965,
+        97967,
+        97963,
+        97964,
+        97973,
+        98286,
+        97969,
+        98285,
+        95349
+      ],
+      "entry": 92947,
+      "exit": 98285,
+      "notes": "Imported from Data_Forever.lua (local RXP source); the crawl re-verifies every link.",
+      "explained": [
+        {
+          "kind": "tail_continues",
+          "qids": [
+            96899
+          ],
+          "reason": "hands off to chapter undead_deathknell"
+        }
+      ]
+    },
+    {
+      "id": "darkshore",
+      "name": "Darkshore",
+      "faction": "Alliance",
+      "race": null,
+      "zone": "Darkshore",
+      "order": 10,
+      "min_level": 10,
+      "max_level": 20,
+      "seeds": [
+        954,
+        1275,
+        957
+      ],
+      "entry": null,
+      "exit": null,
+      "next_chapter": null,
+      "notes": "Seeded for the 20-60 expansion; member quests verified one by one against the Forever database, tails curated after the discovery crawl."
+    },
+    {
+      "id": "wetlands",
+      "name": "The Wetlands",
+      "faction": "Alliance",
+      "race": null,
+      "zone": "Wetlands",
+      "order": 11,
+      "min_level": 20,
+      "max_level": 30,
+      "seeds": [
+        469,
+        470,
+        472,
+        1302,
+        526
+      ],
+      "entry": null,
+      "exit": null,
+      "next_chapter": null,
+      "notes": "Seeded for the 20-60 expansion; member quests verified one by one against the Forever database, tails curated after the discovery crawl.",
+      "explained": [
+        {
+          "kind": "tail_continues",
+          "qids": [
+            1302
+          ],
+          "reason": "hands off to chapter dustwallow"
+        },
+        {
+          "kind": "tail_continues",
+          "qids": [
+            526
+          ],
+          "reason": "hands off to chapter duskwood_darkness"
+        }
+      ]
+    },
+    {
+      "id": "hillsbrad",
+      "name": "Hillsbrad Foothills",
+      "faction": "Neutral",
+      "race": null,
+      "zone": "Hillsbrad Foothills",
+      "order": 12,
+      "min_level": 20,
+      "max_level": 30,
+      "seeds": [
+        513,
+        559,
+        524,
+        563
+      ],
+      "entry": null,
+      "exit": null,
+      "next_chapter": null,
+      "notes": "Seeded for the 20-60 expansion; member quests verified one by one against the Forever database, tails curated after the discovery crawl."
+    },
+    {
+      "id": "ashenvale",
+      "name": "Ashenvale",
+      "faction": "Neutral",
+      "race": null,
+      "zone": "Ashenvale",
+      "order": 13,
+      "min_level": 20,
+      "max_level": 30,
+      "seeds": [
+        1055,
+        1046,
+        1025
+      ],
+      "entry": null,
+      "exit": null,
+      "next_chapter": null,
+      "notes": "Seeded for the 20-60 expansion; member quests verified one by one against the Forever database, tails curated after the discovery crawl."
+    },
+    {
+      "id": "stonetalon",
+      "name": "Stonetalon Mountains",
+      "faction": "Neutral",
+      "race": null,
+      "zone": "Stonetalon Mountains",
+      "order": 14,
+      "min_level": 15,
+      "max_level": 27,
+      "seeds": [
+        1093,
+        1096
+      ],
+      "entry": null,
+      "exit": null,
+      "next_chapter": null,
+      "notes": "Seeded for the 20-60 expansion; member quests verified one by one against the Forever database, tails curated after the discovery crawl."
+    },
+    {
+      "id": "arathi",
+      "name": "Arathi Highlands",
+      "faction": "Neutral",
+      "race": null,
+      "zone": "Arathi Highlands",
+      "order": 15,
+      "min_level": 30,
+      "max_level": 40,
+      "seeds": [
+        665,
+        667,
+        662,
+        664
+      ],
+      "entry": null,
+      "exit": null,
+      "next_chapter": null,
+      "notes": "Seeded for the 20-60 expansion; member quests verified one by one against the Forever database, tails curated after the discovery crawl."
+    },
+    {
+      "id": "desolace",
+      "name": "Desolace",
+      "faction": "Neutral",
+      "race": null,
+      "zone": "Desolace",
+      "order": 16,
+      "min_level": 30,
+      "max_level": 40,
+      "seeds": [
+        1367,
+        1381
+      ],
+      "entry": null,
+      "exit": null,
+      "next_chapter": null,
+      "notes": "Seeded for the 20-60 expansion; member quests verified one by one against the Forever database, tails curated after the discovery crawl."
+    },
+    {
+      "id": "thousand_needles",
+      "name": "Thousand Needles",
+      "faction": "Neutral",
+      "race": null,
+      "zone": "Thousand Needles",
+      "order": 17,
+      "min_level": 25,
+      "max_level": 35,
+      "seeds": [
+        1104,
+        1189,
+        1105,
+        1192,
+        1107
+      ],
+      "entry": null,
+      "exit": null,
+      "next_chapter": null,
+      "notes": "Seeded for the 20-60 expansion; member quests verified one by one against the Forever database, tails curated after the discovery crawl."
+    },
+    {
+      "id": "dustwallow",
+      "name": "Dustwallow Marsh",
+      "faction": "Neutral",
+      "race": null,
+      "zone": "Dustwallow Marsh",
+      "order": 18,
+      "min_level": 35,
+      "max_level": 45,
+      "seeds": [
+        1319,
+        1273,
+        1276,
+        1320,
+        1287,
+        1284
+      ],
+      "entry": null,
+      "exit": null,
+      "next_chapter": null,
+      "notes": "Seeded for the 20-60 expansion; member quests verified one by one against the Forever database, tails curated after the discovery crawl."
+    },
+    {
+      "id": "stranglethorn",
+      "name": "Stranglethorn Vale",
+      "faction": "Neutral",
+      "race": null,
+      "zone": "Stranglethorn Vale",
+      "order": 19,
+      "min_level": 30,
+      "max_level": 45,
+      "seeds": [
+        189,
+        576,
+        207,
+        578,
+        209,
+        206,
+        611,
+        587,
+        608
+      ],
+      "entry": null,
+      "exit": null,
+      "next_chapter": null,
+      "notes": "Seeded for the 20-60 expansion; member quests verified one by one against the Forever database, tails curated after the discovery crawl."
+    },
+    {
+      "id": "badlands",
+      "name": "The Badlands",
+      "faction": "Neutral",
+      "race": null,
+      "zone": "The Badlands",
+      "order": 20,
+      "min_level": 35,
+      "max_level": 45,
+      "seeds": [
+        720,
+        777,
+        728,
+        778,
+        715,
+        716,
+        737,
+        1139
+      ],
+      "entry": null,
+      "exit": null,
+      "next_chapter": null,
+      "notes": "Seeded for the 20-60 expansion; member quests verified one by one against the Forever database, tails curated after the discovery crawl."
+    },
+    {
+      "id": "swamp",
+      "name": "Swamp of Sorrows",
+      "faction": "Neutral",
+      "race": null,
+      "zone": "Swamp of Sorrows",
+      "order": 21,
+      "min_level": 35,
+      "max_level": 45,
+      "seeds": [
+        1475,
+        1391,
+        2784,
+        3628
+      ],
+      "entry": null,
+      "exit": null,
+      "next_chapter": null,
+      "notes": "Seeded for the 20-60 expansion; member quests verified one by one against the Forever database, tails curated after the discovery crawl."
+    },
+    {
+      "id": "hinterlands",
+      "name": "The Hinterlands",
+      "faction": "Neutral",
+      "race": null,
+      "zone": "The Hinterlands",
+      "order": 22,
+      "min_level": 40,
+      "max_level": 50,
+      "seeds": [
+        1451,
+        81
+      ],
+      "entry": null,
+      "exit": null,
+      "next_chapter": null,
+      "notes": "Seeded for the 20-60 expansion; member quests verified one by one against the Forever database, tails curated after the discovery crawl.",
+      "explained": [
+        {
+          "kind": "tail_continues",
+          "qids": [
+            1451
+          ],
+          "reason": "hands off to chapter atalhakkar_prelude, swamp"
+        }
+      ]
+    },
+    {
+      "id": "feralas",
+      "name": "Feralas",
+      "faction": "Neutral",
+      "race": null,
+      "zone": "Feralas",
+      "order": 23,
+      "min_level": 40,
+      "max_level": 50,
+      "seeds": [
+        3445,
+        3446,
+        3447
+      ],
+      "entry": null,
+      "exit": null,
+      "next_chapter": null,
+      "notes": "Seeded for the 20-60 expansion; member quests verified one by one against the Forever database, tails curated after the discovery crawl."
+    },
+    {
+      "id": "tanaris",
+      "name": "Tanaris",
+      "faction": "Neutral",
+      "race": null,
+      "zone": "Tanaris",
+      "order": 24,
+      "min_level": 40,
+      "max_level": 50,
+      "seeds": [
+        1690,
+        1691
+      ],
+      "entry": null,
+      "exit": null,
+      "next_chapter": null,
+      "notes": "Seeded for the 20-60 expansion; member quests verified one by one against the Forever database, tails curated after the discovery crawl."
+    },
+    {
+      "id": "searing",
+      "name": "Searing Gorge",
+      "faction": "Neutral",
+      "race": null,
+      "zone": "Searing Gorge",
+      "order": 25,
+      "min_level": 45,
+      "max_level": 55,
+      "seeds": [
+        4451
+      ],
+      "entry": null,
+      "exit": null,
+      "next_chapter": null,
+      "notes": "Seeded for the 20-60 expansion; member quests verified one by one against the Forever database, tails curated after the discovery crawl."
+    },
+    {
+      "id": "azshara",
+      "name": "Azshara",
+      "faction": "Neutral",
+      "race": null,
+      "zone": "Azshara",
+      "order": 26,
+      "min_level": 45,
+      "max_level": 55,
+      "seeds": [
+        3601,
+        5534,
+        3507
+      ],
+      "entry": null,
+      "exit": null,
+      "next_chapter": null,
+      "notes": "Seeded for the 20-60 expansion; member quests verified one by one against the Forever database, tails curated after the discovery crawl."
+    },
+    {
+      "id": "felwood",
+      "name": "Felwood",
+      "faction": "Neutral",
+      "race": null,
+      "zone": "Felwood",
+      "order": 27,
+      "min_level": 48,
+      "max_level": 55,
+      "seeds": [
+        4441,
+        4261
+      ],
+      "entry": null,
+      "exit": null,
+      "next_chapter": null,
+      "notes": "Seeded for the 20-60 expansion; member quests verified one by one against the Forever database, tails curated after the discovery crawl."
+    },
+    {
+      "id": "ungoro",
+      "name": "Un'Goro Crater",
+      "faction": "Neutral",
+      "race": null,
+      "zone": "Un'Goro Crater",
+      "order": 28,
+      "min_level": 50,
+      "max_level": 55,
+      "seeds": [
+        3845,
+        3912,
+        3962
+      ],
+      "entry": null,
+      "exit": null,
+      "next_chapter": null,
+      "notes": "Seeded for the 20-60 expansion; member quests verified one by one against the Forever database, tails curated after the discovery crawl."
+    },
+    {
+      "id": "western_plaguelands",
+      "name": "Western Plaguelands",
+      "faction": "Neutral",
+      "race": null,
+      "zone": "Western Plaguelands",
+      "order": 29,
+      "min_level": 50,
+      "max_level": 58,
+      "seeds": [
+        5023,
+        5215,
+        5051,
+        5218,
+        5221,
+        5224,
+        5227,
+        5237,
+        5238,
+        5505,
+        105,
+        211,
+        5511
+      ],
+      "entry": null,
+      "exit": null,
+      "next_chapter": null,
+      "notes": "Seeded for the 20-60 expansion; member quests verified one by one against the Forever database, tails curated after the discovery crawl."
+    },
+    {
+      "id": "winterspring",
+      "name": "Winterspring",
+      "faction": "Neutral",
+      "race": null,
+      "zone": "Winterspring",
+      "order": 30,
+      "min_level": 55,
+      "max_level": 60,
+      "seeds": [
+        4842,
+        5121,
+        5128
+      ],
+      "entry": null,
+      "exit": null,
+      "next_chapter": null,
+      "notes": "Seeded for the 20-60 expansion; member quests verified one by one against the Forever database, tails curated after the discovery crawl."
+    },
+    {
+      "id": "eastern_plaguelands",
+      "name": "Eastern Plaguelands",
+      "faction": "Neutral",
+      "race": null,
+      "zone": "Eastern Plaguelands",
+      "order": 31,
+      "min_level": 53,
+      "max_level": 60,
+      "seeds": [
+        5149,
+        5281,
+        5282,
+        5211,
+        5942,
+        5241
+      ],
+      "entry": null,
+      "exit": null,
+      "next_chapter": null,
+      "notes": "Seeded for the 20-60 expansion; member quests verified one by one against the Forever database, tails curated after the discovery crawl."
+    },
+    {
+      "id": "silithus",
+      "name": "Silithus",
+      "faction": "Neutral",
+      "race": null,
+      "zone": "Silithus",
+      "order": 32,
+      "min_level": 55,
+      "max_level": 60,
+      "seeds": [
+        8284,
+        8287,
+        8324
+      ],
+      "entry": null,
+      "exit": null,
+      "next_chapter": null,
+      "notes": "Seeded for the 20-60 expansion; member quests verified one by one against the Forever database, tails curated after the discovery crawl."
+    },
+    {
+      "id": "alterac",
+      "name": "Alterac Valley",
+      "faction": "Neutral",
+      "race": null,
+      "zone": "Alterac Mountains",
+      "order": 33,
+      "min_level": 51,
+      "max_level": 60,
+      "seeds": [
+        514,
+        537,
+        94947
+      ],
+      "entry": null,
+      "exit": null,
+      "next_chapter": null,
+      "notes": "Seeded for the 20-60 expansion; member quests verified one by one against the Forever database, tails curated after the discovery crawl.",
+      "explained": [
+        {
+          "kind": "tail_continues",
+          "qids": [
+            94947
+          ],
+          "reason": "hands off to chapter skyborne_exits"
+        }
+      ]
+    },
+    {
+      "id": "blackrock",
+      "name": "Seal of Ascension",
+      "gate": "Upper Blackrock Spire",
+      "faction": "Neutral",
+      "race": null,
+      "zone": "Blackrock Mountain",
+      "order": 34,
+      "min_level": 55,
+      "max_level": 60,
+      "seeds": [
+        4742,
+        4743
+      ],
+      "entry": 4742,
+      "exit": 4743,
+      "next_chapter": null,
+      "notes": "Seeded for the 20-60 expansion; member quests verified one by one against the Forever database, tails curated after the discovery crawl."
+    },
+    {
+      "id": "horde_onyxia",
+      "name": "Onyxia: The Horde's Champion",
+      "faction": "Horde",
+      "race": null,
+      "zone": "Orgrimmar",
+      "order": 60,
+      "min_level": 55,
+      "max_level": 60,
+      "seeds": [
+        4903,
+        4941,
+        4974,
+        6566,
+        6567,
+        6568,
+        6569,
+        6570,
+        6582,
+        6583,
+        6584,
+        6585,
+        6601,
+        6602,
+        7490,
+        7491,
+        7493
+      ],
+      "entry": 4903,
+      "exit": 7493,
+      "next_chapter": null,
+      "gate": "Onyxia's Lair",
+      "notes": "Horde counterpart of the Alliance Onyxia chain: Warlord's Command to the Orgrimmar hand-ins. IDs verified against the Forever database cache (Alliance mirror: onyxia)."
+    },
+    {
+      "id": "mc_attunement",
+      "name": "Attunement to the Core",
+      "faction": "Alliance",
+      "race": null,
+      "zone": "Searing Gorge",
+      "order": 70,
+      "min_level": 55,
+      "max_level": 60,
+      "seeds": [
+        7848
+      ],
+      "entry": 7848,
+      "exit": 7848,
+      "next_chapter": null,
+      "gate": "Molten Core",
+      "notes": "Alliance Molten Core attunement. The Horde counterpart and the Lothos Riftwalker line are not yet identified: crawl them before closing issue #22."
+    },
+    {
+      "id": "dragonflight_spine",
+      "name": "The Dragonflights Awaken (Silithus to Anachronos)",
+      "faction": "Neutral",
+      "race": null,
+      "zone": "Silithus",
+      "order": 80,
+      "min_level": 50,
+      "max_level": 60,
+      "seeds": [
+        8555
+      ],
+      "entry": 8286,
+      "exit": 8555,
+      "next_chapter": null,
+      "notes": "Endgame seed (issues #22-#26). Seeds are Forever DB name-search hits; the crawl decides membership. Shared spine: 8555 fans out to the Blackwing Lair, Nefarian and Eranikus branches.",
+      "explained": [
+        {
+          "kind": "tail_continues",
+          "qids": [
+            8555
+          ],
+          "reason": "hands off to chapter bwl_attunement, eranikus_awakening, nefarian_arc"
+        }
+      ]
+    },
+    {
+      "id": "bwl_attunement",
+      "name": "Blackwing Lair: Draconic for Dummies to the Wrath of Neptulon",
+      "faction": "Neutral",
+      "race": null,
+      "zone": "Tanaris",
+      "order": 80,
+      "min_level": 50,
+      "max_level": 60,
+      "seeds": [
+        8729
+      ],
+      "entry": 8575,
+      "exit": 8729,
+      "next_chapter": null,
+      "gate": "Blackwing Lair",
+      "exclude": [
+        8286,
+        8288,
+        8301,
+        8303,
+        8305,
+        8519,
+        8555
+      ],
+      "notes": "Endgame seed (issues #22-#26). Seeds are Forever DB name-search hits; the crawl decides membership. 7761 (Blackhand's Command) has no links in the DB and is seeded separately in bwl_blackhand.",
+      "explained": [
+        {
+          "kind": "orphan_link",
+          "qids": [
+            8555,
+            8575
+          ],
+          "reason": "requires 8555, the shared Dragonflight spine (dragonflight_spine); this branch starts there, checked against the Forever DB"
+        },
+        {
+          "kind": "tail_continues",
+          "qids": [
+            8729
+          ],
+          "reason": "hands off to chapter aq_opening"
+        }
+      ]
+    },
+    {
+      "id": "bwl_blackhand",
+      "name": "Blackhand's Command",
+      "faction": "Neutral",
+      "race": null,
+      "zone": "Blackrock Mountain",
+      "order": 80,
+      "min_level": 50,
+      "max_level": 60,
+      "seeds": [
+        7761
+      ],
+      "entry": 7761,
+      "exit": 7761,
+      "next_chapter": null,
+      "gate": "Blackwing Lair",
+      "notes": "DB page shows no before/after links: a stand-alone gate quest."
+    },
+    {
+      "id": "nefarian_arc",
+      "name": "Nefarian and the Dragonflights",
+      "faction": "Neutral",
+      "race": null,
+      "zone": "Tanaris",
+      "order": 80,
+      "min_level": 50,
+      "max_level": 60,
+      "seeds": [
+        8730
+      ],
+      "entry": 8730,
+      "exit": 8730,
+      "next_chapter": null,
+      "exclude": [
+        8286,
+        8288,
+        8301,
+        8303,
+        8305,
+        8519,
+        8555
+      ],
+      "notes": "Endgame seed (issues #22-#26). Seeds are Forever DB name-search hits; the crawl decides membership.",
+      "explained": [
+        {
+          "kind": "orphan_link",
+          "qids": [
+            8555,
+            8730
+          ],
+          "reason": "requires 8555, the shared Dragonflight spine (dragonflight_spine); this branch starts there, checked against the Forever DB"
+        },
+        {
+          "kind": "tail_continues",
+          "qids": [
+            8730
+          ],
+          "reason": "hands off to chapter aq_opening"
+        }
+      ]
+    },
+    {
+      "id": "eranikus_awakening",
+      "name": "Eranikus, Tyrant of the Dream",
+      "faction": "Neutral",
+      "race": null,
+      "zone": "Swamp of Sorrows",
+      "order": 80,
+      "min_level": 50,
+      "max_level": 60,
+      "seeds": [
+        8741
+      ],
+      "entry": 8733,
+      "exit": 8741,
+      "next_chapter": null,
+      "exclude": [
+        8286,
+        8288,
+        8301,
+        8303,
+        8305,
+        8519,
+        8555
+      ],
+      "notes": "Endgame seed (issues #22-#26). Seeds are Forever DB name-search hits; the crawl decides membership.",
+      "explained": [
+        {
+          "kind": "orphan_link",
+          "qids": [
+            8555,
+            8733
+          ],
+          "reason": "requires 8555, the shared Dragonflight spine (dragonflight_spine); this branch starts there, checked against the Forever DB"
+        },
+        {
+          "kind": "tail_continues",
+          "qids": [
+            8741
+          ],
+          "reason": "hands off to chapter aq_opening"
+        }
+      ]
+    },
+    {
+      "id": "eranikus_essence",
+      "name": "The Essence of Eranikus",
+      "faction": "Neutral",
+      "race": null,
+      "zone": "Swamp of Sorrows",
+      "order": 80,
+      "min_level": 50,
+      "max_level": 60,
+      "seeds": [
+        3512
+      ],
+      "entry": null,
+      "exit": null,
+      "next_chapter": null,
+      "notes": "Endgame seed (issues #22-#26). Seeds are Forever DB name-search hits; the crawl decides membership."
+    },
+    {
+      "id": "sunken_temple",
+      "name": "The Sunken Temple (Feralas)",
+      "faction": "Neutral",
+      "race": null,
+      "zone": "Feralas",
+      "order": 80,
+      "min_level": 50,
+      "max_level": 60,
+      "seeds": [
+        3380,
+        3445
+      ],
+      "entry": 3445,
+      "exit": 3445,
+      "next_chapter": null,
+      "notes": "Endgame seed (issues #22-#26). Seeds are Forever DB name-search hits; the crawl decides membership.",
+      "explained": [
+        {
+          "kind": "tail_continues",
+          "qids": [
+            3380
+          ],
+          "reason": "hands off to chapter feralas"
+        },
+        {
+          "kind": "tail_continues",
+          "qids": [
+            3445
+          ],
+          "reason": "hands off to chapter feralas"
+        },
+        {
+          "kind": "open_head",
+          "qids": [
+            3380,
+            3445
+          ],
+          "reason": "3380 (Horde) and 3445 (Alliance) are faction variants of one quest; both lead to 3444."
+        },
+        {
+          "kind": "open_tail",
+          "qids": [
+            3380,
+            3445
+          ],
+          "reason": "3380 (Horde) and 3445 (Alliance) are faction variants of one quest; both lead to 3444."
+        }
+      ]
+    },
+    {
+      "id": "atalhakkar_prelude",
+      "name": "Into the Temple of Atal'Hakkar",
+      "faction": "Neutral",
+      "race": null,
+      "zone": "Stormwind City",
+      "order": 80,
+      "min_level": 50,
+      "max_level": 60,
+      "seeds": [
+        1475
+      ],
+      "entry": null,
+      "exit": null,
+      "next_chapter": null,
+      "notes": "Endgame seed (issues #22-#26). Seeds are Forever DB name-search hits; the crawl decides membership."
+    },
+    {
+      "id": "hakkar_egg",
+      "name": "The God Hakkar",
+      "faction": "Neutral",
+      "race": null,
+      "zone": "Tanaris",
+      "order": 80,
+      "min_level": 50,
+      "max_level": 60,
+      "seeds": [
+        8182
+      ],
+      "entry": 3520,
+      "exit": 8182,
+      "next_chapter": null,
+      "notes": "Endgame seed (issues #22-#26). Seeds are Forever DB name-search hits; the crawl decides membership."
+    },
+    {
+      "id": "zul_gurub",
+      "name": "Zul'Gurub hand-ins",
+      "faction": "Neutral",
+      "race": null,
+      "zone": "Stranglethorn Vale",
+      "order": 80,
+      "min_level": 50,
+      "max_level": 60,
+      "seeds": [
+        8246,
+        8183,
+        8195
+      ],
+      "entry": null,
+      "exit": null,
+      "next_chapter": null,
+      "gate": "Zul'Gurub",
+      "notes": "DB shows these as stand-alone hand-ins.",
+      "explained": [
+        {
+          "kind": "open_head",
+          "qids": [
+            8183,
+            8195,
+            8246
+          ],
+          "reason": "Stand-alone Zul'Gurub hand-ins with no before/after links in the Forever DB."
+        },
+        {
+          "kind": "open_tail",
+          "qids": [
+            8183,
+            8195,
+            8246
+          ],
+          "reason": "Stand-alone Zul'Gurub hand-ins with no before/after links in the Forever DB."
+        }
+      ]
+    },
+    {
+      "id": "aq_scepter",
+      "name": "Lords of the Council (Scepter of the Council)",
+      "faction": "Neutral",
+      "race": null,
+      "zone": "Silithus",
+      "order": 80,
+      "min_level": 50,
+      "max_level": 60,
+      "seeds": [
+        8364
+      ],
+      "entry": null,
+      "exit": null,
+      "next_chapter": null,
+      "notes": "Endgame seed (issues #22-#26). Seeds are Forever DB name-search hits; the crawl decides membership."
+    },
+    {
+      "id": "cenarion_allegiance",
+      "name": "Allegiance to Cenarion Circle",
+      "faction": "Neutral",
+      "race": null,
+      "zone": "Silithus",
+      "order": 80,
+      "min_level": 50,
+      "max_level": 60,
+      "seeds": [
+        9338
+      ],
+      "entry": 9338,
+      "exit": 9338,
+      "next_chapter": null,
+      "notes": "Stand-alone in the DB (issue #20 reputation line)."
+    },
+    {
+      "id": "aq_conqueror",
+      "name": "The Path of the Conqueror",
+      "faction": "Neutral",
+      "race": null,
+      "zone": "Tanaris",
+      "order": 80,
+      "min_level": 50,
+      "max_level": 60,
+      "seeds": [
+        8766
+      ],
+      "entry": null,
+      "exit": null,
+      "next_chapter": null,
+      "gate": "Temple of Ahn'Qiraj",
+      "notes": "Endgame seed (issues #22-#26). Seeds are Forever DB name-search hits; the crawl decides membership."
+    },
+    {
+      "id": "aq_armaments",
+      "name": "Qiraji armaments and secrets",
+      "faction": "Neutral",
+      "race": null,
+      "zone": "Temple of Ahn'Qiraj",
+      "order": 80,
+      "min_level": 50,
+      "max_level": 60,
+      "seeds": [
+        8784,
+        8789,
+        8790
+      ],
+      "entry": null,
+      "exit": null,
+      "next_chapter": null,
+      "gate": "Temple of Ahn'Qiraj",
+      "notes": "Stand-alone raid hand-ins in the DB.",
+      "explained": [
+        {
+          "kind": "open_head",
+          "qids": [
+            8784,
+            8789,
+            8790
+          ],
+          "reason": "Stand-alone raid hand-ins with no before/after links in the Forever DB."
+        },
+        {
+          "kind": "open_tail",
+          "qids": [
+            8784,
+            8789,
+            8790
+          ],
+          "reason": "Stand-alone raid hand-ins with no before/after links in the Forever DB."
+        }
+      ]
+    },
+    {
+      "id": "naxx_attunement",
+      "name": "The Dread Citadel - Naxxramas",
+      "faction": "Neutral",
+      "race": null,
+      "zone": "Eastern Plaguelands",
+      "order": 80,
+      "min_level": 50,
+      "max_level": 60,
+      "seeds": [
+        9121,
+        9122,
+        9123,
+        9120
+      ],
+      "entry": null,
+      "exit": 9120,
+      "next_chapter": null,
+      "gate": "Naxxramas",
+      "notes": "Endgame seed (issues #22-#26). Seeds are Forever DB name-search hits; the crawl decides membership.",
+      "explained": [
+        {
+          "kind": "open_head",
+          "qids": [
+            9121,
+            9122,
+            9123
+          ],
+          "reason": "9121-9123 are three same-named variants of one hand-in: identical successors [9033, 9120, 9233]."
+        }
+      ]
+    },
+    {
+      "id": "stratholme_dawn",
+      "name": "Dawn's Gambit (Stratholme)",
+      "faction": "Neutral",
+      "race": null,
+      "zone": "Eastern Plaguelands",
+      "order": 80,
+      "min_level": 50,
+      "max_level": 60,
+      "seeds": [
+        4771
+      ],
+      "entry": 4726,
+      "exit": 4771,
+      "next_chapter": null,
+      "gate": "Stratholme",
+      "notes": "Endgame seed (issues #22-#26). Seeds are Forever DB name-search hits; the crawl decides membership."
+    },
+    {
+      "id": "mc_hydraxis",
+      "name": "The Molten Core (Azshara)",
+      "faction": "Neutral",
+      "race": null,
+      "zone": "Azshara",
+      "order": 80,
+      "min_level": 50,
+      "max_level": 60,
+      "seeds": [
+        7486
+      ],
+      "entry": 6804,
+      "exit": 7486,
+      "next_chapter": null,
+      "gate": "Molten Core",
+      "notes": "Endgame seed (issues #22-#26). Seeds are Forever DB name-search hits; the crawl decides membership.",
+      "explained": [
+        {
+          "kind": "open_head",
+          "qids": [
+            6804,
+            6805
+          ],
+          "reason": "Poisoned Water (6804) and Stormers and Rumblers (6805) are parallel prerequisites of 6821."
+        }
+      ]
+    },
+    {
+      "id": "aq_opening",
+      "name": "The Might of Kalimdor (opening of the Ahn'Qiraj gates)",
+      "faction": "Neutral",
+      "race": null,
+      "zone": "Silithus",
+      "order": 81,
+      "min_level": 60,
+      "max_level": 60,
+      "seeds": [
+        8742,
+        8743,
+        8745
+      ],
+      "entry": 8742,
+      "exit": null,
+      "next_chapter": null,
+      "exclude": [
+        8729,
+        8730,
+        8741,
+        8286,
+        8288,
+        8301,
+        8303,
+        8305,
+        8519,
+        8555
+      ],
+      "notes": "All three dragonflight branches (bwl_attunement, nefarian_arc, eranikus_awakening) converge on 8742; it opens 8743 and 8745. Issue #25/#27.",
+      "explained": [
+        {
+          "kind": "orphan_link",
+          "qids": [
+            8729,
+            8742
+          ],
+          "reason": "requires the three Dragonflight branch ends (8729, 8730, 8741), separate chapters that converge here by design"
+        },
+        {
+          "kind": "orphan_link",
+          "qids": [
+            8730,
+            8742
+          ],
+          "reason": "requires the three Dragonflight branch ends (8729, 8730, 8741), separate chapters that converge here by design"
+        },
+        {
+          "kind": "orphan_link",
+          "qids": [
+            8741,
+            8742
+          ],
+          "reason": "requires the three Dragonflight branch ends (8729, 8730, 8741), separate chapters that converge here by design"
+        },
+        {
+          "kind": "open_tail",
+          "qids": [
+            8743,
+            8745
+          ],
+          "reason": "8743 (Bang a Gong!) and 8745 (Treasure of the Timeless One) are parallel final quests with no successors in the DB."
+        }
+      ]
+    },
+    {
+      "id": "dark_iron_war",
+      "name": "The Dark Iron War (Wetlands)",
+      "faction": "Neutral",
+      "race": null,
+      "zone": "Wetlands",
+      "order": 82,
+      "min_level": 25,
+      "max_level": 60,
+      "seeds": [
+        378
+      ],
+      "entry": 303,
+      "exit": 378,
+      "next_chapter": null,
+      "notes": "Endgame/Dark Iron seed (issue #22). DB name search 'Dark Iron'; links to the Dwarf saga."
+    },
+    {
+      "id": "brd_dark_iron_legacy",
+      "name": "Dark Iron Legacy (Blackrock Depths)",
+      "faction": "Neutral",
+      "race": null,
+      "zone": "Blackrock Depths",
+      "order": 82,
+      "min_level": 25,
+      "max_level": 60,
+      "seeds": [
+        3801,
+        3802
+      ],
+      "entry": null,
+      "exit": null,
+      "next_chapter": null,
+      "notes": "Endgame/Dark Iron seed (issue #22). DB name search 'Dark Iron'."
+    },
+    {
+      "id": "brd_kill_on_sight",
+      "name": "KILL ON SIGHT: Dark Iron (Blackrock Depths)",
+      "faction": "Neutral",
+      "race": null,
+      "zone": "Blackrock Depths",
+      "order": 82,
+      "min_level": 25,
+      "max_level": 60,
+      "seeds": [
+        4132
+      ],
+      "entry": 4081,
+      "exit": 4132,
+      "next_chapter": null,
+      "notes": "Endgame/Dark Iron seed (issue #22). DB name search 'Dark Iron'."
+    }
+  ]
 }

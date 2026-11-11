@@ -20,7 +20,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
-from storycrawler import builder, graph               # noqa: E402
+from storycrawler import builder, emit_html, graph       # noqa: E402
 from storycrawler.fetcher import Fetcher              # noqa: E402
 from storycrawler.parsers import parse_wiki_chain     # noqa: E402
 from storycrawler.sources import DEFAULT_CRAWL_SOURCES, SOURCES  # noqa: E402
@@ -35,11 +35,13 @@ def _fetcher(args) -> Fetcher:
 
 
 def _merged_and_shapes(args):
-    chapters = builder.load_seeds(args.seeds)
     facts_path = Path(args.out) / FACTS_FILE
     facts = builder.load_facts(facts_path) if facts_path.exists() else []
     merged = graph.merge_facts(facts)
-    shapes = builder.build_chapters(merged, chapters, args.include_class)
+    pairs = builder.build_chapters(
+        merged, builder.load_seeds(args.seeds), args.include_class)
+    chapters = [c for c, _s in pairs]
+    shapes = [s for _c, s in pairs]
     return chapters, facts, merged, shapes
 
 
@@ -70,16 +72,27 @@ def cmd_crawl(args) -> int:
           f"{len(chapters)} chapters; sources={args.sources}")
     rxp = builder.load_rxp_facts([Path(p) for p in args.rxp or []])
     fetcher = _fetcher(args)
-    facts, crawled = builder.crawl(
+    facts, crawled, unclosed = builder.crawl(
         fetcher, seed_ids, tuple(args.sources),
         max_rounds=args.max_rounds, rxp_facts=rxp, verbose=args.verbose)
     out = Path(args.out)
-    out.mkdir(parents=True, exist_ok=True)
-    builder.save_facts(facts, out / FACTS_FILE)
+    if not fetcher.dry_run:
+        # A dry run fetched nothing, so it must never touch the saved
+        # facts; a real (or --offline) partial crawl merges into them.
+        out.mkdir(parents=True, exist_ok=True)
+        saved = out / FACTS_FILE
+        if saved.exists():
+            facts = builder.merge_saved_facts(builder.load_facts(saved),
+                                              facts)
+        builder.save_facts(facts, saved)
     print(f"facts={len(facts)} quests parsed={len(crawled)} "
           f"fetched={fetcher.stats['fetched']} "
           f"cached={fetcher.stats['cached']} "
           f"failed={fetcher.stats['failed']} blocked={fetcher.blocked}")
+    if unclosed:
+        print(f"UNCLOSED ({len(unclosed)} referenced but unfetched; "
+              f"re-run with --max-rounds above {args.max_rounds}): "
+              f"{sorted(unclosed)[:20]}")
     if fetcher.dry_run:
         print(f"DRY RUN: {len(fetcher.planned)} URLs would be fetched:")
         for url in fetcher.planned:
@@ -87,18 +100,23 @@ def cmd_crawl(args) -> int:
     return 0
 
 
+def _gaps_for(args):
+    """The one gap pipeline: build, then find_gaps. build and report use it."""
+    _chapters, _facts, merged, shapes = _merged_and_shapes(args)
+    gaps = graph.find_gaps(merged, _chapters, shapes, set(merged),
+                           include_class=args.include_class)
+    return merged, shapes, gaps
+
+
 def cmd_build(args) -> int:
-    chapters, _facts, merged, shapes = _merged_and_shapes(args)
-    gaps = graph.find_gaps(merged, chapters, shapes, set(merged))
-    for shape in shapes:
-        for qid in shape["in_cycle"]:
-            gaps.append(graph.Gap("cycle", "quest is in a before-link cycle",
-                                  qid, shape["id"]))
+    merged, shapes, gaps = _gaps_for(args)
     written = builder.write_outputs(Path(args.out), merged, shapes, gaps)
     for shape in shapes:
         print(f"{shape['id']}: {len(shape['quests'])} quests "
               f"{shape['entry']} -> {shape['exit']}")
-    print(f"gaps: {len(gaps)} (see gaps.md)")
+    open_gaps, done_gaps = graph.split_gaps(gaps)
+    print(f"gaps: {len(open_gaps)} open, {len(done_gaps)} explained "
+          "(see gaps.md)")
     print("wrote: " + ", ".join(p.name for p in written))
     return 0
 
@@ -113,6 +131,17 @@ def cmd_diff(args) -> int:
     addon = builder.load_addon_catalogue(data_files)
     for line in builder.diff_catalogue(shapes, addon):
         print(line)
+    return 0
+
+
+def cmd_emit_html(args) -> int:
+    graph_path = Path(args.graph) if args.graph else Path(args.out) / "story-graph.json"
+    if not graph_path.exists():
+        print(f"no graph at {graph_path}; run `build` first")
+        return 2
+    dest = Path(args.output) if args.output else Path(args.out) / "story-tree.html"
+    emit_html.write_html(graph_path, dest)
+    print(f"wrote {dest}")
     return 0
 
 
@@ -146,7 +175,7 @@ def cmd_discover(args) -> int:
 
 def cmd_quest(args) -> int:
     fetcher = _fetcher(args)
-    facts, _ = builder.crawl(fetcher, {args.qid}, tuple(
+    facts, _, _ = builder.crawl(fetcher, {args.qid}, tuple(
         s for s in DEFAULT_CRAWL_SOURCES), max_rounds=1, verbose=True)
     merged = graph.merge_facts(facts)
     mq = merged.get(args.qid)
@@ -190,8 +219,15 @@ def build_arg_parser() -> argparse.ArgumentParser:
     c.add_argument("--verbose", action="store_true")
     sub.add_parser("build", help="facts -> chapters, gaps, chart")
     sub.add_parser("diff", help="crawl vs MainStoryGuide/Data_*.lua")
+    rp = sub.add_parser("report", help="regenerate docs/race-gaps.md")
+    rp.add_argument("--doc", default="docs/race-gaps.md")
     e = sub.add_parser("emit-lua", help="print a draft chain block")
     e.add_argument("--chapter", required=True)
+    h = sub.add_parser("emit-html", help="render story-graph.json as an interactive HTML tree")
+    h.add_argument("--graph", default=None,
+                   help="story-graph.json to render (default: <out>/story-graph.json)")
+    h.add_argument("-o", "--output", default=None,
+                   help="HTML file to write (default: <out>/story-tree.html)")
     d = sub.add_parser("discover", help="propose seeds from a wiki article")
     d.add_argument("--wiki-slug", required=True)
     q = sub.add_parser("quest", help="inspect one quest across sources")
@@ -199,9 +235,21 @@ def build_arg_parser() -> argparse.ArgumentParser:
     return p
 
 
+def cmd_report(args) -> int:
+    from storycrawler import report
+    _merged, shapes, gaps = _gaps_for(args)
+    text = report.race_report(
+        shapes, gaps, f"crawl_story.py report --doc {args.doc}")
+    Path(args.doc).parent.mkdir(parents=True, exist_ok=True)
+    Path(args.doc).write_text(text, encoding="utf-8", newline="\n")
+    print(f"wrote {args.doc}")
+    return 0
+
+
 _COMMANDS = {"validate": cmd_validate, "crawl": cmd_crawl,
+             "report": cmd_report,
              "build": cmd_build, "diff": cmd_diff,
-             "emit-lua": cmd_emit_lua, "discover": cmd_discover,
+             "emit-lua": cmd_emit_lua, "emit-html": cmd_emit_html, "discover": cmd_discover,
              "quest": cmd_quest}
 
 

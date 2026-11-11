@@ -42,9 +42,42 @@ def _gates(page_text: str) -> tuple[str | None, str | None, str | None]:
     return faction, race, class_
 
 
+def _giver_card(page: str, label: str) -> tuple[str | None, str | None]:
+    """'Starts at' / 'Hand in to' card -> (npc name, 'npc middle-dot ZONE
+    at 0.xxx, 0.yyy' basis text). Both None when the card is absent."""
+    m = re.search(rf"<dt><strong>{label}</strong></dt>(.*?)</(?:dl|dd)>",
+                  page, re.S)
+    if not m:
+        return None, None
+    seg = m.group(1)
+    nm = re.search(r"/forever/npcs/\d+\">([^<]+)</a>", seg)
+    bs = re.search(r'<span class="basis">(.*?)</span>', seg, re.S)
+    name = _clean(nm.group(1)) if nm else None
+    basis = _clean(bs.group(1)) if bs else None
+    return name, basis
+
+
+def _basis_zone_xy(basis: str | None) -> tuple[str | None, float | None,
+                                               float | None]:
+    """'npc middle-dot Loch Modan at 0.522, 0.694' -> (zone, x, y)."""
+    if not basis:
+        return None, None, None
+    m = re.search(r"\S+\s*·\s*([^0-9<]+?)\s+at\s+([\d.]+)\s*,\s*([\d.]+)",
+                  basis)
+    if not m:
+        return None, None, None
+    try:
+        return (m.group(1).strip(), round(float(m.group(2)) * 100, 1),
+                round(float(m.group(3)) * 100, 1))
+    except ValueError:
+        return None, None, None
+
+
 def parse_foreverdb(qid: int, page: str, url: str) -> QuestFact:
     """pd.zroot.it quest page: 'Before this' / 'After this' sections with
-    /forever/quests/<id> links, 'requires level N'."""
+    /forever/quests/<id> links, 'requires level N', the 'level N Forever
+    quest in ZONE' line, 'FACTION only' gates, and the giver card
+    (NPC names, zones, mapId, 0-100 giver/turn-in coordinates)."""
     fact = QuestFact(qid=qid, source="foreverdb", url=url, name=_h1(page))
     for heading, attr in (("Before this", "before"), ("After this", "after"),
                           ("Followed by", "after")):
@@ -59,7 +92,53 @@ def parse_foreverdb(qid: int, page: str, url: str) -> QuestFact:
     m = re.search(r"requires level (\d+)", page, re.I)
     if m:
         fact.reqlevel = int(m.group(1))
-    fact.faction, fact.race, fact.class_ = _gates(_clean(page))
+    m = re.search(r"level (\d+) Forever quest in ([A-Za-z' \-]+)", page)
+    if m:
+        fact.level = int(m.group(1))
+        fact.zone = m.group(2).strip()
+    m = re.search(r"\b(Alliance|Horde) only\b", page)
+    if m:
+        fact.faction = m.group(1)
+    giver, gbasis = _giver_card(page, "Starts at")
+    turnin, tbasis = _giver_card(page, "Hand in to")
+    if giver:
+        fact.giver = giver
+    if turnin:
+        fact.turnin = turnin
+    gzone, gx, gy = _basis_zone_xy(gbasis)
+    tzone, tx, ty = _basis_zone_xy(tbasis)
+    if fact.zone is None:
+        fact.zone = gzone or tzone
+    if gx is not None:
+        fact.gx, fact.gy = gx, gy
+    if tx is not None:
+        fact.tx, fact.ty = tx, ty
+    m = re.search(r'id="map-givers-data">(\{.*?\})</script>', page, re.S)
+    if m:
+        import json as _json
+        try:
+            data = _json.loads(m.group(1))
+        except ValueError:
+            data = {}
+        if isinstance(data.get("mapId"), int):
+            fact.map_id = data["mapId"]
+        for key, xk, yk in (("pickup", "gx", "gy"), ("turnIn", "tx", "ty")):
+            pt = data.get(key) or {}
+            try:
+                x, y = round(float(pt["x"]) * 100, 1), round(
+                    float(pt["y"]) * 100, 1)
+            except (KeyError, TypeError, ValueError):
+                continue
+            if getattr(fact, xk) is None:
+                setattr(fact, xk, x)
+                setattr(fact, yk, y)
+    gfaction, grace, gclass = _gates(_clean(page))
+    if fact.faction is None:
+        fact.faction = gfaction
+    if fact.race is None:
+        fact.race = grace
+    if fact.class_ is None:
+        fact.class_ = gclass
     return fact
 
 
