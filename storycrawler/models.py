@@ -85,6 +85,11 @@ class SeedChapter:
     exit: int | None = None           # known last/lead-out quest
     next_chapter: str | None = None   # chapter this one's exit leads into
     exclude: list[int] = field(default_factory=list)  # pulled in, not story
+    # Raid/dungeon attunement quests (curated ids). They are exempt from
+    # the level-60 cutoff, and are tagged in the outputs, so a raid-gated
+    # chain is not chopped at the boundary. Never guessed: list ids only
+    # after checking them against the Forever database.
+    attunement: list[int] = field(default_factory=list)
     notes: str = ""
 
     @classmethod

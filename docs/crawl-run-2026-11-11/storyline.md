@@ -1,0 +1,1744 @@
+# Linear main story (draft, generated)
+
+## Northshire's Defence (Alliance / Human)
+Entry 783 -> exit 96627; 13 quests
+- 783 A Threat Within lvl 1
+- 7 Kobold Camp Cleanup lvl 1
+- 15 Investigate Echo Ridge lvl 1
+- 21 Skirmish at Echo Ridge lvl 1
+- 18 Brotherhood of Thieves lvl 2
+- 6 Bounty on Garrick Padfoot lvl 2
+- 54 Report to Goldshire lvl 1
+- 33 Wolves Across the Border lvl 1
+- 5261 Eagan Peltskinner lvl 1
+- 3903 Milly Osworth lvl 2
+- 3904 Milly's Harvest lvl 2
+- 3905 Grape Manifest lvl 2
+- 96627 The Adventurer lvl 4
+
+## Coldridge Valley (Alliance / Dwarf)
+Entry 179 -> exit 2160; 12 quests
+- 179 Dwarven Outfitters lvl 1
+- 233 Coldridge Valley Mail Delivery lvl 1
+- 183 The Boar Hunter lvl 1
+- 234 Coldridge Valley Mail Delivery lvl 1
+- 3364 Scalding Mornbrew Delivery lvl 4
+- 3365 Bring Back the Mug lvl 4
+- 97277 Grund and Gozwin lvl 4
+- 218 The Stolen Journal lvl 1
+- 282 Senir's Observations lvl 1
+- 420 Senir's Observations lvl 1
+- 96628 The Adventurer lvl 4
+- 2160 Supplies to Tannok lvl 1
+
+## TODO Gnome storyline (shares Dun Morogh) (Alliance / Gnome)
+Entry 179 -> exit 2160; 12 quests
+- 179 Dwarven Outfitters lvl 1
+- 233 Coldridge Valley Mail Delivery lvl 1
+- 183 The Boar Hunter lvl 1
+- 234 Coldridge Valley Mail Delivery lvl 1
+- 3364 Scalding Mornbrew Delivery lvl 4
+- 3365 Bring Back the Mug lvl 4
+- 97277 Grund and Gozwin lvl 4
+- 218 The Stolen Journal lvl 1
+- 282 Senir's Observations lvl 1
+- 420 Senir's Observations lvl 1
+- 96628 The Adventurer lvl 4
+- 2160 Supplies to Tannok lvl 1
+
+## Shadowglen (Alliance / Night Elf)
+Entry 456 -> exit 98065; 16 quests
+- 456 The Balance of Nature lvl 1
+- 459 The Woodland Protector lvl 1
+- 97977 Nature's Call lvl 1
+- 457 The Balance of Nature lvl 1
+- 3521 Iverron's Antidote lvl 2
+- 916 Webwood Venom lvl 3
+- 3522 Iverron's Antidote lvl 2
+- 917 Webwood Egg lvl 1
+- 97236 Fang of Githyiss lvl 1
+- 920 Tenaron's Summons lvl 1
+- 921 Crown of the Earth lvl 1
+- 928 Crown of the Earth lvl 1
+- 96630 The Adventurer lvl 4
+- 2159 Dolanaar Delivery lvl 1
+- 97979 The Goddess Provides lvl 1
+- 98065 Crown of the Earth lvl 1
+
+## Shadows over Elwynn (Alliance / Human)
+Entry 62 -> exit 59; 33 quests
+- 62 The Fargodeep Mine lvl 4
+- 76 The Jasperlode Mine lvl 4
+- 52 Protect the Frontier lvl 7
+- 11 Riverpaw Gnoll Bounty lvl 6
+- 176 WANTED: "Hogger" lvl 5
+- 123 The Collector lvl 7
+- 147 Manhunt lvl 7
+- 239 Westbrook Garrison Needs Help! lvl 6
+- 33 Wolves Across the Border lvl 1
+- 783 A Threat Within lvl 1
+- 5261 Eagan Peltskinner lvl 1
+- 7 Kobold Camp Cleanup lvl 1
+- 15 Investigate Echo Ridge lvl 1
+- 21 Skirmish at Echo Ridge lvl 1
+- 96627 The Adventurer lvl 4
+- 54 Report to Goldshire lvl 1
+- 18 Brotherhood of Thieves lvl 2
+- 3903 Milly Osworth lvl 2
+- 3904 Milly's Harvest lvl 2
+- 3905 Grape Manifest lvl 2
+- 6 Bounty on Garrick Padfoot lvl 2
+- 85 Lost Necklace lvl 5
+- 86 Pie for Billy lvl 5
+- 84 Back to Billy lvl 5
+- 87 Goldtooth lvl 5
+- 40 A Fishy Peril lvl 7
+- 35 Further Concerns lvl 7
+- 37 Find the Lost Guards lvl 7
+- 45 Discover Rolf's Fate lvl 7
+- 71 Report to Thomas lvl 7
+- 39 Deliver Thomas' Report lvl 7
+- 46 Bounty on Murlocs lvl 7
+- 59 Cloth and Leather Armor lvl 7
+
+## TODO Dwarf storyline (Alliance / Dwarf)
+Entry 98322 -> exit 99162; 75 quests
+- 98322 Secure the Mountain lvl 4
+- 384 Beer Basted Boar Ribs lvl 5
+- 99158 Dawn in the Mountains lvl 5
+- 400 Tools for Steelgrill lvl 2
+- 98321 Flintfire's Shipment lvl 4
+- 317 Stocking Jetsteam lvl 2
+- 313 The Grizzled Den lvl 4
+- 5541 Ammo for Rumbleshot lvl 5
+- 98319 Secure the Mountain lvl 4
+- 318 Evershine lvl 2
+- 287 Frostmane Hold lvl 7
+- 98323 Secure the Mountain lvl 4
+- 312 Tundra MacGrann's Stolen Stash lvl 7
+- 319 A Favor for Evershine lvl 2
+- 315 The Perfect Stout lvl 5
+- 310 Bitter Rivals lvl 2
+- 320 Return to Bellowfiz lvl 2
+- 311 Return to Marleth lvl 2
+- 413 Shimmer Stout lvl 8
+- 291 The Reports lvl 1
+- 96408 A Visitor to Dun Morogh lvl 9
+- 96392 Farsen's Watch lvl 9
+- 96390 Nip 'Em in the Bud lvl 9
+- 433 The Public Servant lvl 6
+- 96391 Underground Map lvl 9
+- 96393 Old Ironforge Incursion lvl 9
+- 414 Stout to Kadrell lvl 8
+- 224 In Defense of the King's Lands lvl 10
+- 267 The Trogg Threat lvl 10
+- 416 Rat Catching lvl 10
+- 1339 Mountaineer Stormpike's Task lvl 9
+- 418 Thelsamar Blood Sausages lvl 7
+- 6387 Honor Students lvl 10
+- 1338 Stormpike's Order lvl 9
+- 307 Filthy Paws lvl 9
+- 6391 Ride to Ironforge lvl 10
+- 6388 Gryth Thurden lvl 10
+- 6392 Return to Brock lvl 10
+- 6661 Deeprun Rat Roundup lvl 10
+- 6662 Me Brother, Nipsy lvl 10
+- 353 Stormpike's Delivery lvl 9
+- 62 The Fargodeep Mine lvl 4
+- 60 Kobold Candles lvl 3
+- 40 A Fishy Peril lvl 7
+- 88 Princess Must Die! lvl 6
+- 85 Lost Necklace lvl 5
+- 86 Pie for Billy lvl 5
+- 61 Shipment to Stormwind lvl 3
+- 37 Find the Lost Guards lvl 7
+- 52 Protect the Frontier lvl 7
+- 45 Discover Rolf's Fate lvl 7
+- 5545 A Bundle of Trouble lvl 5
+- 71 Report to Thomas lvl 7
+- 91733 Downstream lvl 7
+- 91740 Croaky's Head lvl 7
+- 39 Deliver Thomas' Report lvl 7
+- 109 Report to Gryan Stoutmantle lvl 9
+- 244 Encroaching Gnolls lvl 11
+- 64 The Forgotten Heirloom lvl 9
+- 151 Poor Old Blanchy lvl 9
+- 36 Westfall Stew lvl 9
+- 9 The Killing Fields lvl 8
+- 38 Westfall Stew lvl 9
+- 22 Goretusk Liver Pie lvl 9
+- 12 The People's Militia lvl 9
+- 102 Patrolling Westfall lvl 8
+- 153 Red Leather Bandanas lvl 10
+- 86667 Snowbound lvl 10
+- 86614 Silver of the Waves lvl 13
+- 399 Humble Beginnings lvl 10
+- 170 A New Threat lvl 1
+- 415 Rejold's New Brew lvl 8
+- 99159 Finding Warmth lvl 5
+- 99161 Rime's Wrath lvl 5
+- 99162 Treacherous Cold lvl 5
+
+## The People's Militia (Alliance / Human)
+Entry 109 -> exit 102; 5 quests
+- 109 Report to Gryan Stoutmantle lvl 9
+- 12 The People's Militia lvl 9
+- 13 The People's Militia lvl 9
+- 14 The People's Militia lvl 9
+- 102 Patrolling Westfall lvl 8
+
+## The Defias Brotherhood (Alliance / Human)
+Entry 65 -> exit 253; 35 quests
+- 65 The Defias Brotherhood lvl 14
+- 132 The Defias Brotherhood lvl 14
+- 135 The Defias Brotherhood lvl 14
+- 141 The Defias Brotherhood lvl 14
+- 142 The Defias Brotherhood lvl 14
+- 155 The Defias Brotherhood lvl 14
+- 165 The Hermit lvl 17
+- 166 The Defias Brotherhood lvl 14
+- 373 The Unsent Letter lvl 16
+- 214 Red Silk Bandanas lvl 14
+- 389 Bazil Thredd lvl 16
+- 391 The Stockade Riots lvl 16
+- 392 The Curious Visitor lvl 16
+- 393 Shadow of the Past lvl 16
+- 350 Look to an Old Friend lvl 16
+- 2745 Infiltrating the Castle lvl 16
+- 2746 Items of Some Consequence lvl 16
+- 434 The Attack! lvl 16
+- 394 The Head of the Beast lvl 16
+- 395 Brotherhood's End lvl 16
+- 396 An Audience with the King lvl 16
+- 148 Supplies from Darkshire lvl 20
+- 149 Ghost Hair Thread lvl 20
+- 154 Return the Comb lvl 20
+- 157 Deliver the Thread lvl 20
+- 158 Zombie Juice lvl 20
+- 156 Gather Rot Blossoms lvl 20
+- 159 Juice Delivery lvl 20
+- 133 Ghoulish Effigy lvl 20
+- 134 Ogre Thieves lvl 20
+- 160 Note to the Mayor lvl 20
+- 251 Translate Abercrombie's Note lvl 20
+- 401 Wait for Sirra to Finish lvl 20
+- 252 Translation to Ello lvl 20
+- 253 Bride of the Embalmer lvl 20
+
+## Redridge Under Siege (Alliance / Human)
+Entry 244 -> exit 98386; 12 quests
+- 244 Encroaching Gnolls lvl 11
+- 20 Blackrock Menace lvl 18
+- 34 An Unwelcome Guest lvl 18
+- 91 Solomon's Law lvl 17
+- 180 WANTED: Lieutenant Fangore lvl 15
+- 246 Assessing the Threat lvl 11
+- 98387 Blackrock Blockade lvl 18
+- 19 Tharil'zun lvl 18
+- 115 Shadow Magic lvl 18
+- 125 The Lost Tools lvl 15
+- 89 The Everstill Bridge lvl 15
+- 98386 Alther's Mill lvl 15
+
+## In Defense of the King's Lands (Alliance)
+Entry 224 -> exit 217; 5 quests
+- 224 In Defense of the King's Lands lvl 10
+- 237 In Defense of the King's Lands lvl 10
+- 263 In Defense of the King's Lands lvl 10
+- 267 The Trogg Threat lvl 10
+- 217 In Defense of the King's Lands lvl 10
+
+## The Stockade Uprising (Alliance / Human)
+Entry 377 -> exit 396; 16 quests
+- 377 Crime and Punishment lvl 22
+- 386 What Comes Around... lvl 22
+- 387 Quell The Uprising lvl 22
+- 388 The Color of Blood lvl 22
+- 373 The Unsent Letter lvl 16
+- 389 Bazil Thredd lvl 16
+- 391 The Stockade Riots lvl 16
+- 392 The Curious Visitor lvl 16
+- 393 Shadow of the Past lvl 16
+- 350 Look to an Old Friend lvl 16
+- 2745 Infiltrating the Castle lvl 16
+- 2746 Items of Some Consequence lvl 16
+- 434 The Attack! lvl 16
+- 394 The Head of the Beast lvl 16
+- 395 Brotherhood's End lvl 16
+- 396 An Audience with the King lvl 16
+
+## The Legend of Stalvan (Alliance / Human)
+Entry 66 -> exit 98; 14 quests
+- 66 The Legend of Stalvan lvl 22
+- 67 The Legend of Stalvan lvl 22
+- 68 The Legend of Stalvan lvl 22
+- 69 The Legend of Stalvan lvl 22
+- 70 The Legend of Stalvan lvl 22
+- 72 The Legend of Stalvan lvl 22
+- 74 The Legend of Stalvan lvl 22
+- 75 The Legend of Stalvan lvl 22
+- 77 A Sticky Situation lvl 42
+- 78 The Legend of Stalvan lvl 22
+- 79 The Legend of Stalvan lvl 22
+- 80 The Legend of Stalvan lvl 22
+- 97 The Legend of Stalvan lvl 22
+- 98 The Legend of Stalvan lvl 22
+
+## The Darkness of Duskwood (Alliance / Human)
+Entry 56 -> exit 526; 48 quests
+- 56 The Night Watch lvl 18
+- 57 The Night Watch lvl 18
+- 58 The Night Watch lvl 18
+- 310 Bitter Rivals lvl 2
+- 311 Return to Marleth lvl 2
+- 312 Tundra MacGrann's Stolen Stash lvl 7
+- 313 The Grizzled Den lvl 4
+- 314 Protecting the Herd lvl 6
+- 315 The Perfect Stout lvl 5
+- 413 Shimmer Stout lvl 8
+- 414 Stout to Kadrell lvl 8
+- 415 Rejold's New Brew lvl 8
+- 298 Excavation Progress Report lvl 10
+- 301 Report to Ironforge lvl 10
+- 302 Powder to Ironband lvl 10
+- 273 Resupplying the Excavation lvl 10
+- 454 After the Ambush lvl 10
+- 309 Protecting the Shipment lvl 10
+- 95 Sven's Revenge lvl 20
+- 148 Supplies from Darkshire lvl 20
+- 149 Ghost Hair Thread lvl 20
+- 154 Return the Comb lvl 20
+- 157 Deliver the Thread lvl 20
+- 158 Zombie Juice lvl 20
+- 156 Gather Rot Blossoms lvl 20
+- 159 Juice Delivery lvl 20
+- 133 Ghoulish Effigy lvl 20
+- 134 Ogre Thieves lvl 20
+- 160 Note to the Mayor lvl 20
+- 230 Sven's Camp lvl 20
+- 251 Translate Abercrombie's Note lvl 20
+- 262 The Shadowy Figure lvl 20
+- 265 The Shadowy Search Continues lvl 20
+- 266 Inquire at the Inn lvl 20
+- 401 Wait for Sirra to Finish lvl 20
+- 252 Translation to Ello lvl 20
+- 253 Bride of the Embalmer lvl 20
+- 453 Finding the Shadowy Figure lvl 20
+- 268 Return to Sven lvl 20
+- 323 Proving Your Worth lvl 20
+- 269 Seeking Wisdom lvl 20
+- 270 The Doomed Fleet lvl 20
+- 321 Lightforge Iron lvl 20
+- 324 The Lost Ingots lvl 20
+- 322 Blessed Arm lvl 20
+- 325 Armed and Ready lvl 20
+- 55 Morbent Fel lvl 20
+- 526 Lightforge Ingots lvl 20
+
+## The Missing Diplomat (Alliance / Human)
+Entry 1274 -> exit 1267; 17 quests
+- 1274 The Missing Diplomat lvl 28
+- 1241 The Missing Diplomat lvl 28
+- 1242 The Missing Diplomat lvl 28
+- 1243 The Missing Diplomat lvl 28
+- 1244 The Missing Diplomat lvl 28
+- 1245 The Missing Diplomat lvl 28
+- 1246 The Missing Diplomat lvl 28
+- 1447 The Missing Diplomat lvl 28
+- 1247 The Missing Diplomat lvl 28
+- 1248 The Missing Diplomat lvl 28
+- 1249 The Missing Diplomat lvl 28
+- 1250 The Missing Diplomat lvl 28
+- 1264 The Missing Diplomat lvl 28
+- 1265 The Missing Diplomat lvl 28
+- 1266 The Missing Diplomat lvl 28
+- 1324 The Missing Diplomat lvl 28
+- 1267 The Missing Diplomat lvl 28
+
+## Onyxia: The True Masters (Alliance / Human)
+Entry 4182 -> exit 7497; 19 quests
+- 4182 Dragonkin Menace lvl 48
+- 4183 The True Masters lvl 48
+- 4184 The True Masters lvl 48
+- 4185 The True Masters lvl 48
+- 4186 The True Masters lvl 48
+- 4223 The True Masters lvl 48
+- 4224 The True Masters lvl 48
+- 4241 Marshal Windsor lvl 48
+- 4242 Abandoned Hope lvl 48
+- 4264 A Crumpled Up Note lvl 50
+- 4282 A Shred of Hope lvl 50
+- 4322 Jail Break! lvl 50
+- 6402 Stormwind Rendezvous lvl 50
+- 6403 The Great Masquerade lvl 50
+- 6501 The Dragon's Eye lvl 50
+- 6502 Drakefire Amulet lvl 50
+- 7495 Victory for the Alliance lvl 60
+- 7496 Celebrating Good Times lvl 60
+- 7497 The Journey Has Just Begun lvl 60
+
+## Darkshore (Alliance)
+Entry 954 -> exit 957; 5 quests
+- 954 Bashal'Aran lvl 7
+- 1275 Researching the Corruption lvl 18
+- 955 Bashal'Aran lvl 7
+- 956 Bashal'Aran lvl 7
+- 957 Bashal'Aran lvl 7
+
+## The Wetlands (Alliance)
+Entry 469 -> exit 1320; 30 quests
+- 469 Daily Delivery lvl 18
+- 470 Digging Through the Ooze lvl 19
+- 472 Fall of Dun Modr lvl 25
+- 1302 James Hyal lvl 30
+- 95 Sven's Revenge lvl 20
+- 230 Sven's Camp lvl 20
+- 262 The Shadowy Figure lvl 20
+- 265 The Shadowy Search Continues lvl 20
+- 266 Inquire at the Inn lvl 20
+- 453 Finding the Shadowy Figure lvl 20
+- 268 Return to Sven lvl 20
+- 323 Proving Your Worth lvl 20
+- 269 Seeking Wisdom lvl 20
+- 270 The Doomed Fleet lvl 20
+- 321 Lightforge Iron lvl 20
+- 526 Lightforge Ingots lvl 20
+- 324 The Lost Ingots lvl 20
+- 322 Blessed Arm lvl 20
+- 325 Armed and Ready lvl 20
+- 55 Morbent Fel lvl 20
+- 1282 They Call Him Smiling Jim lvl 30
+- 1252 Lieutenant Paval Reethe lvl 30
+- 1253 The Black Shield lvl 30
+- 1259 Lieutenant Paval Reethe lvl 30
+- 1284 Suspicious Hoofprints lvl 30
+- 1285 Daelin's Men lvl 30
+- 1286 The Deserters lvl 30
+- 1287 The Deserters lvl 30
+- 1319 The Black Shield lvl 30
+- 1320 The Black Shield lvl 30
+
+## Valley of Trials (Horde / Orc)
+Entry 4641 -> exit 842; 64 quests
+- 4641 Your Place In The World lvl 1
+- 788 Cutting Teeth lvl 1
+- 790 Sarkoth lvl 1
+- 804 Sarkoth lvl 1
+- 789 Sting of the Scorpid lvl 1
+- 4402 Galgar's Cactus Apple Surprise lvl 1
+- 5441 Lazy Peons lvl 3
+- 6394 Thazz'ril's Pick lvl 3
+- 2161 A Peon's Burden lvl 1
+- 786 Thwarting Kolkar Aggression lvl 5
+- 97223 Bloodtalon Matriarch lvl 5
+- 817 Practical Prey lvl 5
+- 96821 Legging It lvl 1
+- 818 A Solvent Spirit lvl 5
+- 97225 Forgotten Loa Idols lvl 4
+- 808 Minshina's Skull lvl 4
+- 826 Zalazane lvl 4
+- 823 Report to Orgnil lvl 4
+- 96873 A Pain in the Neck lvl 5
+- 99123 Lost in the Shadows lvl 4
+- 96876 Ukor's Lost Pack lvl 5
+- 806 Dark Storms lvl 4
+- 784 Vanquish the Betrayers lvl 3
+- 837 Encroachment lvl 6
+- 815 Break a Few Eggs lvl 6
+- 96825 This Fruit Could Bite Back lvl 3
+- 791 Carry Your Weight lvl 4
+- 96822 For Honor lvl 3
+- 830 The Admiral's Orders lvl 1
+- 825 From The Wreckage.... lvl 3
+- 831 The Admiral's Orders lvl 1
+- 99048 A Missing Hand lvl 9
+- 99049 Threat from Below lvl 9
+- 816 Lost But Not Forgotten lvl 8
+- 834 Winds in the Desert lvl 7
+- 835 Securing the Lines lvl 7
+- 813 Finding the Antidote lvl 7
+- 828 Margoz lvl 4
+- 840 Conscript of the Horde lvl 10
+- 827 Skull Rock lvl 4
+- 97281 A Simmering Storm lvl 7
+- 97282 Stormy Potential lvl 6
+- 96877 Halikor's Hoof lvl 6
+- 832 Burning Shadows lvl 4
+- 829 Neeru Fireblade lvl 4
+- 97246 Meal Appeal lvl 5
+- 97249 Favorite Food lvl 5
+- 97242 Yelmak's Medley lvl 9
+- 97275 Whuut's the Rush lvl 9
+- 97326 Rocks to Rests lvl 5
+- 5726 Hidden Enemies lvl 9
+- 5727 Hidden Enemies lvl 9
+- 809 Ak'Zeloth lvl 4
+- 812 Need for a Cure lvl 7
+- 924 The Demon Seed lvl 9
+- 794 Burning Blade Medallion lvl 1
+- 805 Report to Sen'jin Village lvl 1
+- 96652 The Adventurer lvl 4
+- 99051 Threat from Below lvl 8
+- 99052 Threat from Below lvl 8
+- 5728 Hidden Enemies lvl 9
+- 5729 Hidden Enemies lvl 9
+- 5730 Hidden Enemies lvl 9
+- 842 Crossroads Conscription lvl 10
+
+## Valley of Trials (Troll) (Horde / Troll)
+Entry 4641 -> exit 842; 64 quests
+- 4641 Your Place In The World lvl 1
+- 788 Cutting Teeth lvl 1
+- 790 Sarkoth lvl 1
+- 804 Sarkoth lvl 1
+- 789 Sting of the Scorpid lvl 1
+- 4402 Galgar's Cactus Apple Surprise lvl 1
+- 5441 Lazy Peons lvl 3
+- 6394 Thazz'ril's Pick lvl 3
+- 2161 A Peon's Burden lvl 1
+- 786 Thwarting Kolkar Aggression lvl 5
+- 97223 Bloodtalon Matriarch lvl 5
+- 817 Practical Prey lvl 5
+- 96821 Legging It lvl 1
+- 818 A Solvent Spirit lvl 5
+- 97225 Forgotten Loa Idols lvl 4
+- 808 Minshina's Skull lvl 4
+- 826 Zalazane lvl 4
+- 823 Report to Orgnil lvl 4
+- 96873 A Pain in the Neck lvl 5
+- 99123 Lost in the Shadows lvl 4
+- 96876 Ukor's Lost Pack lvl 5
+- 806 Dark Storms lvl 4
+- 784 Vanquish the Betrayers lvl 3
+- 837 Encroachment lvl 6
+- 815 Break a Few Eggs lvl 6
+- 96825 This Fruit Could Bite Back lvl 3
+- 791 Carry Your Weight lvl 4
+- 96822 For Honor lvl 3
+- 830 The Admiral's Orders lvl 1
+- 825 From The Wreckage.... lvl 3
+- 831 The Admiral's Orders lvl 1
+- 99048 A Missing Hand lvl 9
+- 99049 Threat from Below lvl 9
+- 816 Lost But Not Forgotten lvl 8
+- 834 Winds in the Desert lvl 7
+- 835 Securing the Lines lvl 7
+- 813 Finding the Antidote lvl 7
+- 828 Margoz lvl 4
+- 840 Conscript of the Horde lvl 10
+- 827 Skull Rock lvl 4
+- 97281 A Simmering Storm lvl 7
+- 97282 Stormy Potential lvl 6
+- 96877 Halikor's Hoof lvl 6
+- 832 Burning Shadows lvl 4
+- 829 Neeru Fireblade lvl 4
+- 97246 Meal Appeal lvl 5
+- 97249 Favorite Food lvl 5
+- 97242 Yelmak's Medley lvl 9
+- 97275 Whuut's the Rush lvl 9
+- 97326 Rocks to Rests lvl 5
+- 5726 Hidden Enemies lvl 9
+- 5727 Hidden Enemies lvl 9
+- 809 Ak'Zeloth lvl 4
+- 812 Need for a Cure lvl 7
+- 924 The Demon Seed lvl 9
+- 794 Burning Blade Medallion lvl 1
+- 805 Report to Sen'jin Village lvl 1
+- 96652 The Adventurer lvl 4
+- 99051 Threat from Below lvl 8
+- 99052 Threat from Below lvl 8
+- 5728 Hidden Enemies lvl 9
+- 5729 Hidden Enemies lvl 9
+- 5730 Hidden Enemies lvl 9
+- 842 Crossroads Conscription lvl 10
+
+## Deathknell (Horde / Undead)
+Entry 363 -> exit 1113; 64 quests
+- 363 Rude Awakening lvl 1
+- 364 The Mindless Ones lvl 1
+- 376 The Damned lvl 2
+- 3901 Rattling the Rattlecages lvl 1
+- 6395 Marla's Last Wish lvl 3
+- 98389 A Light in the Darkness lvl 2
+- 3902 Scavenging Deathknell lvl 2
+- 380 Night Web's Hollow lvl 2
+- 381 The Scarlet Crusade lvl 2
+- 382 The Red Messenger lvl 2
+- 383 Vital Intelligence lvl 2
+- 96656 The Adventurer lvl 4
+- 8 A Rogue's Deal lvl 1
+- 365 Fields of Grief lvl 4
+- 5481 Gordo's Task lvl 5
+- 86784 Sticks and Bones lvl 4
+- 404 A Putrid Task lvl 4
+- 367 A New Plague lvl 6
+- 427 At War With The Scarlet Crusade lvl 5
+- 99141 Patience lvl 4
+- 99134 Discipline lvl 4
+- 375 The Chill of Death lvl 7
+- 97558 Hides for the Forsaken lvl 6
+- 99144 Seeking Refuge lvl 5
+- 5482 Doom Weed lvl 5
+- 426 The Mills Overrun lvl 6
+- 368 A New Plague lvl 6
+- 407 Fields of Grief lvl 4
+- 95314 That Shadowvale Green Elixir lvl 7
+- 370 At War With The Scarlet Crusade lvl 5
+- 374 Proof of Demise lvl 5
+- 398 WANTED: Maggot Eye lvl 6
+- 358 Graverobbers lvl 4
+- 354 Deaths in the Family lvl 7
+- 362 The Haunted Mills lvl 7
+- 405 The Prodigal Lich lvl 5
+- 359 Forsaken Duties lvl 6
+- 360 Return to the Magistrate lvl 6
+- 356 Rear Guard Patrol lvl 6
+- 369 A New Plague lvl 6
+- 99142 Tomb Weed lvl 5
+- 361 A Letter Undelivered lvl 4
+- 355 Speak with Sevren lvl 7
+- 96895 The Argent Emissary lvl 10
+- 371 At War With The Scarlet Crusade lvl 5
+- 96897 The Cult of the Damned lvl 10
+- 96898 Remnants of War lvl 10
+- 96899 Bandarion Keep lvl 10
+- 492 A New Plague lvl 6
+- 445 Delivery to Silverpine Forest lvl 9
+- 96896 A Righteous Cause lvl 10
+- 98545 Leonid's Letter lvl 10
+- 99152 As Above, So Below lvl 10
+- 99153 The One That Got Away lvl 10
+- 95328 Whispering Horror Residue lvl 7
+- 372 At War With The Scarlet Crusade lvl 5
+- 408 The Family Crypt lvl 7
+- 590 A Rogue's Deal lvl 1
+- 92422 The Wrath of Rath'mael lvl 15
+- 366 Return the Book lvl 5
+- 411 The Prodigal Lich Returns lvl 5
+- 410 The Dormant Shade lvl 5
+- 431 Candles of Beckoning lvl 5
+- 1113 Hearts of Zeal lvl 30
+
+## Red Cloud Mesa (Horde / Tauren)
+Entry 747 -> exit 6364; 73 quests
+- 747 The Hunt Begins lvl 1
+- 752 A Humble Task lvl 1
+- 753 A Humble Task lvl 1
+- 750 The Hunt Continues lvl 1
+- 755 Rites of the Earthmother lvl 1
+- 757 Rite of Strength lvl 1
+- 95805 Grace of An'she and Mu'sha lvl 1
+- 780 The Battleboars lvl 1
+- 3376 Break Sharptusk! lvl 3
+- 781 Attack on Camp Narache lvl 1
+- 763 Rites of the Earthmother lvl 1
+- 96659 The Adventurer lvl 4
+- 1656 A Task Unfinished lvl 1
+- 96130 Chakuyak lvl 4
+- 99411 Kyle's Gone Missing! lvl 5
+- 766 Mazzranache lvl 5
+- 743 Dangers of the Windfury lvl 5
+- 745 Sharing the Land lvl 1
+- 767 Rite of Vision lvl 3
+- 746 Dwarven Digging lvl 6
+- 771 Rite of Vision lvl 3
+- 761 Swoop Hunting lvl 4
+- 99108 Sparring Match lvl 4
+- 748 Poison Water lvl 4
+- 99079 Longwalker Malah lvl 4
+- 754 Winterhoof Cleansing lvl 4
+- 756 Thunderhorn Totem lvl 4
+- 772 Rite of Vision lvl 3
+- 749 The Ravaged Caravan lvl 5
+- 99081 Grim Tidings lvl 4
+- 751 The Ravaged Caravan lvl 5
+- 98430 The Longwalkers lvl 1
+- 99101 Our Ancient Enemy lvl 4
+- 99080 Drive Them Out lvl 4
+- 758 Thunderhorn Cleansing lvl 4
+- 773 Rite of Wisdom lvl 3
+- 76156 Stalk With The Earthmother lvl 4
+- 770 The Demon Scarred Cloak lvl 6
+- 833 A Sacred Burial lvl 7
+- 775 Journey into Thunder Bluff lvl 3
+- 861 The Hunter's Way lvl 10
+- 759 Wildmane Totem lvl 4
+- 764 The Venture Co. lvl 5
+- 765 Supervisor Fizsprocket lvl 5
+- 98424 Fizsprocket's Notes lvl 5
+- 99082 The High Chieftain lvl 4
+- 760 Wildmane Cleansing lvl 4
+- 76160 Stalk With The Earthmother lvl 4
+- 744 Preparation for Ceremony lvl 7
+- 776 Rites of the Earthmother lvl 3
+- 768 Gathering Leather lvl 4
+- 5722 Searching for the Lost Satchel lvl 9
+- 5723 Testing an Enemy's Strength lvl 9
+- 76240 Stalk With The Earthmother lvl 4
+- 854 Journey to the Crossroads lvl 9
+- 870 The Forgotten Pools lvl 10
+- 844 Plainstrider Menace lvl 10
+- 871 Disrupt the Attacks lvl 9
+- 5041 Supplies for the Crossroads lvl 9
+- 867 Harpy Raiders lvl 12
+- 848 Fungal Spores lvl 10
+- 1492 Wharfmaster Dizzywig lvl 9
+- 6361 A Bundle of Hides lvl 10
+- 6362 Ride to Thunder Bluff lvl 10
+- 869 Raptor Thieves lvl 9
+- 98427 Ceasing Operations lvl 5
+- 98435 Thunderhorn's Report lvl 4
+- 853 Apothecary Zamah lvl 10
+- 872 The Disruption Ends lvl 9
+- 3281 Stolen Silver lvl 9
+- 860 Sergra Darkthorn lvl 10
+- 6363 Tal the Wind Rider Master lvl 10
+- 6364 Return to Jahan lvl 10
+
+## Threats to Orgrimmar (Horde)
+Entry 3504 -> exit 7493; 30 quests
+- 3504 Betrayed lvl 44
+- 5726 Hidden Enemies lvl 9
+- 5727 Hidden Enemies lvl 9
+- 5728 Hidden Enemies lvl 9
+- 5729 Hidden Enemies lvl 9
+- 5730 Hidden Enemies lvl 9
+- 99048 A Missing Hand lvl 9
+- 99049 Threat from Below lvl 9
+- 99051 Threat from Below lvl 8
+- 99052 Threat from Below lvl 8
+- 3505 Betrayed lvl 44
+- 3506 Betrayed lvl 44
+- 3507 Betrayed lvl 44
+- 4903 Warlord's Command lvl 55
+- 4941 Eitrigg's Wisdom lvl 55
+- 4974 For The Horde! lvl 55
+- 6566 What the Wind Carries lvl 55
+- 6567 The Champion of the Horde lvl 55
+- 6568 The Testament of Rexxar lvl 55
+- 6569 Oculus Illusions lvl 55
+- 6570 Emberstrife lvl 55
+- 6582 The Test of Skulls, Scryer lvl 55
+- 6583 The Test of Skulls, Somnus lvl 55
+- 6584 The Test of Skulls, Chronalis lvl 55
+- 6585 The Test of Skulls, Axtroz lvl 55
+- 6601 Ascension... lvl 55
+- 6602 Blood of the Black Dragon Champion lvl 55
+- 7490 Victory for the Horde lvl 60
+- 7491 For All To See lvl 60
+- 7493 The Journey Has Just Begun lvl 60
+
+## Trouble in the Barrens (Horde)
+Entry 1180 -> exit 914; 26 quests
+- 1180 Goblin Sponsorship lvl 29
+- 840 Conscript of the Horde lvl 10
+- 842 Crossroads Conscription lvl 10
+- 844 Plainstrider Menace lvl 10
+- 845 The Zhevra lvl 10
+- 870 The Forgotten Pools lvl 10
+- 877 The Stagnant Oasis lvl 10
+- 880 Altered Beings lvl 10
+- 3301 Mura Runetotem lvl 10
+- 903 Prowlers of the Barrens lvl 10
+- 881 Echeyakee lvl 10
+- 905 The Angry Scytheclaws lvl 10
+- 3261 Jorn Skyseer lvl 10
+- 882 Ishamuhale lvl 10
+- 6382 The Ashenvale Hunt lvl 20
+- 907 Enraged Thunder Lizards lvl 10
+- 913 Cry of the Thunderhawk lvl 10
+- 874 Mahren Skyseer lvl 9
+- 873 Isha Awak lvl 10
+- 867 Harpy Raiders lvl 12
+- 875 Harpy Lieutenants lvl 12
+- 876 Serena Bloodfeather lvl 12
+- 1060 Letter to Jin'Zil lvl 15
+- 1489 Hamuul Runetotem lvl 12
+- 1490 Nara Wildmane lvl 12
+- 914 Leaders of the Fang lvl 11
+
+## Skyborne: Path of the Caller (Neutral)
+Entry 93797 -> exit 92741; 67 quests
+- 93797 Boughs in the Wind lvl 10
+- 98512 Al'Aketh Assassins lvl 6
+- 95065 Fishin' Time lvl 7
+- 97246 Meal Appeal lvl 5
+- 97249 Favorite Food lvl 5
+- 97242 Yelmak's Medley lvl 9
+- 97275 Whuut's the Rush lvl 9
+- 97326 Rocks to Rests lvl 5
+- 92514 Welcome to Shen'dar Village lvl 4
+- 93461 Welcome to Shen'dar Village lvl 4
+- 92515 The Problem With Prideclaws lvl 4
+- 92516 Hippogryph Harassment lvl 4
+- 92517 The Criminal Element lvl 4
+- 92553 Restocking the Larders lvl 4
+- 93318 WANTED: Vulgara the Insatiable lvl 4
+- 93319 Pilfered Windstones lvl 4
+- 93951 A Little Beauty lvl 4
+- 93036 Infiltrating the Cult lvl 5
+- 92529 Falaath Village lvl 5
+- 92528 Among the Faithful lvl 5
+- 92550 Havoc in the Highlands lvl 5
+- 92551 Stolen Supplies lvl 5
+- 93926 The Western Watch lvl 5
+- 93927 A Last Request lvl 5
+- 92579 To Valanaar lvl 6
+- 92700 The Grand Skyseer lvl 4
+- 93735 The Broken Construct lvl 4
+- 93736 Unwelcome Spirits lvl 4
+- 93737 The Broken Construct lvl 4
+- 93738 The Broken Construct lvl 4
+- 93746 A Firm Response lvl 4
+- 92701 To Valanaar lvl 6
+- 92699 The Supreme Magister lvl 4
+- 92727 The Missing Scholar lvl 4
+- 92849 The Missing Scholar lvl 4
+- 92850 The Missing Scholar lvl 4
+- 99260 Fillion's Mission lvl 5
+- 92840 Catching Wind lvl 5
+- 92834 Avenged Tenfold lvl 6
+- 92860 In Service of Zephras lvl 6
+- 92871 In Service of Zephras lvl 6
+- 93320 Tower Defense lvl 6
+- 92642 Disrupting Logistics lvl 6
+- 92645 Breaking the Breaker lvl 6
+- 92880 Return to Valanaar lvl 6
+- 92881 The High Elder's Request lvl 6
+- 92643 The Turncoat lvl 6
+- 92644 Unfortunate News lvl 6
+- 93740 Blood for Blood lvl 6
+- 93948 Deliver the Signet lvl 6
+- 93949 Bugged lvl 6
+- 94568 The Cult's True Plans lvl 6
+- 92640 Desperate Times lvl 6
+- 92708 A Grand Adventure lvl 7
+- 92709 A Grand Adventure lvl 7
+- 93065 Prepare for Battle lvl 7
+- 92947 Making Our Move lvl 7
+- 93958 The Inner Sanctum lvl 7
+- 92646 Confront Lorthuna lvl 7
+- 93835 Confront Lorthuna lvl 7
+- 93836 The Fate of Zephras lvl 7
+- 93090 What Comes Next lvl 7
+- 94369 The Fate of Zephras lvl 7
+- 93089 What Comes Next lvl 7
+- 94946 The Magical City of Dalaran lvl 7
+- 95349 The Earthen Ring lvl 7
+- 92741 Unwelcome Visitors lvl 8
+
+## Skyborne: Leaving Zephras (Neutral)
+Entry 94947 -> exit 99153; 73 quests
+- 94947 Welcome to Azeroth lvl 7
+- 93963 Exploring the Alliance lvl 7
+- 98021 Journey to Sentinel Hill lvl 7
+- 95350 Welcome to Azeroth lvl 7
+- 98024 Journey to the Crossroads lvl 7
+- 96895 The Argent Emissary lvl 10
+- 96897 The Cult of the Damned lvl 10
+- 96898 Remnants of War lvl 10
+- 92514 Welcome to Shen'dar Village lvl 4
+- 93461 Welcome to Shen'dar Village lvl 4
+- 92515 The Problem With Prideclaws lvl 4
+- 92516 Hippogryph Harassment lvl 4
+- 92517 The Criminal Element lvl 4
+- 92553 Restocking the Larders lvl 4
+- 93318 WANTED: Vulgara the Insatiable lvl 4
+- 93319 Pilfered Windstones lvl 4
+- 93951 A Little Beauty lvl 4
+- 93036 Infiltrating the Cult lvl 5
+- 92529 Falaath Village lvl 5
+- 92528 Among the Faithful lvl 5
+- 92550 Havoc in the Highlands lvl 5
+- 92551 Stolen Supplies lvl 5
+- 93926 The Western Watch lvl 5
+- 93927 A Last Request lvl 5
+- 92701 To Valanaar lvl 6
+- 92579 To Valanaar lvl 6
+- 93948 Deliver the Signet lvl 6
+- 92699 The Supreme Magister lvl 4
+- 92700 The Grand Skyseer lvl 4
+- 92727 The Missing Scholar lvl 4
+- 92849 The Missing Scholar lvl 4
+- 92850 The Missing Scholar lvl 4
+- 93735 The Broken Construct lvl 4
+- 93736 Unwelcome Spirits lvl 4
+- 93737 The Broken Construct lvl 4
+- 93738 The Broken Construct lvl 4
+- 93746 A Firm Response lvl 4
+- 99260 Fillion's Mission lvl 5
+- 92840 Catching Wind lvl 5
+- 92834 Avenged Tenfold lvl 6
+- 92860 In Service of Zephras lvl 6
+- 92871 In Service of Zephras lvl 6
+- 93320 Tower Defense lvl 6
+- 92642 Disrupting Logistics lvl 6
+- 92645 Breaking the Breaker lvl 6
+- 92880 Return to Valanaar lvl 6
+- 92881 The High Elder's Request lvl 6
+- 92643 The Turncoat lvl 6
+- 92644 Unfortunate News lvl 6
+- 93740 Blood for Blood lvl 6
+- 93949 Bugged lvl 6
+- 94568 The Cult's True Plans lvl 6
+- 92640 Desperate Times lvl 6
+- 92708 A Grand Adventure lvl 7
+- 92709 A Grand Adventure lvl 7
+- 93065 Prepare for Battle lvl 7
+- 92947 Making Our Move lvl 7
+- 93739 Exploring the Horde lvl 7
+- 93958 The Inner Sanctum lvl 7
+- 92646 Confront Lorthuna lvl 7
+- 93835 Confront Lorthuna lvl 7
+- 93836 The Fate of Zephras lvl 7
+- 93090 What Comes Next lvl 7
+- 94369 The Fate of Zephras lvl 7
+- 93089 What Comes Next lvl 7
+- 94946 The Magical City of Dalaran lvl 7
+- 95349 The Earthen Ring lvl 7
+- 92741 Unwelcome Visitors lvl 8
+- 96899 Bandarion Keep lvl 10
+- 96896 A Righteous Cause lvl 10
+- 98545 Leonid's Letter lvl 10
+- 99152 As Above, So Below lvl 10
+- 99153 The One That Got Away lvl 10
+
+## Skyborne: Thendal Village (Neutral)
+Entry 92460 -> exit 98286; 51 quests
+- 92460 Coming of Age lvl 1
+- 92461 Harmony in Balance lvl 1
+- 92462 Infestation Investigation lvl 1
+- 92463 The Cirrusfly Queen lvl 2
+- 94414 The Anchors of Zephras lvl 2
+- 92474 Falling With Style lvl 2
+- 92464 Elemental Unrest lvl 2
+- 92598 The Gift of Skysight lvl 2
+- 93552 Harvesting Windstones lvl 2
+- 92597 Reading the Leylines lvl 2
+- 92465 Agitators lvl 2
+- 92469 Return to Rorian lvl 3
+- 92471 Aetheen of the Gales lvl 4
+- 92470 Foul Matriarch lvl 2
+- 92473 Aggressive Encroachment lvl 3
+- 92472 The Next Step lvl 3
+- 95998 The Great Outdoors lvl 4
+- 96101 The Great Outdoors lvl 4
+- 96604 The Great Outdoors lvl 4
+- 96605 The Great Outdoors lvl 4
+- 96606 The Great Outdoors lvl 4
+- 96607 The Great Outdoors lvl 4
+- 96608 The Great Outdoors lvl 4
+- 96044 Camping 101: Blacksmithing lvl 4
+- 96045 Camping 101: Alchemy lvl 4
+- 96046 Camping 101: Mining lvl 4
+- 96047 Camping 101: First Aid lvl 4
+- 96050 Camping 101: Fishing lvl 4
+- 96055 Camping 101: Herbalism lvl 4
+- 96056 Camping 101: Skinning lvl 4
+- 96057 Camping 101: Tailoring lvl 4
+- 96058 Camping 101: Engineering lvl 4
+- 96059 Camping 101: Enchanting lvl 4
+- 96102 Camping 101: Tailoring lvl 4
+- 96629 Camping 101: Cooking lvl 4
+- 96638 The Adventurer lvl 4
+- 96646 Camping 101: Cooking lvl 4
+- 96655 Camping 101: Cooking lvl 4
+- 96658 Camping 101: Cooking lvl 4
+- 96661 Camping 101: Cooking lvl 4
+- 97963 Camping 101: Alchemy lvl 4
+- 97964 Camping 101: Blacksmithing lvl 4
+- 97965 Camping 101: First Aid lvl 4
+- 97967 Camping 101: Fishing lvl 4
+- 97968 Camping 101: Herbalism lvl 4
+- 97969 Camping 101: Leatherworking lvl 4
+- 97970 Camping 101: Mining lvl 4
+- 97971 Camping 101: Skinning lvl 4
+- 97973 Camping 101: Tailoring lvl 4
+- 98285 Camping 101: Engineering lvl 4
+- 98286 Camping 101: Enchanting lvl 4
+
+## Skyborne: Shen'dar Village (Neutral)
+Entry 92544 -> exit 92741; 64 quests
+- 92544 Al'Aketh Thugs lvl 2
+- 93461 Welcome to Shen'dar Village lvl 4
+- 92514 Welcome to Shen'dar Village lvl 4
+- 92596 The High Order lvl 4
+- 94413 A Magical Affront lvl 4
+- 92595 The Windshapers lvl 4
+- 94411 Meddlesome Mages lvl 4
+- 92517 The Criminal Element lvl 4
+- 93319 Pilfered Windstones lvl 4
+- 92516 Hippogryph Harassment lvl 4
+- 92515 The Problem With Prideclaws lvl 4
+- 93951 A Little Beauty lvl 4
+- 92553 Restocking the Larders lvl 4
+- 93318 WANTED: Vulgara the Insatiable lvl 4
+- 93036 Infiltrating the Cult lvl 5
+- 92529 Falaath Village lvl 5
+- 92528 Among the Faithful lvl 5
+- 92550 Havoc in the Highlands lvl 5
+- 92551 Stolen Supplies lvl 5
+- 93926 The Western Watch lvl 5
+- 93927 A Last Request lvl 5
+- 92579 To Valanaar lvl 6
+- 92700 The Grand Skyseer lvl 4
+- 93735 The Broken Construct lvl 4
+- 93736 Unwelcome Spirits lvl 4
+- 93737 The Broken Construct lvl 4
+- 93738 The Broken Construct lvl 4
+- 93746 A Firm Response lvl 4
+- 92701 To Valanaar lvl 6
+- 92699 The Supreme Magister lvl 4
+- 92727 The Missing Scholar lvl 4
+- 92849 The Missing Scholar lvl 4
+- 92850 The Missing Scholar lvl 4
+- 99260 Fillion's Mission lvl 5
+- 92840 Catching Wind lvl 5
+- 92834 Avenged Tenfold lvl 6
+- 92860 In Service of Zephras lvl 6
+- 92871 In Service of Zephras lvl 6
+- 93320 Tower Defense lvl 6
+- 92642 Disrupting Logistics lvl 6
+- 92645 Breaking the Breaker lvl 6
+- 92880 Return to Valanaar lvl 6
+- 92881 The High Elder's Request lvl 6
+- 92643 The Turncoat lvl 6
+- 92644 Unfortunate News lvl 6
+- 93740 Blood for Blood lvl 6
+- 93948 Deliver the Signet lvl 6
+- 93949 Bugged lvl 6
+- 94568 The Cult's True Plans lvl 6
+- 92640 Desperate Times lvl 6
+- 92708 A Grand Adventure lvl 7
+- 92709 A Grand Adventure lvl 7
+- 93065 Prepare for Battle lvl 7
+- 92947 Making Our Move lvl 7
+- 93958 The Inner Sanctum lvl 7
+- 92646 Confront Lorthuna lvl 7
+- 93835 Confront Lorthuna lvl 7
+- 93836 The Fate of Zephras lvl 7
+- 93090 What Comes Next lvl 7
+- 94369 The Fate of Zephras lvl 7
+- 93089 What Comes Next lvl 7
+- 94946 The Magical City of Dalaran lvl 7
+- 95349 The Earthen Ring lvl 7
+- 92741 Unwelcome Visitors lvl 8
+
+## Skyborne: Falaath Village (Neutral)
+Entry 92514 -> exit 92741; 59 quests
+- 92514 Welcome to Shen'dar Village lvl 4
+- 93461 Welcome to Shen'dar Village lvl 4
+- 92515 The Problem With Prideclaws lvl 4
+- 92516 Hippogryph Harassment lvl 4
+- 92517 The Criminal Element lvl 4
+- 92553 Restocking the Larders lvl 4
+- 93318 WANTED: Vulgara the Insatiable lvl 4
+- 93319 Pilfered Windstones lvl 4
+- 93951 A Little Beauty lvl 4
+- 93036 Infiltrating the Cult lvl 5
+- 92529 Falaath Village lvl 5
+- 92528 Among the Faithful lvl 5
+- 92550 Havoc in the Highlands lvl 5
+- 93926 The Western Watch lvl 5
+- 92551 Stolen Supplies lvl 5
+- 93927 A Last Request lvl 5
+- 92579 To Valanaar lvl 6
+- 92700 The Grand Skyseer lvl 4
+- 93735 The Broken Construct lvl 4
+- 93736 Unwelcome Spirits lvl 4
+- 93737 The Broken Construct lvl 4
+- 93738 The Broken Construct lvl 4
+- 93746 A Firm Response lvl 4
+- 92701 To Valanaar lvl 6
+- 92699 The Supreme Magister lvl 4
+- 92727 The Missing Scholar lvl 4
+- 92849 The Missing Scholar lvl 4
+- 92850 The Missing Scholar lvl 4
+- 99260 Fillion's Mission lvl 5
+- 92840 Catching Wind lvl 5
+- 92834 Avenged Tenfold lvl 6
+- 92860 In Service of Zephras lvl 6
+- 92871 In Service of Zephras lvl 6
+- 93320 Tower Defense lvl 6
+- 92642 Disrupting Logistics lvl 6
+- 92645 Breaking the Breaker lvl 6
+- 92880 Return to Valanaar lvl 6
+- 92881 The High Elder's Request lvl 6
+- 92643 The Turncoat lvl 6
+- 92644 Unfortunate News lvl 6
+- 93740 Blood for Blood lvl 6
+- 93948 Deliver the Signet lvl 6
+- 93949 Bugged lvl 6
+- 94568 The Cult's True Plans lvl 6
+- 92640 Desperate Times lvl 6
+- 92708 A Grand Adventure lvl 7
+- 92709 A Grand Adventure lvl 7
+- 93065 Prepare for Battle lvl 7
+- 92947 Making Our Move lvl 7
+- 93958 The Inner Sanctum lvl 7
+- 92646 Confront Lorthuna lvl 7
+- 93835 Confront Lorthuna lvl 7
+- 93836 The Fate of Zephras lvl 7
+- 93090 What Comes Next lvl 7
+- 94369 The Fate of Zephras lvl 7
+- 93089 What Comes Next lvl 7
+- 94946 The Magical City of Dalaran lvl 7
+- 95349 The Earthen Ring lvl 7
+- 92741 Unwelcome Visitors lvl 8
+
+## Skyborne: Valanaar (Neutral)
+Entry 93317 -> exit 94491; 81 quests
+- 93317 Crab Season lvl 4
+- 92679 Blood Tithe lvl 5
+- 94484 Unnerving Silence lvl 8
+- 94896 Aid For The Refugees lvl 8
+- 94897 The Fate of a Loved One lvl 8
+- 92682 Make Yourself Useful lvl 5
+- 92684 Ornery Ornery Galestriders lvl 5
+- 92683 Flutterfly Dust lvl 5
+- 92698 What Is My Purpose? lvl 5
+- 92685 The Hills Have Eyes lvl 5
+- 92693 Standing Our Ground lvl 5
+- 92703 Deliver the News lvl 5
+- 92514 Welcome to Shen'dar Village lvl 4
+- 93461 Welcome to Shen'dar Village lvl 4
+- 92515 The Problem With Prideclaws lvl 4
+- 92516 Hippogryph Harassment lvl 4
+- 92517 The Criminal Element lvl 4
+- 92553 Restocking the Larders lvl 4
+- 93318 WANTED: Vulgara the Insatiable lvl 4
+- 93319 Pilfered Windstones lvl 4
+- 93951 A Little Beauty lvl 4
+- 93036 Infiltrating the Cult lvl 5
+- 92529 Falaath Village lvl 5
+- 92528 Among the Faithful lvl 5
+- 92550 Havoc in the Highlands lvl 5
+- 92551 Stolen Supplies lvl 5
+- 93926 The Western Watch lvl 5
+- 93927 A Last Request lvl 5
+- 92579 To Valanaar lvl 6
+- 92700 The Grand Skyseer lvl 4
+- 92708 A Grand Adventure lvl 7
+- 93735 The Broken Construct lvl 4
+- 93736 Unwelcome Spirits lvl 4
+- 93737 The Broken Construct lvl 4
+- 93738 The Broken Construct lvl 4
+- 93746 A Firm Response lvl 4
+- 92701 To Valanaar lvl 6
+- 92699 The Supreme Magister lvl 4
+- 92727 The Missing Scholar lvl 4
+- 92741 Unwelcome Visitors lvl 8
+- 92849 The Missing Scholar lvl 4
+- 92850 The Missing Scholar lvl 4
+- 92709 A Grand Adventure lvl 7
+- 99260 Fillion's Mission lvl 5
+- 92840 Catching Wind lvl 5
+- 92834 Avenged Tenfold lvl 6
+- 92860 In Service of Zephras lvl 6
+- 92871 In Service of Zephras lvl 6
+- 93320 Tower Defense lvl 6
+- 92642 Disrupting Logistics lvl 6
+- 92645 Breaking the Breaker lvl 6
+- 92880 Return to Valanaar lvl 6
+- 92881 The High Elder's Request lvl 6
+- 92643 The Turncoat lvl 6
+- 92644 Unfortunate News lvl 6
+- 94568 The Cult's True Plans lvl 6
+- 92640 Desperate Times lvl 6
+- 93740 Blood for Blood lvl 6
+- 93948 Deliver the Signet lvl 6
+- 93949 Bugged lvl 6
+- 93065 Prepare for Battle lvl 7
+- 92947 Making Our Move lvl 7
+- 93958 The Inner Sanctum lvl 7
+- 92646 Confront Lorthuna lvl 7
+- 93835 Confront Lorthuna lvl 7
+- 93836 The Fate of Zephras lvl 7
+- 93090 What Comes Next lvl 7
+- 94369 The Fate of Zephras lvl 7
+- 93089 What Comes Next lvl 7
+- 94946 The Magical City of Dalaran lvl 7
+- 95349 The Earthen Ring lvl 7
+- 94493 A Sacrifice in Vain lvl 8
+- 93165 Mercy Falls on Deaf Ears lvl 8
+- 93459 More Al'Aketh Ears lvl 8
+- 94485 Tears of the Lady lvl 8
+- 94486 Feathers for Binding lvl 8
+- 94487 Unwanted and Unworthy lvl 8
+- 94488 The Ties That Bind lvl 8
+- 94489 The Wounds of Betrayal lvl 8
+- 94490 Ripped Missive lvl 9
+- 94491 The Fate of the Den lvl 8
+
+## Skyborne: The Hermit's Trail (Neutral)
+Entry 93159 -> exit 93459; 14 quests
+- 93159 The Strange Hermit lvl 8
+- 93160 The Forest's Bounty lvl 8
+- 93172 Free the Hollows lvl 8
+- 94484 Unnerving Silence lvl 8
+- 94493 A Sacrifice in Vain lvl 8
+- 94485 Tears of the Lady lvl 8
+- 94486 Feathers for Binding lvl 8
+- 94487 Unwanted and Unworthy lvl 8
+- 93165 Mercy Falls on Deaf Ears lvl 8
+- 94488 The Ties That Bind lvl 8
+- 94489 The Wounds of Betrayal lvl 8
+- 94490 Ripped Missive lvl 9
+- 94491 The Fate of the Den lvl 8
+- 93459 More Al'Aketh Ears lvl 8
+
+## Skyborne: War on Zephras (Neutral)
+Entry 92514 -> exit 92741; 59 quests
+- 92514 Welcome to Shen'dar Village lvl 4
+- 93461 Welcome to Shen'dar Village lvl 4
+- 92515 The Problem With Prideclaws lvl 4
+- 92516 Hippogryph Harassment lvl 4
+- 92517 The Criminal Element lvl 4
+- 92553 Restocking the Larders lvl 4
+- 93318 WANTED: Vulgara the Insatiable lvl 4
+- 93319 Pilfered Windstones lvl 4
+- 93951 A Little Beauty lvl 4
+- 93036 Infiltrating the Cult lvl 5
+- 92529 Falaath Village lvl 5
+- 92528 Among the Faithful lvl 5
+- 92550 Havoc in the Highlands lvl 5
+- 92551 Stolen Supplies lvl 5
+- 93926 The Western Watch lvl 5
+- 93927 A Last Request lvl 5
+- 92579 To Valanaar lvl 6
+- 92700 The Grand Skyseer lvl 4
+- 93735 The Broken Construct lvl 4
+- 93737 The Broken Construct lvl 4
+- 93738 The Broken Construct lvl 4
+- 93736 Unwelcome Spirits lvl 4
+- 93746 A Firm Response lvl 4
+- 92701 To Valanaar lvl 6
+- 92699 The Supreme Magister lvl 4
+- 92727 The Missing Scholar lvl 4
+- 92849 The Missing Scholar lvl 4
+- 92850 The Missing Scholar lvl 4
+- 99260 Fillion's Mission lvl 5
+- 92840 Catching Wind lvl 5
+- 92834 Avenged Tenfold lvl 6
+- 92860 In Service of Zephras lvl 6
+- 92871 In Service of Zephras lvl 6
+- 93320 Tower Defense lvl 6
+- 92642 Disrupting Logistics lvl 6
+- 92645 Breaking the Breaker lvl 6
+- 92880 Return to Valanaar lvl 6
+- 92881 The High Elder's Request lvl 6
+- 92643 The Turncoat lvl 6
+- 92644 Unfortunate News lvl 6
+- 93740 Blood for Blood lvl 6
+- 93948 Deliver the Signet lvl 6
+- 93949 Bugged lvl 6
+- 94568 The Cult's True Plans lvl 6
+- 92640 Desperate Times lvl 6
+- 93065 Prepare for Battle lvl 7
+- 92708 A Grand Adventure lvl 7
+- 92709 A Grand Adventure lvl 7
+- 92947 Making Our Move lvl 7
+- 93958 The Inner Sanctum lvl 7
+- 92646 Confront Lorthuna lvl 7
+- 93835 Confront Lorthuna lvl 7
+- 93836 The Fate of Zephras lvl 7
+- 93090 What Comes Next lvl 7
+- 94369 The Fate of Zephras lvl 7
+- 93089 What Comes Next lvl 7
+- 94946 The Magical City of Dalaran lvl 7
+- 95349 The Earthen Ring lvl 7
+- 92741 Unwelcome Visitors lvl 8
+
+## Skyborne: Unverified Pages (Neutral)
+Entry 96101 -> exit 99153; 109 quests
+- 96101 The Great Outdoors lvl 4
+- 92471 Aetheen of the Gales lvl 4
+- 92470 Foul Matriarch lvl 2
+- 96638 The Adventurer lvl 4
+- 92472 The Next Step lvl 3
+- 92473 Aggressive Encroachment lvl 3
+- 92514 Welcome to Shen'dar Village lvl 4
+- 93461 Welcome to Shen'dar Village lvl 4
+- 92515 The Problem With Prideclaws lvl 4
+- 92516 Hippogryph Harassment lvl 4
+- 92517 The Criminal Element lvl 4
+- 92553 Restocking the Larders lvl 4
+- 93318 WANTED: Vulgara the Insatiable lvl 4
+- 93319 Pilfered Windstones lvl 4
+- 93951 A Little Beauty lvl 4
+- 95998 The Great Outdoors lvl 4
+- 96604 The Great Outdoors lvl 4
+- 96605 The Great Outdoors lvl 4
+- 96606 The Great Outdoors lvl 4
+- 96607 The Great Outdoors lvl 4
+- 96608 The Great Outdoors lvl 4
+- 97970 Camping 101: Mining lvl 4
+- 97971 Camping 101: Skinning lvl 4
+- 96646 Camping 101: Cooking lvl 4
+- 97968 Camping 101: Herbalism lvl 4
+- 97965 Camping 101: First Aid lvl 4
+- 97967 Camping 101: Fishing lvl 4
+- 97963 Camping 101: Alchemy lvl 4
+- 97964 Camping 101: Blacksmithing lvl 4
+- 97973 Camping 101: Tailoring lvl 4
+- 98286 Camping 101: Enchanting lvl 4
+- 97969 Camping 101: Leatherworking lvl 4
+- 98285 Camping 101: Engineering lvl 4
+- 96044 Camping 101: Blacksmithing lvl 4
+- 96045 Camping 101: Alchemy lvl 4
+- 96046 Camping 101: Mining lvl 4
+- 96047 Camping 101: First Aid lvl 4
+- 96050 Camping 101: Fishing lvl 4
+- 96055 Camping 101: Herbalism lvl 4
+- 96056 Camping 101: Skinning lvl 4
+- 96057 Camping 101: Tailoring lvl 4
+- 96058 Camping 101: Engineering lvl 4
+- 96059 Camping 101: Enchanting lvl 4
+- 96102 Camping 101: Tailoring lvl 4
+- 96629 Camping 101: Cooking lvl 4
+- 96655 Camping 101: Cooking lvl 4
+- 96658 Camping 101: Cooking lvl 4
+- 96661 Camping 101: Cooking lvl 4
+- 93036 Infiltrating the Cult lvl 5
+- 92529 Falaath Village lvl 5
+- 92528 Among the Faithful lvl 5
+- 92550 Havoc in the Highlands lvl 5
+- 92551 Stolen Supplies lvl 5
+- 93926 The Western Watch lvl 5
+- 93927 A Last Request lvl 5
+- 92579 To Valanaar lvl 6
+- 92700 The Grand Skyseer lvl 4
+- 93736 Unwelcome Spirits lvl 4
+- 93735 The Broken Construct lvl 4
+- 93737 The Broken Construct lvl 4
+- 93738 The Broken Construct lvl 4
+- 93746 A Firm Response lvl 4
+- 92701 To Valanaar lvl 6
+- 92699 The Supreme Magister lvl 4
+- 92727 The Missing Scholar lvl 4
+- 92849 The Missing Scholar lvl 4
+- 92850 The Missing Scholar lvl 4
+- 99260 Fillion's Mission lvl 5
+- 92840 Catching Wind lvl 5
+- 92834 Avenged Tenfold lvl 6
+- 92860 In Service of Zephras lvl 6
+- 92871 In Service of Zephras lvl 6
+- 93320 Tower Defense lvl 6
+- 92642 Disrupting Logistics lvl 6
+- 92645 Breaking the Breaker lvl 6
+- 92880 Return to Valanaar lvl 6
+- 92881 The High Elder's Request lvl 6
+- 92643 The Turncoat lvl 6
+- 92644 Unfortunate News lvl 6
+- 93740 Blood for Blood lvl 6
+- 93948 Deliver the Signet lvl 6
+- 93949 Bugged lvl 6
+- 94568 The Cult's True Plans lvl 6
+- 92640 Desperate Times lvl 6
+- 92708 A Grand Adventure lvl 7
+- 92709 A Grand Adventure lvl 7
+- 93065 Prepare for Battle lvl 7
+- 92947 Making Our Move lvl 7
+- 93958 The Inner Sanctum lvl 7
+- 93835 Confront Lorthuna lvl 7
+- 94369 The Fate of Zephras lvl 7
+- 93089 What Comes Next lvl 7
+- 94946 The Magical City of Dalaran lvl 7
+- 92646 Confront Lorthuna lvl 7
+- 93836 The Fate of Zephras lvl 7
+- 93090 What Comes Next lvl 7
+- 95349 The Earthen Ring lvl 7
+- 95350 Welcome to Azeroth lvl 7
+- 93739 Exploring the Horde lvl 7
+- 98024 Journey to the Crossroads lvl 7
+- 92741 Unwelcome Visitors lvl 8
+- 96895 The Argent Emissary lvl 10
+- 96897 The Cult of the Damned lvl 10
+- 96898 Remnants of War lvl 10
+- 96899 Bandarion Keep lvl 10
+- 96896 A Righteous Cause lvl 10
+- 98545 Leonid's Letter lvl 10
+- 99152 As Above, So Below lvl 10
+- 99153 The One That Got Away lvl 10
+
+## Hillsbrad Foothills (Neutral)
+Entry 509 -> exit 563; 11 quests
+- 509 Elixir of Agony lvl 24
+- 513 Elixir of Agony lvl 24
+- 515 Elixir of Agony lvl 24
+- 517 Elixir of Agony lvl 24
+- 524 Elixir of Agony lvl 24
+- 536 Down the Coast lvl 25
+- 559 Farren's Proof lvl 25
+- 560 Farren's Proof lvl 25
+- 561 Farren's Proof lvl 25
+- 562 Stormwind Ho! lvl 25
+- 563 Reassignment lvl 25
+
+## Ashenvale (Neutral)
+Entry 991 -> exit 1046; 12 quests
+- 991 Raene's Cleansing lvl 18
+- 1023 Raene's Cleansing lvl 18
+- 1025 An Aggressive Defense lvl 18
+- 1024 Raene's Cleansing lvl 18
+- 1026 Raene's Cleansing lvl 18
+- 1027 Raene's Cleansing lvl 18
+- 1028 Raene's Cleansing lvl 18
+- 1055 Raene's Cleansing lvl 18
+- 1029 Raene's Cleansing lvl 18
+- 1030 Raene's Cleansing lvl 18
+- 1045 Raene's Cleansing lvl 18
+- 1046 Raene's Cleansing lvl 18
+
+## Stonetalon Mountains (Neutral)
+Entry 1093 -> exit 1096; 4 quests
+- 1093 Super Reaper 6000 lvl 16
+- 1094 Further Instructions lvl 16
+- 1095 Further Instructions lvl 16
+- 1096 Gerenzo Wrenchwhistle lvl 16
+
+## Arathi Highlands (Neutral)
+Entry 663 -> exit 667; 9 quests
+- 663 Land Ho! lvl 35
+- 665 Sunken Treasure lvl 35
+- 662 Deep Sea Salvage lvl 35
+- 664 Drowned Sorrows lvl 35
+- 666 Sunken Treasure lvl 35
+- 668 Sunken Treasure lvl 35
+- 669 Sunken Treasure lvl 35
+- 670 Sunken Treasure lvl 35
+- 667 Death From Below lvl 35
+
+## Desolace (Neutral)
+Entry 1367 -> exit 7493; 24 quests
+- 1367 Magram Alliance lvl 30
+- 1385 Brutal Politics lvl 30
+- 1386 Assault on the Kolkar lvl 30
+- 1369 Broken Tears lvl 30
+- 1371 Gizmo for Warug lvl 30
+- 1375 Khan Shaka lvl 30
+- 1381 Khan Hratha lvl 30
+- 4903 Warlord's Command lvl 55
+- 4941 Eitrigg's Wisdom lvl 55
+- 4974 For The Horde! lvl 55
+- 6566 What the Wind Carries lvl 55
+- 6567 The Champion of the Horde lvl 55
+- 6568 The Testament of Rexxar lvl 55
+- 6569 Oculus Illusions lvl 55
+- 6570 Emberstrife lvl 55
+- 6582 The Test of Skulls, Scryer lvl 55
+- 6583 The Test of Skulls, Somnus lvl 55
+- 6584 The Test of Skulls, Chronalis lvl 55
+- 6585 The Test of Skulls, Axtroz lvl 55
+- 6601 Ascension... lvl 55
+- 6602 Blood of the Black Dragon Champion lvl 55
+- 7490 Victory for the Horde lvl 60
+- 7491 For All To See lvl 60
+- 7493 The Journey Has Just Begun lvl 60
+
+## Thousand Needles (Neutral)
+Entry 1104 -> exit 1192; 19 quests
+- 1104 Salt Flat Venom lvl 28
+- 1105 Hardened Shells lvl 28
+- 1107 Encrusted Tail Fins lvl 28
+- 1106 Martek the Exiled lvl 26
+- 1108 Indurium lvl 28
+- 1137 News for Fizzle lvl 28
+- 1176 Load Lightening lvl 29
+- 1178 Goblin Sponsorship lvl 29
+- 1180 Goblin Sponsorship lvl 29
+- 1181 Goblin Sponsorship lvl 29
+- 1182 Goblin Sponsorship lvl 29
+- 1183 Goblin Sponsorship lvl 29
+- 1186 The Eighteenth Pilot lvl 29
+- 1187 Razzeric's Tweaking lvl 29
+- 1188 Safety First lvl 29
+- 1189 Safety First lvl 29
+- 1190 Keeping Pace lvl 29
+- 1194 Rizzle's Schematics lvl 29
+- 1192 Indurium Ore lvl 29
+
+## Dustwallow Marsh (Neutral)
+Entry 1251 -> exit 1276; 18 quests
+- 1251 The Black Shield lvl 30
+- 1269 Lieutenant Paval Reethe lvl 30
+- 1273 Questioning Reethe lvl 30
+- 1282 They Call Him Smiling Jim lvl 30
+- 1302 James Hyal lvl 30
+- 1284 Suspicious Hoofprints lvl 30
+- 1252 Lieutenant Paval Reethe lvl 30
+- 1253 The Black Shield lvl 30
+- 1319 The Black Shield lvl 30
+- 1320 The Black Shield lvl 30
+- 1259 Lieutenant Paval Reethe lvl 30
+- 1285 Daelin's Men lvl 30
+- 1286 The Deserters lvl 30
+- 1287 The Deserters lvl 30
+- 1321 The Black Shield lvl 30
+- 1322 The Black Shield lvl 30
+- 1323 The Black Shield lvl 30
+- 1276 The Black Shield lvl 30
+
+## Stranglethorn Vale (Neutral)
+Entry 189 -> exit 608; 23 quests
+- 189 Bloodscalp Ears lvl 30
+- 209 Skullsplitter Tusks lvl 37
+- 203 The Second Rebellion lvl 30
+- 204 Bad Medicine lvl 30
+- 207 Kurzen's Mystery lvl 30
+- 205 Troll Witchery lvl 30
+- 574 Special Forces lvl 30
+- 202 Colonel Kurzen lvl 30
+- 206 Mai'Zoth lvl 30
+- 616 The Haunted Isle lvl 32
+- 578 The Stone of the Tides lvl 32
+- 601 Water Elementals lvl 32
+- 602 Magical Analysis lvl 32
+- 603 Ansirem's Key lvl 32
+- 610 "Pretty Boy" Duncan lvl 32
+- 611 The Curse of the Tides lvl 32
+- 595 The Bloodsail Buccaneers lvl 37
+- 597 The Bloodsail Buccaneers lvl 37
+- 576 Keep An Eye Out lvl 37
+- 587 Up to Snuff lvl 37
+- 599 The Bloodsail Buccaneers lvl 37
+- 604 The Bloodsail Buccaneers lvl 37
+- 608 The Bloodsail Buccaneers lvl 37
+
+## The Badlands (Neutral)
+Entry 720 -> exit 1139; 25 quests
+- 720 A Sign of Hope lvl 35
+- 709 Solution to Doom lvl 30
+- 728 To the Undercity for Yagyin's Digest lvl 30
+- 727 To Ironforge for Yagyin's Digest lvl 30
+- 735 The Star, the Hand and the Heart lvl 30
+- 736 The Star, the Hand and the Heart lvl 30
+- 737 Forbidden Knowledge lvl 30
+- 710 Study of the Elements: Rock lvl 35
+- 711 Study of the Elements: Rock lvl 35
+- 712 Study of the Elements: Rock lvl 35
+- 716 Stone Is Better than Cloth lvl 35
+- 713 Coolant Heads Prevail lvl 35
+- 714 Gyro... What? lvl 35
+- 715 Liquid Stone lvl 35
+- 721 A Sign of Hope lvl 35
+- 722 Amulet of Secrets lvl 35
+- 723 Prospect of Faith lvl 35
+- 724 Prospect of Faith lvl 35
+- 725 Passing Word of a Threat lvl 35
+- 726 Passing Word of a Threat lvl 35
+- 734 This Is Going to Be Hard lvl 35
+- 777 This Is Going to Be Hard lvl 35
+- 778 This Is Going to Be Hard lvl 35
+- 762 An Ambassador of Evil lvl 35
+- 1139 The Lost Tablets of Will lvl 35
+
+## Swamp of Sorrows (Neutral)
+Entry 2784 -> exit 3628; 34 quests
+- 2784 Fall From Grace lvl 45
+- 1372 Nothing But The Truth lvl 37
+- 1383 Nothing But The Truth lvl 37
+- 1388 Nothing But The Truth lvl 37
+- 1391 Nothing But The Truth lvl 37
+- 1448 In Search of The Temple lvl 38
+- 1449 To The Hinterlands lvl 38
+- 1450 Gryphon Master Talonaxe lvl 38
+- 1451 Rhapsody Shindigger lvl 38
+- 1452 Rhapsody's Kalimdor Kocktail lvl 38
+- 1469 Rhapsody's Tale lvl 38
+- 1475 Into The Temple of Atal'Hakkar lvl 41
+- 2621 The Disgraced One lvl 45
+- 2622 The Missing Orders lvl 45
+- 2623 The Swamp Talker lvl 45
+- 2783 Petty Squabbles lvl 50
+- 2801 A Tale of Sorrow lvl 45
+- 2681 The Stones That Bind Us lvl 45
+- 2702 Heroes of Old lvl 45
+- 2701 Heroes of Old lvl 45
+- 2721 Kirith lvl 45
+- 2743 The Cover of Darkness lvl 45
+- 2744 The Demon Hunter lvl 45
+- 3141 Loramus lvl 45
+- 3508 Breaking the Ward lvl 45
+- 3509 The Name of the Beast lvl 45
+- 3510 The Name of the Beast lvl 45
+- 3511 The Name of the Beast lvl 45
+- 3602 Azsharite lvl 45
+- 3621 The Formation of Felbane lvl 45
+- 3625 Enchanted Azsharite Fel Weaponry lvl 45
+- 3626 Return to the Blasted Lands lvl 45
+- 3627 Uniting the Shattered Amulet lvl 45
+- 3628 You Are Rakh'likh, Demon lvl 45
+
+## The Hinterlands (Neutral)
+Entry 1448 -> exit 81; 11 quests
+- 1448 In Search of The Temple lvl 38
+- 1449 To The Hinterlands lvl 38
+- 1450 Gryphon Master Talonaxe lvl 38
+- 1451 Rhapsody Shindigger lvl 38
+- 1452 Rhapsody's Kalimdor Kocktail lvl 38
+- 1469 Rhapsody's Tale lvl 38
+- 1475 Into The Temple of Atal'Hakkar lvl 41
+- 649 Ripple Recovery lvl 42
+- 650 Ripple Recovery lvl 42
+- 77 A Sticky Situation lvl 42
+- 81 Ripple Delivery lvl 42
+
+## Feralas (Neutral)
+Entry 3445 -> exit 3447; 5 quests
+- 3445 The Sunken Temple lvl 46
+- 3380 The Sunken Temple lvl 46
+- 3444 The Stone Circle lvl 46
+- 3446 Into the Depths lvl 46
+- 3447 Secret of the Circle lvl 46
+
+## Tanaris (Neutral)
+Entry 1690 -> exit 1691; 2 quests
+- 1690 Wastewander Justice lvl 40
+- 1691 More Wastewander Justice lvl 40
+
+## Searing Gorge (Neutral)
+Entry 4451 -> exit 7848; 2 quests
+- 4451 The Key to Freedom lvl 43
+- 7848 Attunement to the Core lvl 55
+
+## Azshara (Neutral)
+Entry 3601 -> exit 3507; 6 quests
+- 3601 Kim'jael Indeed! lvl 47
+- 5534 Kim'jael's "Missing" Equipment lvl 47
+- 3504 Betrayed lvl 44
+- 3505 Betrayed lvl 44
+- 3506 Betrayed lvl 44
+- 3507 Betrayed lvl 44
+
+## Felwood (Neutral)
+Entry 939 -> exit 4261; 4 quests
+- 939 Flute of Xavaric lvl 49
+- 4441 Felbound Ancients lvl 49
+- 4442 Purified! lvl 49
+- 4261 Ancient Spirit lvl 49
+
+## Un'Goro Crater (Neutral)
+Entry 3844 -> exit 3962; 13 quests
+- 3844 It's a Secret to Everybody lvl 47
+- 3845 It's a Secret to Everybody lvl 47
+- 3908 It's a Secret to Everybody lvl 47
+- 3909 The Videre Elixir lvl 47
+- 3912 Meet at the Grave lvl 47
+- 3913 A Grave Situation lvl 47
+- 3914 Linken's Sword lvl 47
+- 3941 A Gnome's Assistance lvl 47
+- 3942 Linken's Memory lvl 47
+- 4084 Silver Heart lvl 47
+- 4005 Aquementas lvl 47
+- 3961 Linken's Adventure lvl 47
+- 3962 It's Dangerous to Go Alone lvl 47
+
+## Western Plaguelands (Neutral)
+Entry 5021 -> exit 5511; 49 quests
+- 5021 Better Late Than Never lvl 50
+- 5023 Better Late Than Never lvl 50
+- 5022 Better Late Than Never lvl 50
+- 5048 Good Natured Emma lvl 50
+- 5049 The Jeremiah Blues lvl 50
+- 5050 Good Luck Charm lvl 50
+- 5051 Two Halves Become One lvl 50
+- 5092 Clear the Way lvl 50
+- 5215 The Scourge Cauldrons lvl 50
+- 5096 Scarlet Diversions lvl 50
+- 5097 All Along the Watchtowers lvl 50
+- 211 Alas, Andorhal lvl 50
+- 5098 All Along the Watchtowers lvl 50
+- 105 Alas, Andorhal lvl 50
+- 5216 Target: Felstone Field lvl 50
+- 5217 Return to Chillwind Camp lvl 50
+- 5219 Target: Dalson's Tears lvl 50
+- 5220 Return to Chillwind Camp lvl 50
+- 5222 Target: Writhing Haunt lvl 50
+- 5223 Return to Chillwind Camp lvl 50
+- 5225 Target: Gahrron's Withering lvl 50
+- 5226 Return to Chillwind Camp lvl 50
+- 5237 Mission Accomplished! lvl 50
+- 5228 The Scourge Cauldrons lvl 50
+- 5229 Target: Felstone Field lvl 50
+- 5230 Return to the Bulwark lvl 50
+- 5218 Felstone Field Cauldron lvl 50
+- 5231 Target: Dalson's Tears lvl 50
+- 5232 Return to the Bulwark lvl 50
+- 5221 Dalson's Tears Cauldron lvl 50
+- 5233 Target: Writhing Haunt lvl 50
+- 5234 Return to the Bulwark lvl 50
+- 5224 Writhing Haunt Cauldron lvl 50
+- 5235 Target: Gahrron's Withering lvl 50
+- 5236 Return to the Bulwark lvl 50
+- 5227 Gahrron's Withering Cauldron lvl 50
+- 5238 Mission Accomplished! lvl 50
+- 838 Scholomance lvl 55
+- 964 Skeletal Fragments lvl 55
+- 5514 Mold Rhymes With... lvl 55
+- 5533 Scholomance lvl 55
+- 5537 Skeletal Fragments lvl 55
+- 5538 Mold Rhymes With... lvl 55
+- 5801 Fire Plume Forged lvl 55
+- 5802 Fire Plume Forged lvl 55
+- 5803 Araj's Scarab lvl 55
+- 5505 The Key to Scholomance lvl 55
+- 5804 Araj's Scarab lvl 55
+- 5511 The Key to Scholomance lvl 55
+
+## Winterspring (Neutral)
+Entry 974 -> exit 5128; 11 quests
+- 974 Finding the Source lvl 51
+- 980 The New Springs lvl 51
+- 4842 Strange Sources lvl 51
+- 5083 Winterfall Firewater lvl 52
+- 5084 Falling to Corruption lvl 52
+- 5085 Mystery Goo lvl 52
+- 5086 Toxic Horrors lvl 52
+- 5087 Winterfall Runners lvl 52
+- 5121 High Chief Winterfall lvl 52
+- 5123 The Final Piece lvl 52
+- 5128 Words of the High Chief lvl 52
+
+## Eastern Plaguelands (Neutral)
+Entry 5149 -> exit 5942; 15 quests
+- 5149 Pamela's Doll lvl 50
+- 5281 The Restless Souls lvl 55
+- 5282 The Restless Souls lvl 55
+- 5211 Defenders of Darrowshire lvl 50
+- 5241 Uncle Carlin lvl 50
+- 5152 Auntie Marlene lvl 50
+- 5153 A Strange Historian lvl 50
+- 5154 The Annals of Darrowshire lvl 50
+- 5210 Brother Carlin lvl 50
+- 5168 Heroes of Darrowshire lvl 50
+- 5181 Villains of Darrowshire lvl 50
+- 5206 Marauders of Darrowshire lvl 50
+- 5941 Return to Chromie lvl 50
+- 5721 The Battle of Darrowshire lvl 55
+- 5942 Hidden Treasures lvl 50
+
+## Silithus (Neutral)
+Entry 8284 -> exit 8324; 6 quests
+- 8284 The Twilight Mystery lvl 54
+- 8285 The Deserter lvl 54
+- 8279 The Twilight Lexicon lvl 54
+- 8287 A Terrible Purpose lvl 54
+- 8323 True Believers lvl 54
+- 8324 Still Believing lvl 54
+
+## Alterac Valley (Neutral)
+Entry 94947 -> exit 537; 7 quests
+- 94947 Welcome to Azeroth lvl 7
+- 93963 Exploring the Alliance lvl 7
+- 98021 Journey to Sentinel Hill lvl 7
+- 511 Encrypted Letter lvl 30
+- 514 Letter to Stormpike lvl 30
+- 525 Further Mysteries lvl 30
+- 537 Dark Council lvl 30
+
+## Blackrock Depths (Neutral)
+Entry 4742 -> exit 4743; 3 quests
+- 4742 Seal of Ascension lvl 57
+- 7761 Blackhand's Command lvl 55
+- 4743 Seal of Ascension lvl 57

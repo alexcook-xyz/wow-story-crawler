@@ -59,10 +59,31 @@ def merge_facts(facts: list[QuestFact]) -> dict[int, MergedQuest]:
     return merged
 
 
+# Races that start in the same zone and share quests (Forever: Dwarf and
+# Gnome in Coldridge Valley, Orc and Troll in the Valley of Trials).
+SHARED_START = ({"Dwarf", "Gnome"}, {"Orc", "Troll"})
+
+
+def _other_player(mq: MergedQuest, faction: str | None,
+                  race: str | None) -> bool:
+    if faction in ("Alliance", "Horde") and mq.faction in ("Alliance", "Horde") \
+            and mq.faction != faction:
+        return True
+    if not (race and mq.race) or mq.race == race:
+        return False
+    return not any(race in g and mq.race in g for g in SHARED_START)
+
+
 def expand_from_seeds(merged: dict[int, MergedQuest], seeds: list[int],
                       exclude: set[int], include_class: bool = False,
-                      max_level: int = MAX_LEVEL) -> set[int]:
-    """Transitive closure over before+after links from the seed quests."""
+                      max_level: int = MAX_LEVEL,
+                      attunement: set[int] | frozenset[int] = frozenset(),
+                      faction: str | None = None,
+                      race: str | None = None) -> set[int]:
+    """Transitive closure over before+after links from the seed quests.
+    `attunement` ids are exempt from the level cutoff (raid/dungeon
+    attunements sit at or above the boundary); class gating still applies."""
+    seed_set = set(seeds)   # curated seeds are never filtered out
     seen: set[int] = set()
     queue = deque(q for q in seeds if q not in exclude)
     while queue:
@@ -74,7 +95,10 @@ def expand_from_seeds(merged: dict[int, MergedQuest], seeds: list[int],
             continue
         if mq.class_specific and not include_class:
             continue
-        if mq.reqlevel is not None and mq.reqlevel > max_level:
+        if qid not in seed_set and _other_player(mq, faction, race):
+            continue
+        if (mq.reqlevel is not None and mq.reqlevel > max_level
+                and qid not in attunement):
             continue
         seen.add(qid)
         queue.extend(mq.before)
@@ -116,6 +140,7 @@ def topo_order(merged: dict[int, MergedQuest], members: set[int],
 
 def chapter_shape(merged: dict[int, MergedQuest], chapter: SeedChapter,
                   members: set[int], ordered: list[int]) -> dict:
+    att = set(chapter.attunement)
     heads = [q for q in ordered
              if not any(p in members for p in merged[q].before)]
     tails = [q for q in ordered
@@ -128,6 +153,7 @@ def chapter_shape(merged: dict[int, MergedQuest], chapter: SeedChapter,
         "exit": ordered[-1] if ordered else None,
         "heads": heads, "tails": tails,
         "quests": ordered, "next_chapter": chapter.next_chapter,
+        "attunement": [q for q in ordered if q in att],
     }
 
 
@@ -144,12 +170,20 @@ def find_gaps(merged: dict[int, MergedQuest], chapters: list[SeedChapter],
             if qid not in merged:
                 gaps.append(Gap("unknown_quest", "seed has no page in any "
                                 "source", qid, chapter.id))
+        for qid in chapter.attunement:
+            if qid not in members:
+                gaps.append(Gap("attunement_missing", "curated attunement "
+                                "quest is not in the chapter (no page, "
+                                "class-gated, or excluded)", qid, chapter.id))
         for qid in sorted(members):
             mq = merged[qid]
             for pred in mq.before:
                 if pred not in merged:
                     gaps.append(Gap("missing_page", f"predecessor {pred} "
                                     "was not crawled", qid, chapter.id))
+                elif _other_player(merged[pred], chapter.faction,
+                                   chapter.race):
+                    continue   # another race's variant, not a requirement
                 elif pred not in members and pred in crawled:
                     gaps.append(Gap("orphan_link", f"requires {pred} "
                                     f"({merged[pred].name}) outside the "
