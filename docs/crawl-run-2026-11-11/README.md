@@ -14,11 +14,24 @@ What did NOT run:
 3 unbridged_chapter. None have been triaged, so there are no explained
 entries yet. The acceptance criterion is not met.
 
-Observations to triage (not conclusions):
-- Many chapters share the same Forever starter chain (quest ids ~95998-98286,
-  ending at 98286). Closure pulls it into Human, Dwarf, Gnome and Night Elf
-  chapters alike, which inflates entries/exits. It needs a shared-starter
-  chapter or `exclude` lists.
+Observations to triage (measured on this run's facts, not yet fixed):
+- 45 of 55 chapters have both multiple entries and multiple exits.
+  Two separate causes:
+  1. A 35-quest Forever "Camping 101" profession-tutorial family
+     (95998 "The Great Outdoors", 96031-96059, 96101-96102, 96604-96608,
+     96629, 96646-96661, 97963-97973, 98285-98286) is pulled into the early
+     chapters of every race through shared links. Excluding it everywhere
+     except where a chapter seeds it did NOT reduce open_head/open_tail
+     (still 46/48) and raised orphan_link from 5 to 107, so excluding it
+     alone is not the fix. Whether Camping 101 belongs to the main story
+     (Dwarf `dwarf_lodgings` has 96608 as its curated entry) is a
+     curation decision I did not make.
+  2. Genuinely multi-chain zone chapters (hillsbrad, arathi, desolace,
+     barrens, ...) need `entry`/`exit` curated or splitting.
+- Cross-race contamination: for example `elwynn` and `peoples_militia`
+  list Dwarf starter quests (179, 183, ...) as entries, and
+  `defias_brotherhood` lists Night Elf ones (456, 916, ...). Human
+  chapters should not contain these; the cause has not been found.
 - Exits differ from the curated ones for several race chapters (for example
   Orc/Troll exit 842, Tauren exit 6382, Undead exit 1113).
 - Gnome/Dwarf chapters are shared-starter stubs (names still start TODO).
