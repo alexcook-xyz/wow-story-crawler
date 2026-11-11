@@ -65,5 +65,32 @@ built = builder.build_chapters(merged, [chapter])
 check("build_chapters passes the attunement list through",
       built[0]["quests"] == [1, 2, 3] and built[0]["attunement"] == [3])
 
+# --- faction/race filter: alternatives are not requirements -----------
+v = [
+    QuestFact(10, "foreverdb", name="Hub", after=[20], reqlevel=5),
+    QuestFact(20, "foreverdb", name="Human variant", before=[10], after=[50],
+              faction="Alliance", race="Human"),
+    QuestFact(21, "foreverdb", name="Orc variant", before=[10], after=[50],
+              faction="Horde", race="Orc"),
+    QuestFact(22, "foreverdb", name="Dwarf variant", before=[10], after=[50],
+              faction="Alliance", race="Dwarf"),
+    QuestFact(50, "foreverdb", name="Joins all variants",
+              before=[20, 21, 22]),
+]
+vm = graph.merge_facts(v)
+hum = graph.expand_from_seeds(vm, [50], set(), faction="Alliance",
+                              race="Human")
+check("filter: other faction/race variants are not pulled in",
+      hum == {50, 20, 10})
+gnome = graph.expand_from_seeds(vm, [50], set(), faction="Alliance",
+                                race="Gnome")
+check("filter: Gnome shares Dwarf quests, not Human ones",
+      22 in gnome and 20 not in gnome and 21 not in gnome)
+seeded = graph.expand_from_seeds(vm, [21, 50], set(), faction="Alliance",
+                                 race="Human")
+check("filter: curated seeds are never filtered out", 21 in seeded)
+nofilter = graph.expand_from_seeds(vm, [50], set())
+check("filter: off when faction/race not given", nofilter == {50, 20, 21, 22, 10})
+
 print("ALL ATTUNEMENT TESTS PASS" if fails == 0 else f"{fails} FAILURES")
 sys.exit(1 if fails else 0)

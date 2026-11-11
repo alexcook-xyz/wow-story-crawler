@@ -90,7 +90,8 @@ def build_chapters(merged: dict[int, MergedQuest],
     for chapter in sorted(chapters, key=lambda c: (c.faction, c.order)):
         members = graph.expand_from_seeds(
             merged, chapter.seeds, set(chapter.exclude), include_class,
-            attunement=set(chapter.attunement))
+            attunement=set(chapter.attunement),
+            faction=chapter.faction, race=chapter.race)
         ordered, in_cycle = graph.topo_order(merged, members, chapter.seeds)
         shape = graph.chapter_shape(merged, chapter, members, ordered)
         shape["in_cycle"] = in_cycle

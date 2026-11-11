@@ -59,14 +59,31 @@ def merge_facts(facts: list[QuestFact]) -> dict[int, MergedQuest]:
     return merged
 
 
+# Races that start in the same zone and share quests (Forever: Dwarf and
+# Gnome in Coldridge Valley, Orc and Troll in the Valley of Trials).
+SHARED_START = ({"Dwarf", "Gnome"}, {"Orc", "Troll"})
+
+
+def _other_player(mq: MergedQuest, faction: str | None,
+                  race: str | None) -> bool:
+    if faction in ("Alliance", "Horde") and mq.faction in ("Alliance", "Horde") \
+            and mq.faction != faction:
+        return True
+    if not (race and mq.race) or mq.race == race:
+        return False
+    return not any(race in g and mq.race in g for g in SHARED_START)
+
+
 def expand_from_seeds(merged: dict[int, MergedQuest], seeds: list[int],
                       exclude: set[int], include_class: bool = False,
                       max_level: int = MAX_LEVEL,
                       attunement: set[int] | frozenset[int] = frozenset(),
-                      ) -> set[int]:
+                      faction: str | None = None,
+                      race: str | None = None) -> set[int]:
     """Transitive closure over before+after links from the seed quests.
     `attunement` ids are exempt from the level cutoff (raid/dungeon
     attunements sit at or above the boundary); class gating still applies."""
+    seed_set = set(seeds)   # curated seeds are never filtered out
     seen: set[int] = set()
     queue = deque(q for q in seeds if q not in exclude)
     while queue:
@@ -77,6 +94,8 @@ def expand_from_seeds(merged: dict[int, MergedQuest], seeds: list[int],
         if mq is None:
             continue
         if mq.class_specific and not include_class:
+            continue
+        if qid not in seed_set and _other_player(mq, faction, race):
             continue
         if (mq.reqlevel is not None and mq.reqlevel > max_level
                 and qid not in attunement):
@@ -162,6 +181,9 @@ def find_gaps(merged: dict[int, MergedQuest], chapters: list[SeedChapter],
                 if pred not in merged:
                     gaps.append(Gap("missing_page", f"predecessor {pred} "
                                     "was not crawled", qid, chapter.id))
+                elif _other_player(merged[pred], chapter.faction,
+                                   chapter.race):
+                    continue   # another race's variant, not a requirement
                 elif pred not in members and pred in crawled:
                     gaps.append(Gap("orphan_link", f"requires {pred} "
                                     f"({merged[pred].name}) outside the "
